@@ -130,6 +130,14 @@ In another terminal, start a local server using the following command:
 npm run dev
 ```
 
+## Talks
+
+A collection of talks where DeckDecoGo was used as support:
+
+| Title                      | Author and repo   | Available online          |
+| -------------------------- |:-----------------:| ---------------:|
+| Ionic v4, web components, shadow dom and beyond | [Peterpeterparker](https://github.com/peterpeterparker/ionicv4-and-beyond) | x |
+
 ## Backstory
 
 I had the opportunity to talk about Web Components and Ionic. While I was developing my presentation it came to my mind that I was not really following what I was about to present, that's why I wrapped up together [DeckDeckGo](https://deckdeckgo.com), this new tool to create lightweight presentation using HTML and Ionic components.
