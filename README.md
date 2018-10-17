@@ -136,7 +136,7 @@ A collection of talks where DeckDecoGo was used as support:
 
 | Title                      | Author and repo   | Available online          |
 | -------------------------- |:-----------------:| ---------------:|
-| Ionic v4, web components, shadow dom and beyond | [Peterpeterparker](https://github.com/peterpeterparker/ionicv4-and-beyond) | x |
+| Ionic v4, web components, shadow dom and beyond | [Peterpeterparker](https://github.com/peterpeterparker/ionicv4-and-beyond) |  |
 
 ## Backstory
 
