@@ -9,7 +9,7 @@ const path = require('path');
 const config = {
     entry: './src/index.js',
     output: {
-        filename: 'app.bundle.js',
+        filename: '[name].[chunkhash].js',
         path: path.resolve(__dirname, 'dist')
     },
     module: {
@@ -31,7 +31,6 @@ const plugins = [
         hash: true,
         inject: true,
         template: './src/index.html',
-        chunks: ['vendor', 'shared', 'app'],
         path: path.join(__dirname, "../dist/"),
         filename: 'index.html'
     }),
