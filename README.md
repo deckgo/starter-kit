@@ -32,6 +32,8 @@ Moreover, DeckDeckGo bundles your presentation with services workers letting you
 
 * Bundles the presentation with an **offline** support
 
+* Let you create slides which looks good on **mobile** devices too
+
 * Free and **open source**
 
 ## Getting Started
