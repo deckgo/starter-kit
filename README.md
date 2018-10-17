@@ -138,6 +138,17 @@ Once you are ready for your talk or ready to publish online your slides, run the
 npm run build
 ```
 
+### Before going online
+
+Before your final build and before deploying online your slides, don't forget to edit the information regarding your presentation in the following files:
+
+* Edit the meta tags in the `<head/>` of [src/index.html](https://github.com/fluster/deckdeckgo/blob/master/src/index.html)
+
+* Generate your favicons and replace the respective files in the [assets](https://github.com/fluster/deckdeckgo/blob/master/assets/) folder. For that purpose I suggest you to use the real great tool [RealFaviconGenerator](https://realfavicongenerator.net) 
+
+* Update your information in the [manifest.json](https://github.com/fluster/deckdeckgo/blob/master/src/manifest.json) file
+
+
 ## Talks
 
 A collection of talks where DeckDecoGo was used as support:
