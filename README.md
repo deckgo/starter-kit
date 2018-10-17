@@ -118,7 +118,7 @@ Simply use the [Ionic Color Generator](https://beta.ionicframework.com/docs/them
 
 [lite-server](https://github.com/johnpapa/lite-server) and [Webpack](https://webpack.js.org) are use to helps you during the development of your presentation.
 
-In a terminal, start the following command to bundle your slides and keep listening to their modifications:
+In a terminal, start the following command to bundle your slides and to keep listening to modifications:
 
 ```bash
 npm run watch
@@ -128,6 +128,14 @@ In another terminal, start a local server using the following command:
 
 ```bash
 npm run dev
+```
+
+## Build
+
+Once you are ready for your talk or ready to publish online your slides, run the following command in a terminal:
+
+```bash
+npm run build
 ```
 
 ## Talks
