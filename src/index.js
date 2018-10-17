@@ -14,3 +14,4 @@ import './scripts/print.js';
 import './scripts/lazy.js';
 import './scripts/slider.js';
 import './scripts/sliderJumpTo.js';
+import './scripts/modal.js';

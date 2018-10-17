@@ -77,7 +77,22 @@
                             <ion-label text-wrap>Bundles the presentation with an <strong>offline</strong> support</ion-label>
                             <ion-checkbox slot="start" checked></ion-checkbox>
                         </ion-item>
+
+                        <ion-item>
+                            <ion-label text-wrap>Free and <strong>open source</strong></ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
                     </ion-list>
+                </ion-card>
+            </ion-slide>
+
+            <ion-slide>
+                <ion-card no-shadow>
+                    <h1>Do you want to add some fancy elements to your slides? 🤔</h1>
+                    <p>Use Ionic components for that purpose, like for example a modal</p>
+                    <div>
+                        <ion-button onclick="presentModal()" shape="round" size="large">Click me</ion-button>
+                    </div>
                 </ion-card>
             </ion-slide>
 
@@ -103,6 +118,7 @@
     </ion-fab>
 
     <ion-popover-controller></ion-popover-controller>
+    <ion-modal-controller></ion-modal-controller>
 </ion-app>
 
 <script defer src="app.bundle.js"></script>

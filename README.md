@@ -32,6 +32,8 @@ Moreover, DeckDeckGo bundles your presentation with services workers letting you
 
 * Bundles the presentation with an **offline** support
 
+* Free and **open source**
+
 ## Getting Started
 
 To get started, simply clone this repository, install the dependencies and start editing your presentation while editing `src/index.html` 😉
