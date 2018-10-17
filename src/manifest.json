@@ -1,0 +1,9 @@
+{
+  "name": "DeckDeckGo",
+  "short_name": "DeckDeckGo",
+  "theme_color": "#ffffff",
+  "background_color": "#3880ff",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/"
+}

@@ -36,7 +36,8 @@ const plugins = [
         filename: 'index.html'
     }),
     new CopyWebpackPlugin([
-        {from: 'src/assets/', to: 'assets'}
+        {from: 'src/assets/', to: 'assets'},
+        {from: 'src/manifest.json', to: ''}
     ])
 ];
 
