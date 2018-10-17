@@ -6,6 +6,20 @@ DeckDeckGo let you create without effort your slides and allows you to add some 
 
 Moreover, DeckDeckGo bundles your presentation with services workers letting you publish it online with an offline support.
 
+## Table of contents
+
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Editing](#editing)
+    - [Samples](#samples)
+- [Theming](#theming)
+- [Development](#development)
+- [Build](#build)
+    - [Before going online](#before-going-online)
+- [Talks](#talks)
+- [Backstory](#backstory)
+- [License](#license)
+
 ## Features
 
 * Use HTML and CSS to create **without effort** your presentation
@@ -32,8 +46,6 @@ npm run dev
 ## Editing
 
 To develop your presentation, simply edit `src/index.html` and add your slides using Ionic tags `ion-slide`.
- 
-### Note
 
 Each `ion-slide` inside `ion-slides` is a slide of your presentation. Inside each `ion-slide` you could add and edit the content to display.
 
