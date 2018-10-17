@@ -167,11 +167,16 @@ Before your final build and before deploying online your slides, don't forget to
 
 ## Talks
 
-A collection of talks where DeckDecoGo was used as support:
+A collection of talks where DeckDecoGo was used:
 
 | Title                      | Author and repo   | Available online          |
 | -------------------------- |:-----------------:| ---------------:|
 | Ionic v4, web components, shadow dom and beyond | [Peterpeterparker](https://github.com/peterpeterparker/ionicv4-and-beyond) |  |
+
+
+### Send me your talks
+
+If you would publish online a talk you would have built with DeckDeckGo, reach me out, I would be super duper happy to list these ❤️
 
 ## Backstory
 
