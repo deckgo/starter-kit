@@ -13,7 +13,7 @@ presentModal = async function () {
     </ion-toolbar>
   </ion-header>
   <ion-content padding>
-    <h1 text-center>Yes that's correct, a modal in a slideshow 😉</h1>
+    <h3 text-center>Yes that's correct, a modal in a slideshow 😉</h3>
   </ion-content>
   <ion-footer>
     <ion-toolbar text-center>

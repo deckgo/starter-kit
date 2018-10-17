@@ -2,6 +2,14 @@ body {
     margin: 0;
 }
 
+*, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+a, strong {
+    font-weight: 500;
+}
+
 :root {
     --ion-background-color: #3880ff;
 
@@ -12,6 +20,7 @@ body {
 
 h1 {
     color: var(--ion-color-primary);
+    text-transform: uppercase;
 }
 
 a ion-icon {
