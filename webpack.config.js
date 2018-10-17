@@ -2,6 +2,8 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
+const {GenerateSW} = require('workbox-webpack-plugin');
+
 const path = require('path');
 
 module.exports = {
@@ -33,6 +35,7 @@ module.exports = {
         }),
         new CopyWebpackPlugin([
             {from: 'src/assets/', to: 'assets'}
-        ])
+        ]),
+        new GenerateSW()
     ]
 };
