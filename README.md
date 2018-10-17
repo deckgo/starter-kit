@@ -16,7 +16,7 @@ Moreover, DeckDeckGo bundles your presentation with services workers letting you
 
 * Lightweight and **lazy** loaded images
 
-* Bundles the presentation with **offline** support using service workers
+* Bundles the presentation with an **offline** support
 
 ## Getting Started
 
