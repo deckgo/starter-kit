@@ -9,6 +9,8 @@ import './css/code.css';
 import './css/card.css';
 import './css/grid.css';
 
+import '@webcomponents/custom-elements';
+
 import './scripts/fullscreen.js';
 import './scripts/print.js';
 import './scripts/lazy.js';
