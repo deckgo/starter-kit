@@ -1,0 +1,32 @@
+{
+  "name": "deckdeckgo",
+  "version": "0.0.1",
+  "description": "DeckDeckGo, the new tool to create lightweight presentation using HTML and Ionic components",
+  "homepage": "https://deckdeckgo.com",
+  "scripts": {
+    "dev": "lite-server",
+    "watch": "webpack --watch --mode development",
+    "build": "webpack --mode production"
+  },
+  "author": {
+    "name": "David Dal Busco",
+    "email": "david.dalbusco@outlook.com",
+    "web": "https://fluster.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fluster/deckdeckgo.git"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.3",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "lite-server": "^2.4.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "license": "MIT"
+}

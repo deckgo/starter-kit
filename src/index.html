@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+    <title>DeckDeckGo</title>
+
+    <meta name="author" content="David Dal Busco">
+    <meta name="description" content="DeckDeckGo is the new tool to create lightweight presentation using HTML and Ionic components. DeckDeckGo let you create without effort your slides and allows you to add some extra interactive features with the help of the Ionic Web Components. Moreover, DeckDeckGo bundles your presentation with services workers letting you publish it online with an offline support.">
+
+    <!-- Ionic -->
+    <link href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" rel="stylesheet" media="screen">
+    <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+
+</head>
+<body>
+
+<ion-app>
+    <ion-content>
+        <ion-slides id="slider">
+
+            <!-- BEGIN: Your slides -->
+
+            <ion-slide>
+                <ion-card no-shadow>
+                    <h1><strong>DeckDeckGo</strong>, the new tool to create lightweight presentation using HTML and [Ionic](https://ionicframework.com) components 🚀</h1>
+                </ion-card>
+            </ion-slide>
+
+            <ion-slide>
+                <ion-card no-shadow class="align-start-xs">
+                    <h1>Features</h1>
+
+                    <ion-list lines="none" padding-top>
+                        <ion-item>
+                            <ion-label text-wrap>Use HTML and CSS to create <strong>without effort</strong> your presentation</ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label text-wrap>Use <strong>Ionic</strong> components to create the content or even add extra features</ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label text-wrap><strong>Style</strong> your presentation quickly</ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label text-wrap>Lightweight and <strong>lazy</strong> loaded images</ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label text-wrap>Bundles the presentation with an <strong>offline</strong> support</ion-label>
+                            <ion-checkbox slot="start" checked></ion-checkbox>
+                        </ion-item>
+                    </ion-list>
+                </ion-card>
+            </ion-slide>
+
+            <!-- END: Your slides -->
+
+        </ion-slides>
+    </ion-content>
+
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed" id="navigation">
+        <ion-fab-button>
+            <ion-icon name="apps"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-list side="start">
+            <ion-fab-button onclick="toggleFullScreen()"><ion-icon name="expand"></ion-icon></ion-fab-button>
+            <ion-fab-button onclick="presentSlidePicker()"><ion-icon name="skip-forward"></ion-icon></ion-fab-button>
+            <ion-fab-button onclick="nextSlide()"><ion-icon name="arrow-forward"></ion-icon></ion-fab-button>
+            <ion-fab-button onclick="previousSlide()"><ion-icon name="arrow-back"></ion-icon></ion-fab-button>
+        </ion-fab-list>
+        <ion-fab-list side="top">
+            <ion-fab-button onclick="doPrint()"><ion-icon name="print"></ion-icon></ion-fab-button>
+            <ion-fab-button onclick="window.open('https://github.com/peterpeterparker/ionicv4-and-beyond', '_blank');"><ion-icon name="logo-github"></ion-icon></ion-fab-button>
+        </ion-fab-list>
+    </ion-fab>
+
+    <ion-popover-controller></ion-popover-controller>
+</ion-app>
+
+<script defer src="app.bundle.js"></script>
+
+</body>
+</html>

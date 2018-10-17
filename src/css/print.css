@@ -1,0 +1,38 @@
+@media print {
+
+    body {
+        position: inherit;
+    }
+
+    ion-app.ion-page {
+        contain: content;
+        position: inherit;
+    }
+
+    ion-content {
+        position: static;
+        --overflow: visible;
+    }
+
+    ion-content div.inner-scroll {
+        overflow: visible;
+    }
+
+    ion-slides.slides {
+        display: inherit;
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+    }
+
+    ion-slides .swiper-wrapper {
+        display: block;
+        width: auto;
+        height: auto;
+        overflow: visible;
+    }
+
+    #navigation {
+        display: none;
+    }
+}

@@ -1,0 +1,13 @@
+code {
+    white-space: pre;
+    display: block;
+    background: #fbfbfb;
+    color: rgba(0,0,0,.84);
+    font-family: Menlo,Monaco,"Courier New",Courier,monospace;
+}
+
+@media(max-width: 768px) {
+    code {
+        font-size: 0.5rem;
+    }
+}

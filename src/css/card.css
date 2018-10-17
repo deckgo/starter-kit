@@ -1,0 +1,5 @@
+ion-card[no-shadow] {
+    box-shadow: none;
+    --color: var(--ion-color-primary);
+    max-width: 80%;
+}

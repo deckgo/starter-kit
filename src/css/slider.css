@@ -1,0 +1,22 @@
+ion-slides {
+    height: 100%;
+}
+
+ion-slide {
+    overflow-y: scroll;
+}
+
+ion-slide ion-card:first-of-type {
+    display: flex;
+    flex-direction: column;
+}
+
+@media(max-width: 768px) {
+    ion-slide ion-card:first-of-type.align-start-xs {
+        align-self: start;
+    }
+}
+
+ion-slides.slides-md {
+    --progress-bar-background-active: var(--ion-color-primary);
+}

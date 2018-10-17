@@ -1,0 +1,7 @@
+ion-button.demo-b1 button {
+    background: yellow !important;
+}
+
+ion-button.demo-b2 {
+    --background: red;
+}
