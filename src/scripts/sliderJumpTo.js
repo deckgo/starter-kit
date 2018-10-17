@@ -23,7 +23,7 @@ buildSlidesListActions = function() {
             for (const slide of slides) {
                 const h1 = slide.getElementsByTagName('h1');
 
-                const text = 'Slide ' + i + (h1 && h1.length > 0 ? ': ' + h1[0].innerText : '');
+                const text = 'Slide ' + i + (h1 && h1.length > 0 ? ': ' + h1[0].innerHTML : '');
 
                 result += '<ion-item ion-item button onclick="jumpToSlide(' + i +')"><ion-label>' + text + '</ion-label></ion-item>';
 

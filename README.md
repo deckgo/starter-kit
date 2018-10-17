@@ -24,7 +24,7 @@ Moreover, DeckDeckGo bundles your presentation with services workers letting you
 
 * Use HTML and CSS to create **without effort** your presentation
 
-* Use **Ionic** components to create the content or even add extra features
+* Use **Ionic** components and icons to create the content or even add extra features
 
 * **Style** your presentation quickly
 
