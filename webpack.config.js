@@ -6,7 +6,7 @@ const {GenerateSW} = require('workbox-webpack-plugin');
 
 const path = require('path');
 
-module.exports = {
+const config = {
     entry: './src/index.js',
     output: {
         filename: 'app.bundle.js',
@@ -22,20 +22,35 @@ module.exports = {
                 ]
             }
         ]
-    },
-    plugins: [
-        new CleanWebpackPlugin(['dist']),
-        new HtmlWebpackPlugin({
-            hash: true,
-            inject: true,
-            template: './src/index.html',
-            chunks: ['vendor', 'shared', 'app'],
-            path: path.join(__dirname, "../dist/"),
-            filename: 'index.html'
-        }),
-        new CopyWebpackPlugin([
-            {from: 'src/assets/', to: 'assets'}
-        ]),
-        new GenerateSW()
-    ]
+    }
+};
+
+const plugins = [
+    new CleanWebpackPlugin(['dist']),
+    new HtmlWebpackPlugin({
+        hash: true,
+        inject: true,
+        template: './src/index.html',
+        chunks: ['vendor', 'shared', 'app'],
+        path: path.join(__dirname, "../dist/"),
+        filename: 'index.html'
+    }),
+    new CopyWebpackPlugin([
+        {from: 'src/assets/', to: 'assets'}
+    ])
+];
+
+module.exports = (env, argv) => {
+
+    if (argv.mode === 'development') {
+        config.devtool = 'source-map';
+    }
+
+    if (argv.mode === 'production') {
+        plugins.push(new GenerateSW());
+    }
+
+    config.plugins = plugins;
+
+    return config;
 };
