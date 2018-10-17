@@ -13,13 +13,14 @@ presentModal = async function () {
     </ion-toolbar>
   </ion-header>
   <ion-content padding>
-    <h3 text-center>Yes that's correct, a modal in a slideshow 😉</h3>
+    <div style="height: 100%; display: flex; flex-direction: column;" align-items-center justify-content-center>
+        <h3 text-center>Yes that's correct, a modal in a slideshow 😉</h3>
+        
+        <div text-center>
+            <ion-button shape="round" size="large" color="primary">Dimiss modal</ion-button>
+        </div>
+    </div>
   </ion-content>
-  <ion-footer>
-    <ion-toolbar text-center>
-        <ion-button class="dismiss" shape="round" size="large" color="tertiary">Dismiss Modal</ion-button>
-    </ion-toolbar>
-  </ion-footer>
   `;
 
     // listen for close event
