@@ -37,7 +37,8 @@ const plugins = [
     }),
     new CopyWebpackPlugin([
         {from: 'src/assets/', to: 'assets'},
-        {from: 'src/manifest.json', to: ''}
+        {from: 'src/manifest.json', to: ''},
+        {from: 'src/robots.txt', to: ''}
     ])
 ];
 
