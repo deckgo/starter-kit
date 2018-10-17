@@ -16,8 +16,12 @@
 
     <script>
         if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/service-worker.js');
+            window.addEventListener('load', async () => {
+                try {
+                    await navigator.serviceWorker.register('/service-worker.js');
+                } catch (e) {
+                    console.warn('No service worker registered');
+                }
             });
         }
     </script>
