@@ -8,6 +8,7 @@ import './css/list.css';
 import './css/code.css';
 import './css/card.css';
 import './css/grid.css';
+import './css/alert.css';
 
 import '@webcomponents/custom-elements';
 
@@ -17,3 +18,4 @@ import './scripts/lazy.js';
 import './scripts/slider.js';
 import './scripts/sliderJumpTo.js';
 import './scripts/modal.js';
+import './scripts/alert.js';

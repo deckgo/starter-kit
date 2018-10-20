@@ -65,6 +65,9 @@
                 <ion-card no-shadow>
                     <h1>DeckDeckGo</h1>
                     <h3>The new tool to create lightweight presentation using HTML and <a href="https://ionicframework.com">Ionic</a> 🚀</h3>
+                    <p no-margin style="font-size: 5rem;">
+                        <ion-icon onclick="presentAlert()" src="assets/img/deckdeckgo.svg" padding-top margin-top></ion-icon>
+                    </p>
                 </ion-card>
             </ion-slide>
 
@@ -166,8 +169,10 @@
         </ion-fab-list>
     </ion-fab>
 
+    <!-- Ionic components anchors -->
     <ion-popover-controller></ion-popover-controller>
     <ion-modal-controller></ion-modal-controller>
+    <ion-alert-controller></ion-alert-controller>
 </ion-app>
 
 </body>
