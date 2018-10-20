@@ -17,6 +17,7 @@ Moreover, DeckDeckGo bundles your presentation with services workers letting you
 - [Build](#build)
     - [Before going online](#before-going-online)
 - [Talks](#talks)
+- [Design and logo](#design-and-logo)
 - [Backstory](#backstory)
 - [License](#license)
 
@@ -110,6 +111,12 @@ A collection of talks where DeckDecoGo was used:
 ### Send me your talks
 
 If you would publish online a talk you would have built with DeckDeckGo, reach me out, I would be super duper happy to list these ❤️
+
+## Design and logo
+
+The DeckDeckGo logo was designed and offered by [Anita](hello@skinque.com) from [Skinque.com](http://skinque.com), a great online marketplace for tattoos 🤘
+
+Reach her out if you are looking for a cool custom tattoo or a nice logo 😃 
 
 ## Backstory
 
