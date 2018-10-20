@@ -2,8 +2,8 @@
   "name": "DeckDeckGo",
   "short_name": "DeckDeckGo",
   "display": "standalone",
-  "theme_color": "#3880ff",
-  "background_color": "#3880ff",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
   "scope": "/",
   "start_url": "/",
   "icons": [
