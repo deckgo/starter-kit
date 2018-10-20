@@ -55,7 +55,7 @@ Each `ion-slide` inside `ion-slides` is a slide of your presentation. Inside eac
 
 ### Samples
 
-For some more guidance, you could have a look to the following [samples](docs/SAMPLES.md).
+For some more guidance, you could have a look to the following [samples](doc/samples/README.md).
 
 ## Theming
 
