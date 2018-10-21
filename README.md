@@ -1,10 +1,10 @@
 # DeckDeckGo
 
-[DeckDeckGo](https://deckedeck.go) is the new tool to create lightweight presentation using HTML and [Ionic](https://ionicframework.com) components.
+[DeckDeckGo] is the new tool to create lightweight presentation using HTML and [Ionic](https://ionicframework.com) components.
 
-DeckDeckGo let you create without effort your slides and allows you to add some extra interactive features with the help of the Ionic Web Components.
+[DeckDeckGo] let you create without effort your slides and allows you to add some extra interactive features with the help of the Ionic Web Components.
 
-Moreover, DeckDeckGo bundles your presentation with services workers letting you publish it online with an offline support.
+Moreover, [DeckDeckGo] bundles your presentation with services workers letting you publish it online with an offline support.
 
 ## Table of contents
 
@@ -69,7 +69,7 @@ If you wish to lazy load the images of your presentation, replace their `src` ta
 
 ## Theming
 
-Theming a DeckDeckGo presentation is easy and quick.
+Theming a [DeckDeckGo] presentation is easy and quick.
 
 Simply use the [Ionic Color Generator](https://beta.ionicframework.com/docs/theming/color-generator) to select the colors of your choice, `copy` the generated CSS variables, `parse` them into `src/css/variables.css` and voilà 😁 
 
@@ -119,20 +119,22 @@ A collection of talks where DeckDecoGo was used:
 
 ### Send me your talks
 
-If you would publish online a talk you would have built with DeckDeckGo, reach me out, I would be super duper happy to list these ❤️
+If you would publish online a talk you would have built with [DeckDeckGo], reach me out, I would be super duper happy to list these ❤️
 
 ## Design and logo
 
-The DeckDeckGo logo was designed and offered by [Anita](hello@skinque.com) from [Skinque.com](http://skinque.com), a great online marketplace for tattoos 🤘
+The [DeckDeckGo] logo was designed and offered by [Anita](hello@skinque.com) from [Skinque.com](http://skinque.com), a great online marketplace for tattoos 🤘
 
 Reach her out if you are looking for a cool custom tattoo or a nice logo 😃 
 
 ## Backstory
 
-I had the opportunity to talk about Web Components and Ionic. While I was developing my presentation it came to my mind that I was not really following what I was about to present, that's why I wrapped up together [DeckDeckGo](https://deckdeckgo.com), this new tool to create lightweight presentation using HTML and Ionic components.
+I had the opportunity to talk about Web Components and Ionic. While I was developing my presentation it came to my mind that I was not really following what I was about to present, that's why I wrapped up together [DeckDeckGo], this new tool to create lightweight presentation using HTML and Ionic components.
 
 Furthermore this project also allowed me to discover how to embed `@ionic/core` in a `index.html` and how to use it with vanilla Javascript.
 
 ## License
 
 MIT © [David Dal Busco](mailto:david.dalbusco@outlook.com)
+
+[DeckDeckGo]: https://deckdeckgo.com
