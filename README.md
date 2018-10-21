@@ -12,6 +12,7 @@ Moreover, DeckDeckGo bundles your presentation with services workers letting you
 - [Getting Started](#getting-started)
 - [Editing](#editing)
     - [Samples](#samples)
+    - [Lazy loading](#lazy-loading)
 - [Theming](#theming)
 - [Development](#development)
 - [Build](#build)
@@ -57,6 +58,14 @@ Each `ion-slide` inside `ion-slides` is a slide of your presentation. Inside eac
 ### Samples
 
 For some more guidance, you could have a look to the following [samples](doc/samples/README.md).
+
+### Lazy loading
+
+If you wish to lazy load the images of your presentation, replace their `src` tags with `data-src`. The provided script [/src/scripts/lazy.js](https://github.com/fluster/deckdeckgo/blob/master/src/scripts/lazy.js) will take care of the lazy loading of the images when navigating through the slides.
+
+```
+<img data-src="assets/img/deckdeckgo.png"/>
+```
 
 ## Theming
 
