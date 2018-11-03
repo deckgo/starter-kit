@@ -8,7 +8,15 @@ Moreover, [DeckDeckGo] bundles your presentation with services workers letting y
 
 ## Table of contents
 
-
+- [Stater Kit](#stater-kit)
+- [Getting Started](#getting-started)
+- [Editing](#editing)
+- [Theming](#theming)
+- [Development](#development)
+- [Build](#build)
+	- [Before going online](#before-going-online)
+- [Design and logo](#design-and-logo)
+- [License](#license)
 
 ## Stater Kit
 
