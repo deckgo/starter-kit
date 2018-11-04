@@ -15,9 +15,6 @@ import './css/alert.css';
 import '@webcomponents/custom-elements';
 
 import './scripts/loading.js';
-import './scripts/fullscreen.js';
-import './scripts/print.js';
-import './scripts/lazy.js';
 import './scripts/slider.js';
 import './scripts/sliderJumpTo.js';
 import './scripts/modal.js';

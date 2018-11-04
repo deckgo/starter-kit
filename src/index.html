@@ -67,24 +67,23 @@
 
 <ion-app class="loading">
     <ion-content>
-        <ion-slides id="slider">
+        <deckgo-deck id="slider">
 
             <!-- BEGIN: Your slides -->
 
-            <ion-slide>
-                <ion-card no-shadow>
-                    <h1>DeckDeckGo</h1>
+            <deckgo-slide-title>
+                <h1 slot="title">DeckDeckGo</h1>
+                <div no-shadow slot="content">
                     <h3>The new tool to create lightweight presentation using HTML and <a href="https://ionicframework.com">Ionic</a> 🚀</h3>
                     <p no-margin style="font-size: 5rem;">
                         <ion-icon onclick="presentAlert()" src="assets/img/deckdeckgo.svg" padding-top margin-top></ion-icon>
                     </p>
-                </ion-card>
-            </ion-slide>
+                </div>
+            </deckgo-slide-title>
 
-            <ion-slide>
-                <ion-card no-shadow class="align-start-xs">
-                    <h1>Features</h1>
-
+            <deckgo-slide-content>
+                <h1 slot="title">Features</h1>
+                <ion-card slot="content" no-shadow class="align-start-xs">
                     <ion-list lines="none" padding-top>
                         <ion-item>
                             <ion-label text-wrap>Use HTML and CSS to create <strong>without effort</strong> your presentation</ion-label>
@@ -117,31 +116,31 @@
                         </ion-item>
                     </ion-list>
                 </ion-card>
-            </ion-slide>
+            </deckgo-slide-content>
 
-            <ion-slide>
-                <ion-card no-shadow>
-                    <h1 style="display: none;">Fancy components</h1>
+            <deckgo-slide-content>
+                <h1 slot="title" style="display: none;">Fancy components</h1>
+                <ion-card slot="content" no-shadow>
                     <h3>Cherry on the cake 🍒🍰</h3>
                     <p>Use any <strong>Ionic</strong> core components in your presentation to add some fancy elements, like for example a modal:</p>
                     <div padding-top>
                         <ion-button onclick="presentModal()" shape="round" size="large">Click me</ion-button>
                     </div>
                 </ion-card>
-            </ion-slide>
+            </deckgo-slide-content>
 
-            <ion-slide>
-                <ion-card no-shadow>
-                    <h1 style="display: none;">Mobile oriented</h1>
+            <deckgo-slide-content>
+                <h1 slot="title" style="display: none;">Mobile oriented</h1>
+                <ion-card slot="content" no-shadow>
                     <h3>Give also a try on your mobile device 📱</h3>
 
                     <p>Presentation built with DeckDeckGo are smooth on <strong>mobile devices</strong> and could be added to the home screen</p>
                 </ion-card>
-            </ion-slide>
+            </deckgo-slide-content>
 
-            <ion-slide>
-                <ion-card no-shadow>
-                    <h1>Long Story Short</h1>
+            <deckgo-slide-title>
+                <h1 slot="title">Long Story Short</h1>
+                <ion-card slot="content" no-shadow>
                     <h3 margin>Fork <a href="https://github.com/fluster/deckdeckgo">DeckDeckGo</a> on <a href="https://github.com/fluster/deckdeckgo">Github</a> and start building your presentation now!</h3>
 
                     <p no-margin style="font-size: 5rem;">
@@ -156,11 +155,11 @@
                         <a href="https://www.linkedin.com/in/david-dal-busco/"><ion-icon name="logo-linkedin"></ion-icon></a>
                     </p>
                 </ion-card>
-            </ion-slide>
+            </deckgo-slide-title>
 
             <!-- END: Your slides -->
 
-        </ion-slides>
+        </deckgo-deck>
     </ion-content>
 
     <ion-fab vertical="bottom" horizontal="end" slot="fixed" id="navigation">

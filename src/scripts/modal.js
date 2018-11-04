@@ -1,5 +1,5 @@
 // Src: https://beta.ionicframework.com/docs/api/modal
-presentModal = async function () {
+presentModal = async () => {
     // initialize controller
     const modalController = document.querySelector('ion-modal-controller');
     await modalController.componentOnReady();

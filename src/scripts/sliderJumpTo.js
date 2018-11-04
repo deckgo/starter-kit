@@ -11,19 +11,19 @@ class SlidesList extends HTMLElement {
     }
 }
 
-buildSlidesListActions = function() {
+buildSlidesListActions = () => {
     return new Promise(async (resolve) => {
         let result = '';
 
-        const slides = document.getElementById('slider').getElementsByTagName('ion-slide');
+        const slides = document.querySelectorAll('#slider > *');
 
         if (slides) {
             let i = 0;
 
             for (const slide of slides) {
-                const h1 = slide.getElementsByTagName('h1');
+                const title = slide.querySelector('[slot="title"]');
 
-                const text = 'Slide ' + i + (h1 && h1.length > 0 ? ': ' + h1[0].innerHTML : '');
+                const text = 'Slide ' + i + (title ? ': ' + title.innerHTML : '');
 
                 result += '<ion-item ion-item button onclick="jumpToSlide(' + i +')"><ion-label>' + text + '</ion-label></ion-item>';
 
@@ -35,15 +35,14 @@ buildSlidesListActions = function() {
     });
 };
 
-jumpToSlide = async function(index) {
+jumpToSlide = async (index) => {
     await document.getElementById('slider').slideTo(index, 0);
-    await lazyLoadOneSlideImages(index);
     await document.querySelector('ion-popover-controller').dismiss();
 };
 
 customElements.define('slides-list', SlidesList);
 
-presentSlidePicker = async function() {
+presentSlidePicker = async () => {
     const popoverController = document.querySelector('ion-popover-controller');
 
     if (!popoverController) {
