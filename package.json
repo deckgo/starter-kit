@@ -1,5 +1,5 @@
 {
-  "name": "deckdeckgo",
+  "name": "deckdeckgo-starter",
   "version": "1.0.0-beta.3",
   "description": "DeckDeckGo, the new tool to create lightweight presentation using HTML and Ionic components",
   "homepage": "https://deckdeckgo.com",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/fluster/deckdeckgo.git"
+    "url": "git://github.com/fluster/deckdeckgo-starter.git"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.19",
