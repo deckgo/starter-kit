@@ -29,11 +29,6 @@
     <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#3880ff">
 
-    <!-- Ionic -->
-    <link href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" rel="stylesheet" media="screen">
-    <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
-    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
-
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', async () => {
@@ -52,10 +47,25 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="msapplication-tap-highlight" content="no">
 
+    <style>
+        /* Until Web Components are loaded, don't display content */
+        body {
+            background: #3880ff;
+        }
+
+        ion-app.loading {
+            color: transparent;
+        }
+
+        ion-app.loading a {
+            color: transparent;
+        }
+    </style>
+
 </head>
 <body>
 
-<ion-app>
+<ion-app class="loading">
     <ion-content>
         <ion-slides id="slider">
 

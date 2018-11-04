@@ -22,7 +22,7 @@
     "copy-webpack-plugin": "^4.6.0",
     "css-loader": "^1.0.1",
     "file-loader": "^2.0.0",
-    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin": "^4.0.0-beta.2",
     "lite-server": "^2.4.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.24.0",
@@ -31,6 +31,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@webcomponents/custom-elements": "^1.2.1"
+    "@ionic/core": "^4.0.0-beta.15",
+    "@webcomponents/custom-elements": "^1.2.1",
+    "ionicons": "^4.4.6"
   }
 }
