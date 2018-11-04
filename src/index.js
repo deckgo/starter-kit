@@ -24,9 +24,12 @@ import './scripts/modal.js';
 import './scripts/alert.js';
 
 import { defineCustomElements as ionicElements } from '@ionic/core/loader';
-ionicElements(window).then(async () => {
-    await postLoading();
-});
+ionicElements(window);
 
 import { defineCustomElements as ioniconsElements } from 'ionicons/dist/loader';
 ioniconsElements(window);
+
+import { defineCustomElements as deckDeckGoElements } from 'deckdeckgo/dist/loader';
+deckDeckGoElements(window).then(async () => {
+    await postLoading();
+});
