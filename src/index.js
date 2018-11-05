@@ -3,14 +3,9 @@ import '@ionic/core/css/ionic.bundle.css';
 import './css/variables.css';
 import './css/theme.css';
 import './css/deck.css';
+import './css/font.css';
 import './css/popover.css';
 import './css/print.css';
-import './css/slider.css';
-import './css/button.css';
-import './css/list.css';
-import './css/code.css';
-import './css/card.css';
-import './css/grid.css';
 import './css/alert.css';
 
 import '@webcomponents/custom-elements';

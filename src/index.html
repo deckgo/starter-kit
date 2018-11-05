@@ -74,15 +74,12 @@
             <deckgo-slide-title>
                 <h1 slot="title">DeckDeckGo</h1>
                 <div no-shadow slot="content">
-                    <h3>The new tool to create lightweight presentation using HTML and <a href="https://ionicframework.com">Ionic</a> 🚀</h3>
-                    <p no-margin style="font-size: 5rem;">
-                        <ion-icon onclick="presentAlert()" src="assets/img/deckdeckgo.svg" padding-top margin-top></ion-icon>
-                    </p>
+                    <h3>Create a lightweight presentation using HTML and Web Components 🚀</h3>
                 </div>
             </deckgo-slide-title>
 
             <deckgo-slide-content>
-                <h1 slot="title">Features</h1>
+                <h2 slot="title">Features</h2>
                 <ion-card slot="content" no-shadow class="align-start-xs">
                     <ion-list lines="none" padding-top>
                         <ion-item>
@@ -173,6 +170,7 @@
             <ion-fab-button onclick="previousSlide()"><ion-icon name="arrow-back"></ion-icon></ion-fab-button>
         </ion-fab-list>
         <ion-fab-list side="top">
+            <ion-fab-button onclick="presentAlert()"><ion-icon name="help"></ion-icon></ion-fab-button>
             <ion-fab-button onclick="doPrint()"><ion-icon name="print"></ion-icon></ion-fab-button>
             <ion-fab-button onclick="window.open('https://github.com/fluster/deckdeckgo', '_blank');"><ion-icon name="logo-github"></ion-icon></ion-fab-button>
         </ion-fab-list>

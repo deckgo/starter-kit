@@ -1,0 +1,29 @@
+*, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+a, strong {
+    font-weight: 500;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+@media(min-width: 992px) {
+    body {
+        font-size: 32px;
+    }
+}
