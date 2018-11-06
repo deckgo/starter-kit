@@ -14,10 +14,10 @@ presentModal = async () => {
   </ion-header>
   <ion-content padding>
     <div style="height: 100%; display: flex; flex-direction: column;" align-items-center justify-content-center>
-        <h3 text-center>Yes that's correct, a modal in a slideshow 😉</h3>
+        <h3 text-center>...or this modal 😉</h3>
         
         <div text-center padding-top>
-            <ion-button shape="round" size="large" color="primary">Dimiss modal</ion-button>
+            <ion-button shape="round" size="large" color="primary">Dismiss</ion-button>
         </div>
     </div>
   </ion-content>

@@ -74,7 +74,7 @@
             <deckgo-slide-title>
                 <h1 slot="title">DeckDeckGo</h1>
                 <div no-shadow slot="content">
-                    <h3>Create a lightweight presentation using HTML and Web Components 🚀</h3>
+                    <h3>Create a lightweight presentation using <strong>HTML</strong> and <strong>Web Components</strong> 🚀</h3>
                 </div>
             </deckgo-slide-title>
 
@@ -120,37 +120,25 @@
             <deckgo-slide-title reveal="true">
                 <h2 slot="title">Reveal</h2>
                 <p no-shadow slot="content">
-                    <span>A</span> <span style="color: var(--ion-color-success);">journey</span> <span>of a thousand miles</span> <span style="color: var(--ion-color-warning);">begins with a single step - </span> <span style="color: var(--ion-color-dark);">Laozi</span>
+                    <span>A</span> <span>journey</span> <span>of a thousand miles</span> <span style="color: var(--ion-color-warning);">begins with a single step - </span> <span style="color: var(--ion-color-success);">Laozi</span>
                 </p>
             </deckgo-slide-title>
 
-            <deckgo-slide-content>
-                <h1 slot="title" style="display: none;">Fancy components</h1>
-                <ion-card slot="content" no-shadow>
-                    <h3>Cherry on the cake 🍒🍰</h3>
-                    <p>Use any <strong>Ionic</strong> core components in your presentation to add some fancy elements, like for example a modal:</p>
+            <deckgo-slide-title>
+                <h2 slot="title">Cherry on the cake 🍒🍰</h2>
+                <div slot="content">
+                    <p>Add any <strong>Ionic</strong> components to your presentation</p>
                     <div padding-top>
-                        <ion-button onclick="presentModal()" shape="round" size="large">Click me</ion-button>
+                        <ion-button onclick="presentModal()" shape="round" size="large">Like for example this button</ion-button>
                     </div>
-                </ion-card>
-            </deckgo-slide-content>
-
-            <deckgo-slide-content>
-                <h1 slot="title" style="display: none;">Mobile oriented</h1>
-                <ion-card slot="content" no-shadow>
-                    <h3>Give also a try on your mobile device 📱</h3>
-
-                    <p>Presentation built with DeckDeckGo are smooth on <strong>mobile devices</strong> and could be added to the home screen</p>
-                </ion-card>
-            </deckgo-slide-content>
+                </div>
+            </deckgo-slide-title>
 
             <deckgo-slide-title>
-                <h1 slot="title">Long Story Short</h1>
-                <ion-card slot="content" no-shadow>
-                    <h3 margin>Fork <a href="https://github.com/fluster/deckdeckgo">DeckDeckGo</a> on <a href="https://github.com/fluster/deckdeckgo">Github</a> and start building your presentation now!</h3>
-
-                    <p no-margin style="font-size: 5rem;">
-                        <a href="https://github.com/fluster/deckdeckgo"><ion-icon name="logo-github"></ion-icon></a>
+                <h2 slot="title">Get started now 🔥</h2>
+                <div slot="content" no-shadow>
+                    <p no-margin>
+                        <a href="https://github.com/fluster/deckdeckgo"><ion-icon style="font-size: 5rem;" name="logo-github"></ion-icon> DeckDeckGo</a>
                     </p>
 
                     <p style="margin-bottom: 0;">
@@ -160,7 +148,7 @@
                         <a href="https://twitter.com/daviddalbusco"><ion-icon name="logo-twitter"></ion-icon></a>
                         <a href="https://www.linkedin.com/in/david-dal-busco/"><ion-icon name="logo-linkedin"></ion-icon></a>
                     </p>
-                </ion-card>
+                </div>
             </deckgo-slide-title>
 
             <!-- END: Your slides -->
