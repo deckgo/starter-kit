@@ -23,10 +23,11 @@ h3 {
 }
 
 deckgo-deck {
-    --code-font-size: 16px;
+    --code-font-size: 14px;
+    --code-font-family: Menlo, monospace;
 }
 
-ion-label, ion-label[text-wrap].sc-ion-label-md-h {
+ion-label, ion-label[text-wrap].sc-ion-label-md-h, p {
     font-size: 1.8rem;
 }
 

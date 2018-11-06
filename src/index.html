@@ -113,9 +113,16 @@
                 </div>
             </deckgo-slide-split>
 
-            <deckgo-slide-code src-file="./assets/code/deckdeckgo-slide-code-example.txt" style="--code-margin-bottom: 6rem; --background: white; --color: var(--ion-color-tertiary); --code-color: var(--ion-color-dark);">
-                <h1 slot="title">Code</h1>
+            <deckgo-slide-code src-file="./assets/code/deckdeckgo-slide-code-example.txt" style="--code-margin-bottom: 6rem; --background: var(--ion-color-dark); --color: var(--ion-color-warning); --code-color: var(--ion-color-light);">
+                <h2 slot="title">Code</h2>
             </deckgo-slide-code>
+
+            <deckgo-slide-title reveal="true">
+                <h2 slot="title">Reveal</h2>
+                <p no-shadow slot="content">
+                    <span>A</span> <span style="color: var(--ion-color-success);">journey</span> <span>of a thousand miles</span> <span style="color: var(--ion-color-warning);">begins with a single step - </span> <span style="color: var(--ion-color-dark);">Laozi</span>
+                </p>
+            </deckgo-slide-title>
 
             <deckgo-slide-content>
                 <h1 slot="title" style="display: none;">Fancy components</h1>
