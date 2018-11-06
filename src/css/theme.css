@@ -24,7 +24,3 @@ blockquote {
 strong {
     text-decoration: underline;
 }
-
-img.add-box-shadow, code {
-    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, .14), 0 4px 5px rgba(0, 0, 0, .1);
-}
