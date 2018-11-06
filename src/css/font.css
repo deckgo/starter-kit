@@ -28,11 +28,15 @@ deckgo-deck {
 }
 
 ion-label, ion-label[text-wrap].sc-ion-label-md-h, p {
-    font-size: 1.8rem;
+    font-size: 1em;
 }
 
 @media(min-width: 992px) {
     body {
         font-size: 32px;
+    }
+
+    ion-label, ion-label[text-wrap].sc-ion-label-md-h, p {
+        font-size: 1.4em;
     }
 }
