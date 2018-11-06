@@ -22,6 +22,10 @@ h3 {
     font-size: 1.4em;
 }
 
+ion-label, ion-label[text-wrap].sc-ion-label-md-h {
+    font-size: 1.8rem;
+}
+
 @media(min-width: 992px) {
     body {
         font-size: 32px;
