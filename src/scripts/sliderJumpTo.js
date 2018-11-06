@@ -25,7 +25,7 @@ buildSlidesListActions = () => {
 
                 const text = 'Slide ' + i + (title ? ': ' + title.innerHTML : '');
 
-                result += '<ion-item ion-item button onclick="jumpToSlide(' + i +')"><ion-label>' + text + '</ion-label></ion-item>';
+                result += '<ion-item ion-item button onclick="jumpToSlide(' + i +')" color="primary"><ion-label>' + text + '</ion-label></ion-item>';
 
                 i++;
             }

@@ -120,7 +120,7 @@
             <deckgo-slide-title reveal="true">
                 <h2 slot="title">Reveal</h2>
                 <p no-shadow slot="content">
-                    <span>A</span> <span>journey</span> <span>of a thousand miles</span> <span style="color: var(--ion-color-warning);">begins with a single step - </span> <span style="color: var(--ion-color-success);">Laozi</span>
+                    <span>A</span> <span>journey</span> <span>of a thousand miles</span> <span style="color: var(--ion-color-warning);">begins with a single step - </span> <span><strong>Laozi</strong></span>
                 </p>
             </deckgo-slide-title>
 
@@ -137,14 +137,14 @@
             <deckgo-slide-title>
                 <h2 slot="title">Get started now 🔥</h2>
                 <div slot="content" no-shadow>
-                    <p no-margin>
-                        <a href="https://github.com/fluster/deckdeckgo"><ion-icon style="font-size: 5rem;" name="logo-github"></ion-icon> DeckDeckGo</a>
+                    <p>
+                        <a href="https://github.com/fluster/deckdeckgo"><ion-icon style="font-size: 5rem;" name="logo-github"></ion-icon></a>
                     </p>
 
-                    <p style="margin-bottom: 0;">
+                    <p style="margin-bottom: 0; margin-top: 16px; font-size: 0.5em;">
                         Created by David Dal Busco
                     </p>
-                    <p no-margin no-padding>
+                    <p no-margin no-padding style="font-size: 0.8em; margin-top: 8px;">
                         <a href="https://twitter.com/daviddalbusco"><ion-icon name="logo-twitter"></ion-icon></a>
                         <a href="https://www.linkedin.com/in/david-dal-busco/"><ion-icon name="logo-linkedin"></ion-icon></a>
                     </p>
@@ -161,15 +161,15 @@
             <ion-icon name="apps"></ion-icon>
         </ion-fab-button>
         <ion-fab-list side="start">
-            <ion-fab-button onclick="toggleFullScreen()"><ion-icon name="expand"></ion-icon></ion-fab-button>
-            <ion-fab-button onclick="presentSlidePicker()"><ion-icon name="skip-forward"></ion-icon></ion-fab-button>
-            <ion-fab-button onclick="nextSlide()"><ion-icon name="arrow-forward"></ion-icon></ion-fab-button>
-            <ion-fab-button onclick="previousSlide()"><ion-icon name="arrow-back"></ion-icon></ion-fab-button>
+            <ion-fab-button color="primary" onclick="toggleFullScreen()"><ion-icon name="expand"></ion-icon></ion-fab-button>
+            <ion-fab-button color="primary" onclick="presentSlidePicker()"><ion-icon name="skip-forward"></ion-icon></ion-fab-button>
+            <ion-fab-button color="primary" onclick="nextSlide()"><ion-icon name="arrow-forward"></ion-icon></ion-fab-button>
+            <ion-fab-button color="primary" onclick="previousSlide()"><ion-icon name="arrow-back"></ion-icon></ion-fab-button>
         </ion-fab-list>
         <ion-fab-list side="top">
-            <ion-fab-button onclick="presentAlert()"><ion-icon name="help"></ion-icon></ion-fab-button>
-            <ion-fab-button onclick="doPrint()"><ion-icon name="print"></ion-icon></ion-fab-button>
-            <ion-fab-button onclick="window.open('https://github.com/fluster/deckdeckgo', '_blank');"><ion-icon name="logo-github"></ion-icon></ion-fab-button>
+            <ion-fab-button color="primary" onclick="presentAlert()"><ion-icon name="help"></ion-icon></ion-fab-button>
+            <ion-fab-button color="primary" onclick="doPrint()"><ion-icon name="print"></ion-icon></ion-fab-button>
+            <ion-fab-button color="primary" onclick="window.open('https://github.com/fluster/deckdeckgo', '_blank');"><ion-icon name="logo-github"></ion-icon></ion-fab-button>
         </ion-fab-list>
     </ion-fab>
 
