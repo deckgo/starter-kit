@@ -53,7 +53,7 @@
             background: #3880ff;
         }
 
-        ion-app.loading {
+        ion-app.loading, ion-app.loading a {
             color: transparent;
         }
 
@@ -82,7 +82,7 @@
                 <h2 slot="title">Features</h2>
                 <ion-list slot="content" lines="none" padding-top>
                     <ion-item style="--color: var(--ion-color-dark);">
-                        <ion-label text-wrap>✏️ Use HTML and CSS to create <strong>without effort</strong> your presentation</ion-label>
+                        <ion-label text-wrap>✏️ Create <strong>without effort</strong> your presentation using HTML and CSS</ion-label>
                     </ion-item>
 
                     <ion-item style="--color: var(--ion-color-dark);">
@@ -108,19 +108,23 @@
             </deckgo-slide-content>
 
             <deckgo-slide-split style="--slide-split-align: center; --slide-split-text-align: center; --slide-split-background-end: white; --slide-split-color-end: var(--ion-color-tertiary);">
-                <h3 slot="start">Bundle your presentation as a <strong>Progressive Web App</strong> with <strong>offline</strong> support</h3>
-                <div slot="end">
+                <h3 slot="start">Publis your presentation as a <strong>Progressive Web App</strong> with <strong>offline</strong> support</h3>
+                <div slot="end" style="text-align: center; width: 100%;">
+                    <img data-src="./assets/img/deckdeckgo-homecoming.png" style="width: 20vw;"/>
                 </div>
             </deckgo-slide-split>
 
-            <deckgo-slide-code src-file="./assets/code/deckdeckgo-slide-code-example.txt" style="--code-margin-bottom: 6rem; --background: var(--ion-color-dark); --color: var(--ion-color-warning); --code-color: var(--ion-color-light);">
-                <h2 slot="title">Code</h2>
+            <deckgo-slide-code src-file="./assets/code/deckdeckgo-slide-code-example.txt" style="--code-margin-bottom: 6rem; --background: var(--ion-color-dark); --color: var(--ion-color-tertiary); --code-color: var(--ion-color-light);">
+                <div slot="title">
+                    <h2>Code</h2>
+                    <p>Showcase your code with a scroller and some zoom effects</p>
+                </div>
             </deckgo-slide-code>
 
             <deckgo-slide-title reveal="true">
                 <h2 slot="title">Reveal</h2>
                 <p no-shadow slot="content">
-                    <span>A</span> <span>journey</span> <span>of a thousand miles</span> <span style="color: var(--ion-color-warning);">begins with a single step - </span> <span><strong>Laozi</strong></span>
+                    <span>A</span> <span>journey</span> <span>of a thousand miles</span> <span style="color: var(--ion-color-warning);"><strong>begins with a single step</strong> - </span> <span>Laozi</span>
                 </p>
             </deckgo-slide-title>
 
