@@ -1,3 +1,11 @@
+<a name="1.0.0-beta.4"></a>
+# [1.0.0-beta.4](https://github.com/fluster/deckdeckgo/compare/v1.0.0-beta.3...v1.0.0-beta.3) (2018-11-07)
+
+### Features
+
+* DeckDeckGo is now based on a custom slide/presentation tool build with StencilJS
+* This project used to be a single repo but has now been split in a code [DeckDeckGo](https://github.com/fluster/deckdeckgo), a [starter kit](https://github.com/fluster/deckdeckgo-starter) (this repo), a [CLI](https://github.com/fluster/create-deckdeckgo) and a [website](https://github.com/fluster/deckdeckgo-website) 
+
 <a name="1.0.0-beta.3"></a>
 # [1.0.0-beta.3](https://github.com/fluster/deckdeckgo/compare/v1.0.0-beta.2...v1.0.0-beta.3) (2018-08-20)
 
