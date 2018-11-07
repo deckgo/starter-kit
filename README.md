@@ -24,20 +24,15 @@ This project is the starter kit of [DeckDeckGo]. Visit the main project [repo](h
 
 ## Getting Started
 
-To get started, simply clone this repository, install the dependencies and start editing your presentation while editing `src/index.html` 😉
+To get started and **to create your presentation**, run the following command and follow the prompt:
 
 ```bash
-git clone https://github.com/fluster/deckdeckgo-starter
-cd deckdeckgo-starter
-npm install
-npm run dev
+npm init deckdeckgo
 ```
-
-*Note: [DeckDeckGo] will soon offer a CLI to let you initialize your presentation based on this starter kit more easily*
 
 ## Editing
 
-To develop your presentation, simply edit `src/index.html`, add a `<deckgo-deck>` elements containing your [slides](https://github.com/fluster/deckdeckgo/doc/slides/slides.md).
+To prepare your slides and content for your talk, edit `src/index.html`, add a `<deckgo-deck>` elements containing your [slides](https://github.com/fluster/deckdeckgo/doc/slides/slides.md).
 
 ## Theming
 
