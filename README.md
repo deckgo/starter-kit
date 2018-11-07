@@ -1,10 +1,10 @@
 # DeckDeckGo - Starter Kit
 
-[DeckDeckGo] is the new tool to create lightweight presentation using HTML and Web Components.
+Create a lightweight presentation using HTML and Web Components.
 
 [DeckDeckGo] let you create without effort your slides and allows you to add some extra interactive features with the help of the [Ionic](https://ionicframework.com) components.
 
-Moreover, [DeckDeckGo] bundles your presentation with services workers letting you publish it online with as a Progressive Web App.
+Moreover, [DeckDeckGo] bundles your presentation with services workers letting you publish it online as a Progressive Web App.
 
 ## Table of contents
 
