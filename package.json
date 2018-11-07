@@ -35,5 +35,16 @@
     "@webcomponents/custom-elements": "^1.2.1",
     "deckdeckgo": "0.0.5",
     "ionicons": "^4.4.6"
-  }
+  },
+  "keywords": [
+    "ionic",
+    "stencil",
+    "stenciljs",
+    "web components",
+    "pwa",
+    "presentation",
+    "slides",
+    "slideshow",
+    "talk"
+  ]
 }
