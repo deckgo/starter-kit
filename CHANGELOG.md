@@ -1,3 +1,11 @@
+<a name="1.0.0-beta.6"></a>
+# [1.0.0-beta.6](https://github.com/fluster/deckdeckgo-starter/compare/v1.0.0-beta.5...v1.0.0-beta.6) (2018-11-11)
+
+### Feat
+
+* fix over scrolling on iOS
+* include last DeckDeckGo library
+
 <a name="1.0.0-beta.5"></a>
 # [1.0.0-beta.5](https://github.com/fluster/deckdeckgo-starter/compare/v1.0.0-beta.4...v1.0.0-beta.5) (2018-11-07)
 
