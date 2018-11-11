@@ -5,6 +5,7 @@
 
 * fix over scrolling on iOS
 * include last DeckDeckGo library
+* add `npm run start` to watch and serve in a single command
 
 <a name="1.0.0-beta.5"></a>
 # [1.0.0-beta.5](https://github.com/fluster/deckdeckgo-starter/compare/v1.0.0-beta.4...v1.0.0-beta.5) (2018-11-07)
