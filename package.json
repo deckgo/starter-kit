@@ -4,6 +4,7 @@
   "description": "DeckDeckGo, the new tool to create lightweight presentation using HTML and Ionic components",
   "homepage": "https://deckdeckgo.com",
   "scripts": {
+    "start": "concurrently --kill-others \"npm run watch\" \"npm run dev\"",
     "dev": "lite-server",
     "watch": "webpack --watch --mode development",
     "build": "webpack --mode production"
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.19",
+    "concurrently": "^4.0.1",
     "copy-webpack-plugin": "^4.6.0",
     "css-loader": "^1.0.1",
     "file-loader": "^2.0.0",
