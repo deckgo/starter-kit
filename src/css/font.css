@@ -41,6 +41,6 @@ ion-label, ion-label[text-wrap].sc-ion-label-md-h, p {
     }
 
     deckgo-deck {
-        --code-font-size: 20px;
+        --code-font-size: 24px;
     }
 }
