@@ -1,7 +1,14 @@
+<a name="1.0.0-beta.7"></a>
+# [1.0.0-beta.7](https://github.com/fluster/deckdeckgo-starter/compare/v1.0.0-beta.6...v1.0.0-beta.7) (2018-11-14)
+
+### Features
+
+* update DeckDeckGo library v1.0.0-beta.4 (see related release for [details](https://github.com/fluster/deckdeckgo/releases/tag/v1.0.0-beta.4))
+
 <a name="1.0.0-beta.6"></a>
 # [1.0.0-beta.6](https://github.com/fluster/deckdeckgo-starter/compare/v1.0.0-beta.5...v1.0.0-beta.6) (2018-11-11)
 
-### Feat
+### Features
 
 * fix over scrolling on iOS
 * include last DeckDeckGo library

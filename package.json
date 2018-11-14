@@ -1,6 +1,6 @@
 {
   "name": "deckdeckgo-starter",
-  "version": "1.0.0-beta.6",
+  "version": "1.0.0-beta.7",
   "description": "DeckDeckGo, the new tool to create lightweight presentation using HTML and Ionic components",
   "homepage": "https://deckdeckgo.com",
   "scripts": {
@@ -35,7 +35,7 @@
   "dependencies": {
     "@ionic/core": "^4.0.0-beta.15",
     "@webcomponents/custom-elements": "^1.2.1",
-    "deckdeckgo": "^1.0.0-beta.3",
+    "deckdeckgo": "^1.0.0-beta.4",
     "ionicons": "^4.4.6"
   },
   "keywords": [
