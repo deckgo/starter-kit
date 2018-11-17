@@ -15,6 +15,7 @@ import './scripts/slider.js';
 import './scripts/sliderJumpTo.js';
 import './scripts/modal.js';
 import './scripts/alert.js';
+import './scripts/socketIo.js';
 
 import { defineCustomElements as ionicElements } from '@ionic/core/loader';
 ionicElements(window);
@@ -25,4 +26,5 @@ ioniconsElements(window);
 import { defineCustomElements as deckDeckGoElements } from 'deckdeckgo/dist/loader';
 deckDeckGoElements(window).then(async () => {
     await postLoading();
+    await initSocketIo();
 });
