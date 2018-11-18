@@ -2,7 +2,7 @@ const io = require('socket.io-client');
 
 initSocketIo = () => {
     return new Promise((resolve) => {
-        const url = location.protocol + '//' + location.hostname + ':' + location.port;
+        const url = location.protocol + '//' + location.hostname + ':3002';
 
         const socket = io.connect(url, {
             'transports': ['websocket', 'xhr-polling'],
