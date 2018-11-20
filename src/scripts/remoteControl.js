@@ -15,7 +15,8 @@ const room = 'test_room';
 
 initRemoteControl = () => {
     return new Promise((resolve) => {
-        const url = location.protocol + '//' + location.hostname + ':3002';
+        // noinspection JSUnresolvedVariable
+        const url = SIGNALING_SERVER;
 
         socket = io.connect(url, {
             'transports': ['websocket', 'xhr-polling'],
