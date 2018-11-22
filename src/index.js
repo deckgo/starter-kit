@@ -26,5 +26,5 @@ ioniconsElements(window);
 import { defineCustomElements as deckDeckGoElements } from 'deckdeckgo/dist/loader';
 deckDeckGoElements(window).then(async () => {
     await postLoading();
-    await initRemoteControl();
+    await connectRemoteControl();
 });

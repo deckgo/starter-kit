@@ -13,7 +13,16 @@ let rtcPeerConn, dataChannel, socket;
 
 const room = 'test_room';
 
-initRemoteControl = () => {
+connectRemoteControl = () => {
+    return new Promise(async (resolve) => {
+       await disconnect();
+       await connect();
+
+       resolve();
+    });
+};
+
+function connect() {
     return new Promise((resolve) => {
         // noinspection JSUnresolvedVariable
         const url = SIGNALING_SERVER;
@@ -25,46 +34,74 @@ initRemoteControl = () => {
 
         socket.on('connect', async () => {
             socket.emit('join', {
-                room: room
+                room: room,
+                deck: true
             });
+        });
 
-            socket.emit('signal', {
-                'type': 'user_here',
-                'room': room
-            });
+        socket.on('joined', async () => {
+            // Do nothing on the deck side
         });
 
         socket.on('signaling_message', async (data) => {
             //Setup the RTC Peer Connection object
             if (!rtcPeerConn) {
-                startSignaling(data.type);
+                startSignaling();
             }
 
-            if (data.type !== 'user_here') {
-                const message = JSON.parse(data.message);
-                if (message.sdp) {
-                    await rtcPeerConn.setRemoteDescription(new RTCSessionDescription(message.sdp), async () => {
-                        // if we received an offer, we need to answer
-                        if (rtcPeerConn.remoteDescription.type === 'offer') {
-                            await rtcPeerConn.createAnswer(sendLocalDesc, (err) => {
-                                console.error(err)
-                            });
-                        }
-                    }, (err) => {
-                        console.error(err)
+            if (data.type === 'user_here') {
+                if (!rtcPeerConn.currentLocalDescription) {
+                    // let the 'negotiationneeded' event trigger offer generation
+                    await rtcPeerConn.createOffer(sendLocalDesc, (err) => {
+                        console.error(err);
                     });
-                } else {
-                    await rtcPeerConn.addIceCandidate(new RTCIceCandidate(message.candidate));
                 }
+
+                return;
+            }
+
+            const message = JSON.parse(data.message);
+            if (message.sdp) {
+                await rtcPeerConn.setRemoteDescription(new RTCSessionDescription(message.sdp), async () => {
+                    // App create answer
+                }, (err) => {
+                    console.error(err)
+                });
+            } else {
+                await rtcPeerConn.addIceCandidate(new RTCIceCandidate(message.candidate));
             }
 
         });
 
         resolve();
     });
-};
+}
 
-function startSignaling(type) {
+function disconnect() {
+    return new Promise((resolve) => {
+        if (dataChannel) {
+            dataChannel.close();
+        }
+
+        if (rtcPeerConn) {
+            rtcPeerConn.close();
+        }
+
+        dataChannel = null;
+        rtcPeerConn = null;
+
+        if (socket) {
+            socket.emit('leave');
+            socket.removeAllListeners();
+            socket.disconnect();
+        }
+
+        resolve();
+    });
+}
+
+function startSignaling() {
+
     rtcPeerConn = new RTCPeerConnection(configuration);
     dataChannel = rtcPeerConn.createDataChannel('action', dataChannelOptions);
 
@@ -81,15 +118,6 @@ function startSignaling(type) {
             });
         }
     };
-
-    if (type === 'user_here') {
-        // let the 'negotiationneeded' event trigger offer generation
-        rtcPeerConn.onnegotiationneeded = async () => {
-            await rtcPeerConn.createOffer(sendLocalDesc, (err) => {
-                console.error(err)
-            });
-        }
-    }
 }
 
 async function sendLocalDesc(desc) {
