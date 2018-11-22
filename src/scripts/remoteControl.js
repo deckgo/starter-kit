@@ -9,7 +9,7 @@ const dataChannelOptions = {
     maxPacketLifeTime: 1000, //milliseconds
 };
 
-let rtcPeerConn, dataChannelIn, dataChannelOut, socket;
+let rtcPeerConn, dataChannelOut, socket;
 
 const room = 'test_room';
 
@@ -81,10 +81,6 @@ function connect() {
 
 function disconnect() {
     return new Promise((resolve) => {
-        if (dataChannelIn) {
-            dataChannelIn.close();
-        }
-
         if (dataChannelOut) {
             dataChannelOut.close();
         }
@@ -93,7 +89,6 @@ function disconnect() {
             rtcPeerConn.close();
         }
 
-        dataChannelIn = null;
         dataChannelOut = null;
         rtcPeerConn = null;
 
@@ -111,10 +106,8 @@ function startSignaling() {
 
     rtcPeerConn = new RTCPeerConnection(configuration);
 
-    dataChannelOut = rtcPeerConn.createDataChannel('action_deck', dataChannelOptions);
+    dataChannelOut = rtcPeerConn.createDataChannel('deckgo_' + room, dataChannelOptions);
     dataChannelOut.onopen = dataChannelStateChanged;
-
-    rtcPeerConn.ondatachannel = receiveDataChannel;
 
     // send any ice candidates to the other peer
     rtcPeerConn.onicecandidate = (evt) => {
@@ -144,11 +137,6 @@ function dataChannelStateChanged() {
     if (dataChannelOut.readyState === 'open') {
         dataChannelOut.onmessage = receiveDataChannelMessage;
     }
-}
-
-function receiveDataChannel(event) {
-    dataChannelIn = event.channel;
-    dataChannelIn.onmessage = receiveDataChannelMessage;
 }
 
 function receiveDataChannelMessage(event) {
