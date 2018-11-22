@@ -15,10 +15,10 @@ const room = 'test_room';
 
 connectRemoteControl = () => {
     return new Promise(async (resolve) => {
-       await disconnect();
-       await connect();
+        await disconnect();
+        await connect();
 
-       resolve();
+        resolve();
     });
 };
 
@@ -52,7 +52,9 @@ function connect() {
             if (data.type === 'user_here') {
                 if (!rtcPeerConn.currentLocalDescription) {
                     // let the 'negotiationneeded' event trigger offer generation
-                    await rtcPeerConn.createOffer(sendLocalDesc, (err) => {
+                    await rtcPeerConn.createOffer().then((desc) => {
+                        sendLocalDesc(desc);
+                    }, (err) => {
                         console.error(err);
                     });
                 }
@@ -62,7 +64,7 @@ function connect() {
 
             const message = JSON.parse(data.message);
             if (message.sdp) {
-                await rtcPeerConn.setRemoteDescription(new RTCSessionDescription(message.sdp), async () => {
+                rtcPeerConn.setRemoteDescription(new RTCSessionDescription(message.sdp)).then(() => {
                     // App create answer
                 }, (err) => {
                     console.error(err)
@@ -120,8 +122,8 @@ function startSignaling() {
     };
 }
 
-async function sendLocalDesc(desc) {
-    await rtcPeerConn.setLocalDescription(desc, () => {
+function sendLocalDesc(desc) {
+    rtcPeerConn.setLocalDescription(desc).then(() => {
         socket.emit('signal', {
             'type': 'sending_local_description',
             'message': JSON.stringify({'sdp': rtcPeerConn.localDescription}),
