@@ -1,7 +1,13 @@
 const io = require('socket.io-client');
 
 const configuration = {
-    iceServers: [{urls: 'stun:stun.l.google.com:19302'}]
+    iceServers: [
+        {
+            urls: 'turn:user@api.deckdeckgo.com:3478',
+            username: 'user',
+            credential: 'deckdeckgo'
+        }
+    ]
 };
 
 const dataChannelOptions = {
