@@ -23,8 +23,12 @@ ionicElements(window);
 import { defineCustomElements as ioniconsElements } from 'ionicons/dist/loader';
 ioniconsElements(window);
 
+// Init DeckDeckGo elements
 import { defineCustomElements as deckDeckGoElements } from 'deckdeckgo/dist/loader';
+import { defineCustomElements as deckDeckGoRemoteElements } from 'deckdeckgo-remote/dist/loader';
+
 deckDeckGoElements(window).then(async () => {
     await postLoading();
-    await connectRemoteControl();
+
+    await deckDeckGoRemoteElements(window);
 });

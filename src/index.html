@@ -97,6 +97,14 @@
             <!-- END: Your slides -->
 
         </deckgo-deck>
+
+        <deckgo-remote room="test_room"></deckgo-remote>
+
+        <script>
+            const deckgoRemoteElement = document.querySelector("deckgo-remote");
+            deckgoRemoteElement.addEventListener('event', async event => { await remoteEvent(event) });
+        </script>
+
     </ion-content>
 
     <ion-fab vertical="bottom" horizontal="end" slot="fixed" id="navigation">
