@@ -85,7 +85,15 @@ function remoteSize() {
 
         deckgoRemoteElement.width = window.innerWidth;
         deckgoRemoteElement.height = window.innerHeight;
-        deckgoRemoteElement.slides = 2;
+
+        const deck = document.getElementById('slider');
+
+        if (!deckgoRemoteElement || !deck) {
+            resolve();
+            return;
+        }
+
+        deckgoRemoteElement.slides = deck.childElementCount;
 
         resolve();
     });
