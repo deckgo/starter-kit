@@ -28,6 +28,19 @@ remoteEvent = async (event) => {
     });
 };
 
+reconnectRemoteControl = () => {
+    return new Promise(async (resolve) => {
+        const deckgoRemoteElement = document.querySelector("deckgo-remote");
+
+        if (!deckgoRemoteElement) {
+            resolve();
+            return;
+        }
+
+        await deckgoRemoteElement.connect();
+    });
+};
+
 initRemote = async () => {
     return new Promise(async (resolve) => {
         const deckgoRemoteElement = document.querySelector("deckgo-remote");
