@@ -99,14 +99,14 @@ function moveRemote(event) {
             return;
         }
 
-        deckgoRemoteElement.moveDraw(event.detail, '300ms');
+        await deckgoRemoteElement.moveDraw(event.detail, '300ms');
 
         resolve();
     });
 }
 
 function scrollRemote(event) {
-    return new Promise((resolve) => {
+    return new Promise(async (resolve) => {
         const deckgoRemoteElement = document.querySelector("deckgo-remote");
 
         if (!deckgoRemoteElement) {
@@ -114,7 +114,7 @@ function scrollRemote(event) {
             return;
         }
 
-        deckgoRemoteElement.moveDraw(event.detail, '0ms');
+        await deckgoRemoteElement.moveDraw(event.detail, '0ms');
 
         resolve();
     });
