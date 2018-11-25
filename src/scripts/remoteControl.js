@@ -1,6 +1,6 @@
 remoteEvent = async (event) => {
     return new Promise(async (resolve) => {
-        if (!event || !event.detail || !event.detail.event) {
+        if (!event || !event.detail) {
             resolve();
             return;
         }
@@ -10,17 +10,17 @@ remoteEvent = async (event) => {
             return;
         }
 
-        const data = event.detail.event;
+        const type = event.detail.type;
 
-        if (data === 'nextSlide') {
+        if (type === 'nextSlide') {
             await document.getElementById('slider').slideNext();
-        } else if (data === 'prevSlide') {
+        } else if (type === 'prevSlide') {
             await document.getElementById('slider').slidePrev();
-        } else if (data === 'start_drawing') {
+        } else if (type === 'start_drawing') {
             await document.querySelector('deckgo-remote').startDrawing(event.detail);
-        } else if (data === 'end_drawing') {
+        } else if (type === 'end_drawing') {
             await document.querySelector('deckgo-remote').endDrawing(event.detail);
-        } else if (data === 'draw') {
+        } else if (type === 'draw') {
             await document.querySelector('deckgo-remote').draw(event.detail);
         }
 
@@ -62,11 +62,19 @@ function initDeckMove() {
             return;
         }
 
-        deck.addEventListener('slideWillChange', async event => {
+        deck.addEventListener('slideNextStart', async () => {
+            await slidePrevNext(true)
+        });
+
+        deck.addEventListener('slidePrevStart', async () => {
+            await slidePrevNext(false)
+        });
+
+        deck.addEventListener('slideWillChange', async (event) => {
             await moveRemote(event)
         });
 
-        deck.addEventListener('slideDrag', async event => {
+        deck.addEventListener('slideDrag', async (event) => {
             await scrollRemote(event)
         });
 
@@ -94,6 +102,25 @@ function remoteSize() {
         }
 
         deckgoRemoteElement.slides = deck.childElementCount;
+
+        resolve();
+    });
+}
+
+function slidePrevNext(next) {
+    return new Promise(async (resolve) => {
+        const deckgoRemoteElement = document.querySelector("deckgo-remote");
+
+        if (!deckgoRemoteElement) {
+            resolve();
+            return;
+        }
+
+        if (next) {
+            await deckgoRemoteElement.nextSlide();
+        } else {
+            await deckgoRemoteElement.prevSlide();
+        }
 
         resolve();
     });
