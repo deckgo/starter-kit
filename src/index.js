@@ -30,5 +30,7 @@ import { defineCustomElements as deckDeckGoRemoteElements } from 'deckdeckgo-rem
 deckDeckGoElements(window).then(async () => {
     await postLoading();
 
-    await deckDeckGoRemoteElements(window);
+    deckDeckGoRemoteElements(window).then(async () => {
+        await initRemote();
+    });
 });
