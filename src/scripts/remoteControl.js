@@ -37,10 +37,9 @@ initRemote = async () => {
             return;
         }
 
-        deckgoRemoteElement.addEventListener('event', async event => { await remoteEvent(event) });
-
-        deckgoRemoteElement.addEventListener('slideWillChange', async event => { await moveRemote(event) });
-        deckgoRemoteElement.addEventListener('slideDrag', async event => { await scrollRemote(event) });
+        deckgoRemoteElement.addEventListener('event', async event => {
+            await remoteEvent(event)
+        });
 
         window.addEventListener('resize', async () => {
             await remoteSize();
@@ -48,9 +47,32 @@ initRemote = async () => {
 
         await remoteSize();
 
+        await initDeckMove();
+
         resolve();
     });
 };
+
+function initDeckMove() {
+    return new Promise(async (resolve) => {
+        const deck = document.getElementById('slider');
+
+        if (!deck) {
+            resolve();
+            return;
+        }
+
+        deck.addEventListener('slideWillChange', async event => {
+            await moveRemote(event)
+        });
+
+        deck.addEventListener('slideDrag', async event => {
+            await scrollRemote(event)
+        });
+
+        resolve();
+    });
+}
 
 function remoteSize() {
     return new Promise(async (resolve) => {
@@ -61,7 +83,7 @@ function remoteSize() {
             return;
         }
 
-        deckgoRemoteElement.width = window.innerWidth;
+        deckgoRemoteElement.width = window.innerWidth * 2;
         deckgoRemoteElement.height = window.innerHeight;
 
         resolve();
@@ -77,8 +99,7 @@ function moveRemote(event) {
             return;
         }
 
-        // TODO
-        // deckgoRemoteElement.moveDraw(event.detail, '300ms');
+        deckgoRemoteElement.moveDraw(event.detail, '300ms');
 
         resolve();
     });
@@ -93,8 +114,7 @@ function scrollRemote(event) {
             return;
         }
 
-        // TODO
-        // draw.moveDraw(event.detail, '0ms');
+        deckgoRemoteElement.moveDraw(event.detail, '0ms');
 
         resolve();
     });
