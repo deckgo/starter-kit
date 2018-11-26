@@ -12,16 +12,10 @@ remoteEvent = async (event) => {
 
         const type = event.detail.type;
 
-        if (type === 'nextSlide') {
+        if (type === 'next_slide') {
             await document.getElementById('slider').slideNext();
-        } else if (type === 'prevSlide') {
+        } else if (type === 'prev_slide') {
             await document.getElementById('slider').slidePrev();
-        } else if (type === 'start_drawing') {
-            await document.querySelector('deckgo-remote').startDrawing(event.detail);
-        } else if (type === 'end_drawing') {
-            await document.querySelector('deckgo-remote').endDrawing(event.detail);
-        } else if (type === 'draw') {
-            await document.querySelector('deckgo-remote').draw(event.detail);
         }
 
         resolve();
