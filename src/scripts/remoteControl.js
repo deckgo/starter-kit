@@ -101,6 +101,9 @@ function remoteSize() {
         deckgoRemoteElement.width = window.innerWidth;
         deckgoRemoteElement.height = window.innerHeight;
 
+        // SIGNALING_SERVER is declared by Webpack, see webpack.config.js
+        deckgoRemoteElement.server = SIGNALING_SERVER;
+
         const deck = document.getElementById('slider');
 
         if (!deckgoRemoteElement || !deck) {
