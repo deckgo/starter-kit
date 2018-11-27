@@ -6,6 +6,8 @@ Create a lightweight presentation using HTML and Web Components.
 
 Moreover, [DeckDeckGo] bundles your presentation with services workers letting you publish it online as a Progressive Web App.
 
+Cherry on the cake 🍒🎂 [DeckDeckGo] comes with its [Progressive Web App](https://deckdeckgo.app) that allows you to remote control your presentation 🚀
+
 ## Table of contents
 
 - [Stater Kit](#stater-kit)
