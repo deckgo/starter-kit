@@ -7,7 +7,8 @@
     "start": "concurrently --kill-others \"npm run watch\" \"npm run dev\"",
     "dev": "lite-server",
     "watch": "webpack --watch --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "local": "concurrently --kill-others \"webpack --watch --mode local\" \"npm run dev\""
   },
   "author": {
     "name": "David Dal Busco",
