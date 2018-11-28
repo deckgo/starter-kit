@@ -4,6 +4,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const {GenerateSW} = require('workbox-webpack-plugin');
 
+const webpack = require('webpack');
+
 const path = require('path');
 
 const config = {
@@ -44,7 +46,7 @@ const plugins = [
 
 module.exports = (env, argv) => {
 
-    if (argv.mode === 'development') {
+    if (argv.mode === 'development' || argv.mode === 'local') {
         config.devtool = 'source-map';
     }
 
@@ -53,6 +55,22 @@ module.exports = (env, argv) => {
     }
 
     config.plugins = plugins;
+
+    if (argv.mode === 'local') {
+        plugins.push(
+            new webpack.DefinePlugin({
+                SIGNALING_SERVER: JSON.stringify('http://localhost:3002')
+            })
+        );
+    }
+
+    if (argv.mode === 'production' || argv.mode === 'development') {
+        plugins.push(
+            new webpack.DefinePlugin({
+                SIGNALING_SERVER: JSON.stringify('https://api.deckdeckgo.com')
+            })
+        );
+    }
 
     return config;
 };

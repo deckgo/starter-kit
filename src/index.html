@@ -88,6 +88,11 @@
                     <p>
                         <a href="https://deckdeckgo.com">DeckDeckGo</a> is free and open source 🎁
                     </p>
+
+                    <p>
+                        Find the documentation, the options, information about "editing" and templates in the DeckDeckGo's <a href="https://github.com/fluster/deckdeckgo">Github</a> repo
+                    </p>
+
                     <p>
                         <a href="https://github.com/fluster/deckdeckgo"><ion-icon style="font-size: 5rem;" name="logo-github"></ion-icon></a>
                     </p>
@@ -97,6 +102,9 @@
             <!-- END: Your slides -->
 
         </deckgo-deck>
+
+        <deckgo-remote room="test_room"></deckgo-remote>
+
     </ion-content>
 
     <ion-fab vertical="bottom" horizontal="end" slot="fixed" id="navigation">
@@ -112,6 +120,7 @@
         <ion-fab-list side="top">
             <ion-fab-button color="primary" onclick="presentAlert()"><ion-icon name="help"></ion-icon></ion-fab-button>
             <ion-fab-button color="primary" onclick="doPrint()"><ion-icon name="print"></ion-icon></ion-fab-button>
+            <ion-fab-button color="primary" onclick="reconnectRemoteControl()"><ion-icon name="link"></ion-icon></ion-fab-button>
             <ion-fab-button color="primary" onclick="window.open('https://github.com/fluster/deckdeckgo', '_blank');"><ion-icon name="logo-github"></ion-icon></ion-fab-button>
         </ion-fab-list>
     </ion-fab>

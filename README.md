@@ -6,6 +6,8 @@ Create a lightweight presentation using HTML and Web Components.
 
 Moreover, [DeckDeckGo] bundles your presentation with services workers letting you publish it online as a Progressive Web App.
 
+Cherry on the cake 🍒🎂 [DeckDeckGo] comes with its [Progressive Web App](https://deckdeckgo.app) that allows you to remote control your presentation 🚀
+
 ## Table of contents
 
 - [Stater Kit](#stater-kit)
@@ -49,13 +51,7 @@ For more customization have a look the documentation of each [slides](https://gi
 In a terminal, start the following command to bundle your slides and to keep listening to modifications:
 
 ```bash
-npm run watch
-```
-
-In another terminal, start a local server using the following command:
-
-```bash
-npm run dev
+npm run start
 ```
 
 ## Build
@@ -81,6 +77,7 @@ Before your final build and before deploying online your slides, don't forget to
 The [DeckDeckGo] logo was designed and offered by [Anita](hello@skinque.com) from [Skinque.com](http://skinque.com), a great online marketplace for tattoos 🤘
 
 Reach her out if you are looking for a cool custom tattoo or a nice logo 😃
+
 ## License
 
 MIT © [David Dal Busco](mailto:david.dalbusco@outlook.com)
