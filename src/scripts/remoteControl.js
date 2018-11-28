@@ -69,11 +69,11 @@ function initDeckMove() {
             return;
         }
 
-        deck.addEventListener('slideNextStart', async () => {
+        deck.addEventListener('slideNextDidChange', async () => {
             await slidePrevNext(true)
         });
 
-        deck.addEventListener('slidePrevStart', async () => {
+        deck.addEventListener('slidePrevDidChange', async () => {
             await slidePrevNext(false)
         });
 

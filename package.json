@@ -36,7 +36,7 @@
   "dependencies": {
     "@ionic/core": "^4.0.0-beta.16",
     "@webcomponents/custom-elements": "^1.2.1",
-    "deckdeckgo": "^1.0.0-beta.6",
+    "deckdeckgo": "^1.0.0-beta.7",
     "deckdeckgo-remote": "^1.0.0-alpha.1",
     "ionicons": "^4.4.8"
   },
