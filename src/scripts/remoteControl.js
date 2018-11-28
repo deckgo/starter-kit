@@ -86,6 +86,10 @@ function initDeckMove() {
             await scrollRemote(event)
         });
 
+        deck.addEventListener('slideToChange', async (event) => {
+            await slideToChange(event)
+        });
+
         resolve();
     });
 }
@@ -113,6 +117,23 @@ function remoteSize() {
         }
 
         deckgoRemoteElement.slides = deck.childElementCount;
+
+        resolve();
+    });
+}
+
+function slideToChange(event) {
+    return new Promise(async (resolve) => {
+        const deckgoRemoteElement = document.querySelector("deckgo-remote");
+
+        if (!deckgoRemoteElement || !event) {
+            resolve();
+            return;
+        }
+
+        const slideIndex = event.detail;
+
+        await deckgoRemoteElement.slideTo(slideIndex, 0);
 
         resolve();
     });
