@@ -51,13 +51,7 @@ For more customization have a look the documentation of each [slides](https://gi
 In a terminal, start the following command to bundle your slides and to keep listening to modifications:
 
 ```bash
-npm run watch
-```
-
-In another terminal, start a local server using the following command:
-
-```bash
-npm run dev
+npm run start
 ```
 
 ## Build
