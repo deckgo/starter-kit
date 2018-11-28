@@ -13,9 +13,9 @@ remoteEvent = async (event) => {
         const type = event.detail.type;
 
         if (type === 'next_slide') {
-            await document.getElementById('slider').slideNext();
+            await document.getElementById('slider').slideNext(false, false);
         } else if (type === 'prev_slide') {
-            await document.getElementById('slider').slidePrev();
+            await document.getElementById('slider').slidePrev(false, false);
         }
 
         resolve();
