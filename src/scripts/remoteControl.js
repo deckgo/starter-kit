@@ -11,11 +11,12 @@ remoteEvent = async (event) => {
         }
 
         const type = event.detail.type;
+        const slideAnimation = event.detail.slideAnimation;
 
         if (type === 'next_slide') {
-            await document.getElementById('slider').slideNext(false, false);
+            await document.getElementById('slider').slideNext(slideAnimation, false);
         } else if (type === 'prev_slide') {
-            await document.getElementById('slider').slidePrev(false, false);
+            await document.getElementById('slider').slidePrev(slideAnimation, false);
         }
 
         resolve();
