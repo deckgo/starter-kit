@@ -5,8 +5,10 @@
   "homepage": "https://deckdeckgo.com",
   "scripts": {
     "start": "concurrently --kill-others \"npm run watch\" \"npm run dev\"",
+    "start-no-remote": "concurrently --kill-others \"npm run watch-no-remote\" \"npm run dev\"",
     "dev": "lite-server",
     "watch": "webpack --watch --mode development",
+    "watch-no-remote": "webpack --watch --mode development --env.no-remote=true",
     "build": "webpack --mode production",
     "local": "concurrently --kill-others \"webpack --watch --mode development --env.local=true\" \"npm run dev\""
   },

@@ -56,23 +56,29 @@ module.exports = (env, argv) => {
 
     config.plugins = plugins;
 
+    let processEnv;
+
     if (env && env.local) {
-        plugins.push(
-            new webpack.DefinePlugin({
-                'process.env': {
-                    SIGNALING_SERVER: JSON.stringify('http://localhost:3002')
-                }
-            })
-        );
+        processEnv = {
+            'process.env': {
+                SIGNALING_SERVER: JSON.stringify('http://localhost:3002')
+            }
+        };
     } else {
-        plugins.push(
-            new webpack.DefinePlugin({
-                'process.env': {
-                    SIGNALING_SERVER: JSON.stringify('https://api.deckdeckgo.com')
-                }
-            })
-        );
+        processEnv = {
+            'process.env': {
+                SIGNALING_SERVER: JSON.stringify('https://api.deckdeckgo.com')
+            }
+        };
     }
+
+    if (env && env.noRemote) {
+        processEnv['process.env']['NO_REMOTE'] = true;
+    }
+
+    plugins.push(
+        new webpack.DefinePlugin(processEnv)
+    );
 
     return config;
 };

@@ -38,6 +38,11 @@ reconnectRemoteControl = () => {
 
 initRemote = async () => {
     return new Promise(async (resolve) => {
+        if (process.env.NO_REMOTE) {
+            resolve();
+            return;
+        }
+
         const deckgoRemoteElement = document.querySelector("deckgo-remote");
 
         if (!deckgoRemoteElement || !window) {
@@ -53,8 +58,7 @@ initRemote = async () => {
             await remoteSize();
         });
 
-        // SIGNALING_SERVER is declared by Webpack, see webpack.config.js
-        deckgoRemoteElement.server = process.env.SIGNALING_SERVER;
+        await initRemoteRoomServer();
 
         await remoteSize();
 
@@ -63,6 +67,24 @@ initRemote = async () => {
         resolve();
     });
 };
+
+function initRemoteRoomServer() {
+    return new Promise(async (resolve) => {
+        const deckgoRemoteElement = document.querySelector("deckgo-remote");
+
+        if (!deckgoRemoteElement || !document) {
+            resolve();
+            return;
+        }
+
+        deckgoRemoteElement.room =  '{{DECKDECKGO_TITLE}}';
+
+        // SIGNALING_SERVER is declared by Webpack, see webpack.config.js
+        deckgoRemoteElement.server = process.env.SIGNALING_SERVER;
+
+        resolve();
+    });
+}
 
 function initDeckMove() {
     return new Promise(async (resolve) => {
