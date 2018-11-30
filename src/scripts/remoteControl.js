@@ -77,7 +77,9 @@ function initRemoteRoomServer() {
             return;
         }
 
-        deckgoRemoteElement.room =  '{{DECKDECKGO_TITLE}}';
+        if (!deckgoRemoteElement.room) {
+            deckgoRemoteElement.room = process.env.ROOM_NAME ? process.env.ROOM_NAME : 'DeckDeckGo';
+        }
 
         // SIGNALING_SERVER is declared by Webpack, see webpack.config.js
         deckgoRemoteElement.server = process.env.SIGNALING_SERVER;
