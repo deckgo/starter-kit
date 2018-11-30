@@ -54,6 +54,12 @@ In a terminal, start the following command to bundle your slides and to keep lis
 npm run start
 ```
 
+If you wish to develop your presentation without adding it to the list of available deck of the remote control, run the following command instead of the previous one:
+
+```bash
+npm run start-no-remote
+```
+
 ## Build
 
 Once you are ready for your talk or ready to publish online your slides, run the following command in a terminal:
