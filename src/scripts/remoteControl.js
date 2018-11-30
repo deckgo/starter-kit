@@ -54,7 +54,7 @@ initRemote = async () => {
         });
 
         // SIGNALING_SERVER is declared by Webpack, see webpack.config.js
-        deckgoRemoteElement.server = SIGNALING_SERVER;
+        deckgoRemoteElement.server = process.env.SIGNALING_SERVER;
 
         await remoteSize();
 
