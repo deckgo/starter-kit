@@ -5,18 +5,23 @@ remoteEvent = async (event) => {
             return;
         }
 
-        if (!document.getElementById('slider')) {
+        const slider = document.getElementById('slider');
+
+        if (!slider) {
             resolve();
             return;
         }
 
         const type = event.detail.type;
-        const slideAnimation = event.detail.slideAnimation;
 
         if (type === 'next_slide') {
-            await document.getElementById('slider').slideNext(slideAnimation, false);
+            const slideAnimation = event.detail.slideAnimation;
+            await slider.slideNext(slideAnimation, false);
         } else if (type === 'prev_slide') {
-            await document.getElementById('slider').slidePrev(slideAnimation, false);
+            const slideAnimation = event.detail.slideAnimation;
+            await slider.slidePrev(slideAnimation, false);
+        } else if (type === 'slide_action') {
+            await youtubePlayPause(event);
         }
 
         resolve();
@@ -55,12 +60,12 @@ initRemote = async () => {
         });
 
         window.addEventListener('resize', async () => {
-            await remoteSize();
+            await initRemoteSize();
         });
 
-        await initRemoteRoomServer();
+        await initDeck();
 
-        await remoteSize();
+        await initRemoteSize();
 
         await initDeckMove();
 
@@ -68,7 +73,24 @@ initRemote = async () => {
     });
 };
 
-function initRemoteRoomServer() {
+function initDeck() {
+    return new Promise(async (resolve) => {
+        const deck = document.getElementById('slider');
+
+        if (!deck) {
+            resolve();
+            return;
+        }
+
+        deck.addEventListener('slidesDidLoad', async (slides) => {
+            await initRemoteRoomServer(slides)
+        });
+
+        resolve();
+    });
+}
+
+function initRemoteRoomServer(slides) {
     return new Promise(async (resolve) => {
         const deckgoRemoteElement = document.querySelector("deckgo-remote");
 
@@ -76,6 +98,8 @@ function initRemoteRoomServer() {
             resolve();
             return;
         }
+
+        deckgoRemoteElement.slides = slides.detail;
 
         if (!deckgoRemoteElement.room) {
             deckgoRemoteElement.room = process.env.ROOM_NAME ? process.env.ROOM_NAME : 'DeckDeckGo';
@@ -121,7 +145,7 @@ function initDeckMove() {
     });
 }
 
-function remoteSize() {
+function initRemoteSize() {
     return new Promise(async (resolve) => {
         const deckgoRemoteElement = document.querySelector("deckgo-remote");
 
@@ -140,7 +164,7 @@ function remoteSize() {
             return;
         }
 
-        deckgoRemoteElement.slides = deck.childElementCount;
+        deckgoRemoteElement.length = deck.childElementCount;
 
         resolve();
     });
@@ -207,6 +231,34 @@ function scrollRemote(event) {
         }
 
         await deckgoRemoteElement.moveDraw(event.detail, '0ms');
+
+        resolve();
+    });
+}
+
+function youtubePlayPause(event) {
+    return new Promise(async (resolve) => {
+        const deck = document.getElementById('slider');
+
+        if (!deck) {
+            resolve();
+            return;
+        }
+
+        const index = await deck.getActiveIndex();
+
+        const youtubeSlideElement = document.querySelector('.deckgo-slide-container:nth-child(' + (index + 1) + ')');
+
+        if (!youtubeSlideElement || youtubeSlideElement.tagName !== 'deckgo-slide-youtube'.toUpperCase()) {
+            resolve();
+            return;
+        }
+
+        if (event.detail.action === 'youtube_pause') {
+            await youtubeSlideElement.pause();
+        } else {
+            await youtubeSlideElement.play();
+        }
 
         resolve();
     });
