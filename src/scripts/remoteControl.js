@@ -39,6 +39,13 @@ reconnectRemoteControl = () => {
 
         await deckgoRemoteElement.connect();
 
+        if (!document.getElementById('slider')) {
+            resolve();
+            return;
+        }
+
+        await document.getElementById('slider').slideTo(0, 300, false);
+
         resolve();
     });
 };
