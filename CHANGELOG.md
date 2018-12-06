@@ -1,3 +1,15 @@
+<a name="1.0.0-beta.9"></a>
+# [1.0.0-beta.9](https://github.com/fluster/deckdeckgo-starter/compare/v1.0.0-beta.8...v1.0.0-beta.9) (2018-12-06)
+
+### Remote control features 📱
+
+* handle remote play/pause Youtube video ([#18](https://github.com/fluster/deckdeckgo-starter/issues/18))
+* on reconnect, slide automatically to first slide ([#17](https://github.com/fluster/deckdeckgo-starter/issues/17))
+
+### Features
+
+* add an extra script to optionally start locally without remote control ([#16](https://github.com/fluster/deckdeckgo-starter/issues/16))
+
 <a name="1.0.0-beta.8"></a>
 # [1.0.0-beta.8](https://github.com/fluster/deckdeckgo-starter/compare/v1.0.0-beta.7...v1.0.0-beta.8) (2018-11-28)
 
