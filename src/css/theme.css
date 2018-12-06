@@ -3,3 +3,7 @@
     --ion-text-color: var(--ion-color-primary);
     --ion-header-size: 40px;
 }
+
+ion-content {
+    --ion-background-color: transparent;
+}
