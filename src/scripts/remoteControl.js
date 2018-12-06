@@ -38,6 +38,8 @@ reconnectRemoteControl = () => {
         }
 
         await deckgoRemoteElement.connect();
+
+        resolve();
     });
 };
 
