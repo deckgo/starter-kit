@@ -1,6 +1,6 @@
 {
   "name": "{{DECKDECKGO_TITLE}}",
-  "short_name": "{{DECKDECKGO_TITLE}}",
+  "short_name": "{{DECKDECKGO_SHORT_NAME}}",
   "display": "standalone",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
