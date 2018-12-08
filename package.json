@@ -29,6 +29,7 @@
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^4.0.0-beta.2",
     "lite-server": "^2.4.0",
+    "progress-bar-webpack-plugin": "^1.11.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2",

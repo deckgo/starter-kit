@@ -1,6 +1,7 @@
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 
 const {GenerateSW} = require('workbox-webpack-plugin');
 
@@ -41,7 +42,8 @@ const plugins = [
         {from: 'src/manifest.json', to: ''},
         {from: 'src/robots.txt', to: ''},
         {from: 'node_modules/ionicons/dist/ionicons/svg/', to: 'svg'}
-    ])
+    ]),
+    new ProgressBarPlugin()
 ];
 
 module.exports = (env, argv) => {
