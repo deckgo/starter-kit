@@ -3,6 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 
+const tc = require('turbocolor');
+
 const {GenerateSW} = require('workbox-webpack-plugin');
 
 const webpack = require('webpack');
@@ -54,6 +56,13 @@ module.exports = (env, argv) => {
 
     if (argv.mode === 'production') {
         plugins.push(new GenerateSW());
+        plugins.push({
+            apply: (compiler) => {
+                compiler.hooks.beforeRun.tap('CleanWebpackPlugin', (stats) => {
+                    console.log('\nDon\'t forget to edit your ' + tc.magenta('meta information and favicon') + ' before publishing your talk online 🚀\n');
+                });
+            }
+        });
     }
 
     config.plugins = plugins;
