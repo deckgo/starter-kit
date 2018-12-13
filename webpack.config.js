@@ -36,7 +36,7 @@ const plugins = [
         hash: true,
         inject: true,
         template: './src/index.html',
-        path: path.join(__dirname, "../dist/"),
+        path: path.join(__dirname, '../dist/'),
         filename: 'index.html'
     }),
     new CopyWebpackPlugin([

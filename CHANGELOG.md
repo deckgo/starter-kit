@@ -1,3 +1,27 @@
+<a name="1.0.0-beta.10"></a>
+# [1.0.0-beta.10](https://github.com/fluster/deckdeckgo-starter/compare/v1.0.0-beta.9...v1.0.0-beta.10) (2018-12-13)
+
+### Features
+
+* add Markdown support ([#25](https://github.com/fluster/deckdeckgo-starter/issues/25))
+* display a msg about editing favicon and meta information before going online ([#21](https://github.com/fluster/deckdeckgo-starter/issues/21))
+* when a presentation is created with the cli, the manifest.json short_name should be max. 12 characters long ([#23](https://github.com/fluster/deckdeckgo-starter/issues/23))
+
+### Fix
+
+* on mobile devices, some titles may have been displayed with an overflow ([#20](https://github.com/fluster/deckdeckgo-starter/issues/20))
+
+#### Note regarding upgrade
+
+If you are looking to upgrade your presentation created with a previous version of DeckDeckGo, follow the following steps:
+
+1. update the dependencies and install the new one as in [package.json](https://github.com/fluster/deckdeckgo-starter/blob/master/package.json)
+2. create the new file [webpack.info.plugin.js](https://github.com/fluster/deckdeckgo-starter/blob/master/webpack.info.plugin.js) at the root of your project
+3. override your [webpack.config.js](https://github.com/fluster/deckdeckgo-starter/blob/master/webpack.config.js) file
+4. update your [font.css](https://github.com/fluster/deckdeckgo-starter/blob/master/src/css/font.css) file
+5. update your [theme.css](https://github.com/fluster/deckdeckgo-starter/blob/master/src/css/theme.css) file
+6. enjoy 🎉 
+
 <a name="1.0.0-beta.9"></a>
 # [1.0.0-beta.9](https://github.com/fluster/deckdeckgo-starter/compare/v1.0.0-beta.8...v1.0.0-beta.9) (2018-12-06)
 
