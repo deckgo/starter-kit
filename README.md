@@ -1,8 +1,10 @@
 # DeckDeckGo - Starter Kit
 
-Create a lightweight presentation using HTML and Web Components.
+Create a lightweight presentation using Web Components.
 
 [DeckDeckGo] let you create without effort your slides and allows you to add some extra interactive features with the help of the [Ionic](https://ionicframework.com) components.
+
+For the editing, [DeckDeckGo] supports both HTML or Markdown.
 
 Moreover, [DeckDeckGo] bundles your presentation with services workers letting you publish it online as a Progressive Web App.
 
@@ -13,6 +15,8 @@ Cherry on the cake 🍒🎂 [DeckDeckGo] comes with its [Progressive Web App](ht
 - [Stater Kit](#stater-kit)
 - [Getting Started](#getting-started)
 - [Editing](#editing)
+    - [HTML](#html)
+    - [Markdown](#markdown)
 - [Theming](#theming)
 - [Development](#development)
 - [Build](#build)
@@ -34,7 +38,15 @@ npm init deckdeckgo
 
 ## Editing
 
-To prepare your slides and content for your talk, edit `src/index.html`, add a `<deckgo-deck>` elements containing your [slides](https://github.com/fluster/deckdeckgo/doc/slides/slides.md).
+To prepare your slides and content for your talk, you would have two options respectively using HTML or Markdown.
+ 
+### HTML
+
+Edit `src/index.html`, add a `<deckgo-deck>` elements containing your [slides](https://github.com/fluster/deckdeckgo/doc/slides/slides.md).
+
+### Markdown
+
+Edit `src/index.md` and add your [slides](https://github.com/fluster/deckdeckgo/doc/slides/slides.md). These will be automatically added add build time to the `<deckgo-deck>` elements of the `index.html` file. 
 
 ## Theming
 
