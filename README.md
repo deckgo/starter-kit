@@ -46,7 +46,7 @@ Edit `src/index.html`, add a `<deckgo-deck>` elements containing your [slides](h
 
 ### Markdown
 
-Edit `src/index.md` and add your [slides](https://github.com/fluster/deckdeckgo/doc/slides/slides.md). These will be automatically added add build time to the `<deckgo-deck>` elements of the `index.html` file. 
+Edit `src/index.md` and add your [slides](https://github.com/fluster/deckdeckgo/doc/slides/slides.md). These will be automatically added at build time to the `<deckgo-deck>` elements of the `index.html` file. 
 
 ## Theming
 
