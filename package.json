@@ -40,7 +40,7 @@
   "dependencies": {
     "@ionic/core": "^4.0.0-beta.16",
     "@webcomponents/custom-elements": "^1.2.1",
-    "deckdeckgo": "^1.0.0-beta.12",
+    "deckdeckgo": "^1.0.0-beta.15",
     "deckdeckgo-remote": "^1.0.0-alpha.3",
     "ionicons": "^4.4.8"
   },
