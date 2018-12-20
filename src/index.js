@@ -26,8 +26,11 @@ ioniconsElements(window);
 // Init DeckDeckGo elements
 import { defineCustomElements as deckDeckGoElements } from 'deckdeckgo/dist/loader';
 import { defineCustomElements as deckDeckGoRemoteElements } from 'deckdeckgo-remote/dist/loader';
+import { defineCustomElements as deckDeckGoChartsElements } from 'deckdeckgo-charts/dist/loader';
 
 deckDeckGoElements(window).then(async () => {
+    await deckDeckGoChartsElements(window);
+
     await postLoading();
 
     deckDeckGoRemoteElements(window).then(async () => {
