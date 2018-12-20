@@ -3,6 +3,13 @@
 
 ### Features
 
+* add charts to your presentation 📈
+
+<a name="1.0.0-beta.10"></a>
+# [1.0.0-beta.10](https://github.com/fluster/deckdeckgo-starter/compare/v1.0.0-beta.9...v1.0.0-beta.10) (2018-12-13)
+
+### Features
+
 * add Markdown support ([#25](https://github.com/fluster/deckdeckgo-starter/issues/25))
 * display a msg about editing favicon and meta information before going online ([#21](https://github.com/fluster/deckdeckgo-starter/issues/21))
 * when a presentation is created with the cli, the manifest.json short_name should be max. 12 characters long ([#23](https://github.com/fluster/deckdeckgo-starter/issues/23))
