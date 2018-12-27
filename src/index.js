@@ -27,9 +27,13 @@ ioniconsElements(window);
 import { defineCustomElements as deckDeckGoElements } from 'deckdeckgo/dist/loader';
 import { defineCustomElements as deckDeckGoRemoteElements } from 'deckdeckgo-remote/dist/loader';
 import { defineCustomElements as deckDeckGoChartsElements } from 'deckdeckgo-charts/dist/loader';
+import { defineCustomElements as deckDeckGoQRCodeElements } from 'deckdeckgo-qrcode/dist/loader';
+import { defineCustomElements as deckDeckGoHighlightCodeElements } from 'deckdeckgo-highlight-code/dist/loader';
 
 deckDeckGoElements(window).then(async () => {
     await deckDeckGoChartsElements(window);
+    await deckDeckGoQRCodeElements(window);
+    await deckDeckGoHighlightCodeElements(window);
 
     await postLoading();
 
