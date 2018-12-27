@@ -1,3 +1,10 @@
+<a name="1.0.0-beta.12"></a>
+# [1.0.0-beta.12](https://github.com/fluster/deckdeckgo-starter/compare/v1.0.0-beta.11...v1.0.0-beta.12) (2018-12-27)
+
+### Features
+
+* add QR code to your presentation
+
 <a name="1.0.0-beta.11"></a>
 # [1.0.0-beta.11](https://github.com/fluster/deckdeckgo-starter/compare/v1.0.0-beta.10...v1.0.0-beta.11) (2018-12-20)
 
