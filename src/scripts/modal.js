@@ -1,5 +1,25 @@
 // Src: https://beta.ionicframework.com/docs/api/modal
-presentModal = async () => {
+displaySlideNotes = async () => {
+    const deck = document.getElementById('slider');
+
+    if (!deck) {
+        return;
+    }
+
+    const index = await deck.getActiveIndex();
+
+    const slide = document.querySelector('.deckgo-slide-container:nth-child(' + (index + 1) + ')');
+
+    if (!slide) {
+        return;
+    }
+
+    const title = slide.querySelector('[slot="title"]');
+    const notes = slide.querySelector('[slot="notes"]');
+
+    const titleText = title ? title.innerHTML : 'Slide ' + index;
+    const notesText = notes ? notes.innerHTML : 'No particular notes';
+
     // initialize controller
     const modalController = document.querySelector('ion-modal-controller');
     await modalController.componentOnReady();
@@ -8,18 +28,17 @@ presentModal = async () => {
     const element = document.createElement('div');
     element.innerHTML = `
   <ion-header>
-    <ion-toolbar>
-      <ion-title>DeckDeckGo</ion-title>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+          <ion-button>
+              <ion-icon name="close"></ion-icon>
+          </ion-button>
+      </ion-buttons>
+      <ion-title>${titleText}</ion-title>
     </ion-toolbar>
   </ion-header>
   <ion-content padding>
-    <div style="height: 100%; display: flex; flex-direction: column;" align-items-center justify-content-center>
-        <h3 text-center>...or this modal 😉</h3>
-        
-        <div text-center padding-top>
-            <ion-button shape="round" size="large" color="primary">Dismiss</ion-button>
-        </div>
-    </div>
+    <p style="white-space: pre-wrap;">${notesText}</p>
   </ion-content>
   `;
 
