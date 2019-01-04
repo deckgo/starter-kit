@@ -15,7 +15,7 @@ displaySlideNotes = async () => {
     }
 
     const title = slide.querySelector('[slot="title"]');
-    const notes = slide.querySelector('[slot="notes"]');
+    const notes = slide.querySelector('[slot="notes"][show]');
 
     const titleText = title ? title.innerHTML : 'Slide ' + index;
     const notesText = notes ? notes.innerHTML : 'No particular notes';
