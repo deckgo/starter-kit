@@ -28,7 +28,7 @@ displaySlideNotes = async () => {
     const element = document.createElement('div');
     element.innerHTML = `
   <ion-header>
-    <ion-toolbar color="primary">
+    <ion-toolbar color="tertiary">
       <ion-buttons slot="start">
           <ion-button>
               <ion-icon name="close"></ion-icon>
@@ -37,7 +37,7 @@ displaySlideNotes = async () => {
       <ion-title>${titleText}</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content padding>
+  <ion-content padding color="primary">
     <p style="white-space: pre-wrap;">${notesText}</p>
   </ion-content>
   `;
