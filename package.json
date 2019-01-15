@@ -32,19 +32,19 @@
     "lite-server": "^2.4.0",
     "progress-bar-webpack-plugin": "^1.11.0",
     "style-loader": "^0.23.1",
-    "webpack": "^4.28.2",
-    "webpack-cli": "^3.1.2",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1",
     "workbox-webpack-plugin": "^3.6.3"
   },
   "license": "MIT",
   "dependencies": {
     "@ionic/core": "^4.0.0-rc.0",
     "@webcomponents/custom-elements": "^1.2.1",
-    "deckdeckgo": "^1.0.0-beta.21",
+    "deckdeckgo": "^1.0.0-beta.22",
     "deckdeckgo-charts": "^1.0.0-alpha.3",
     "deckdeckgo-highlight-code": "^1.0.0-alpha.1",
-    "deckdeckgo-qrcode": "^1.0.0-alpha.1",
-    "deckdeckgo-remote": "^1.0.0-alpha.3",
+    "deckdeckgo-qrcode": "^1.0.0-alpha.3",
+    "deckdeckgo-remote": "^1.0.0-alpha.4",
     "ionicons": "^4.5.1"
   },
   "keywords": [
