@@ -1,3 +1,10 @@
+<a name="1.0.0-beta.13"></a>
+# [1.0.0-beta.13](https://github.com/fluster/deckdeckgo-starter/compare/v1.0.0-beta.12...v1.0.0-beta.13) (2019-01-15)
+
+### Features
+
+* display editor notes in a modal ([#26](https://github.com/deckgo/deckdeckgo-starter/issues/26))
+
 <a name="1.0.0-beta.12"></a>
 # [1.0.0-beta.12](https://github.com/fluster/deckdeckgo-starter/compare/v1.0.0-beta.11...v1.0.0-beta.12) (2018-12-27)
 
