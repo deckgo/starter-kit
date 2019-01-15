@@ -74,10 +74,22 @@ npm run start-no-remote
 
 ## Build
 
-Once you are ready for your talk or ready to publish online your slides, run the following command in a terminal:
+When you are ready for your talk or ready to publish online your slides, run the following command in a terminal:
 
 ```bash
 npm run build
+```
+
+If you do not wish to remove your notes from your presentation, run the build command with the attributes `--notes`:
+
+```bash
+npm run build -- --notes
+```
+
+If you wish to run your presentation locally afterwards, you could run the following command to start the local server:
+
+```bash
+npm run dev
 ```
 
 ### Before going online
