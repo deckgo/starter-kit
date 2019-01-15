@@ -38,7 +38,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@ionic/core": "^4.0.0-rc.1",
+    "@ionic/core": "^4.0.0-rc.0",
     "@webcomponents/custom-elements": "^1.2.1",
     "deckdeckgo": "^1.0.0-beta.22",
     "deckdeckgo-charts": "^1.0.0-alpha.3",
