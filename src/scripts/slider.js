@@ -3,7 +3,11 @@ previousSlide = async () => {
         return;
     }
 
-    await document.getElementById('slider').slidePrev();
+    if (document.dir === 'rtl') {
+        await document.getElementById('slider').slideNext();
+    } else {
+        await document.getElementById('slider').slidePrev();
+    }
 };
 
 nextSlide = async () => {
@@ -11,7 +15,11 @@ nextSlide = async () => {
         return;
     }
 
-    await document.getElementById('slider').slideNext();
+    if (document.dir === 'rtl') {
+        await document.getElementById('slider').slidePrev();
+    } else {
+        await document.getElementById('slider').slideNext();
+    }
 };
 
 firstSlide = async () => {
