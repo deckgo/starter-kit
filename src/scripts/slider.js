@@ -3,6 +3,10 @@ previousSlide = async () => {
         return;
     }
 
+    if (window.event) {
+        window.event.stopPropagation();
+    }
+
     if (document.dir === 'rtl') {
         await document.getElementById('slider').slideNext();
     } else {
@@ -13,6 +17,10 @@ previousSlide = async () => {
 nextSlide = async () => {
     if (!document.getElementById('slider')) {
         return;
+    }
+
+    if (window.event) {
+        window.event.stopPropagation();
     }
 
     if (document.dir === 'rtl') {

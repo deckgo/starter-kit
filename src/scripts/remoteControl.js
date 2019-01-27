@@ -16,10 +16,10 @@ remoteEvent = async (event) => {
 
         if (type === 'next_slide') {
             const slideAnimation = event.detail.slideAnimation;
-            await slider.slideNext(slideAnimation, false);
+            await slider.slideNext(slideAnimation, slideAnimation);
         } else if (type === 'prev_slide') {
             const slideAnimation = event.detail.slideAnimation;
-            await slider.slidePrev(slideAnimation, false);
+            await slider.slidePrev(slideAnimation, slideAnimation);
         } else if (type === 'slide_action') {
             await youtubePlayPause(event);
         }

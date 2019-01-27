@@ -1,3 +1,10 @@
+<a name="1.0.0-beta.14"></a>
+# [1.0.0-beta.14](https://github.com/fluster/deckdeckgo-starter/compare/v1.0.0-beta.13...v1.0.0-beta.14) (2019-01-27)
+
+### Features
+
+* command slide animation (= reveal object) from the remote control too ([f17107d](https://github.com/deckgo/deckdeckgo-starter/commit/f17107de2fd69f716e7fec8abe945100b07b6034))
+
 <a name="1.0.0-beta.13"></a>
 # [1.0.0-beta.13](https://github.com/fluster/deckdeckgo-starter/compare/v1.0.0-beta.12...v1.0.0-beta.13) (2019-01-15)
 
