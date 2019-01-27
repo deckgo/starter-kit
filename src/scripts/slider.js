@@ -47,10 +47,25 @@ toggleFullScreen = async () => {
 };
 
 doPrint = async () => {
-    if (!document.getElementById('slider')) {
+    const slider = document.getElementById('slider');
+
+    if (!slider) {
         return;
     }
 
-    await document.getElementById('slider').doPrint();
-};
+    const content = document.querySelector('ion-content');
 
+    if (!content) {
+        return;
+    }
+
+    const innerScroll = content.shadowRoot.querySelector('div.inner-scroll');
+
+    if (!innerScroll) {
+        return;
+    }
+
+    innerScroll.style.position = 'initial';
+
+    await slider.doPrint();
+};
