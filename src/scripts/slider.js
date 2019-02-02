@@ -7,11 +7,7 @@ previousSlide = async () => {
         window.event.stopPropagation();
     }
 
-    if (document.dir === 'rtl') {
-        await document.getElementById('slider').slideNext();
-    } else {
-        await document.getElementById('slider').slidePrev();
-    }
+    await document.getElementById('slider').slidePrev();
 };
 
 nextSlide = async () => {
@@ -23,11 +19,7 @@ nextSlide = async () => {
         window.event.stopPropagation();
     }
 
-    if (document.dir === 'rtl') {
-        await document.getElementById('slider').slidePrev();
-    } else {
-        await document.getElementById('slider').slideNext();
-    }
+    await document.getElementById('slider').slideNext();
 };
 
 firstSlide = async () => {

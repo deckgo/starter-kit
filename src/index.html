@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="rtl">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
@@ -76,25 +76,111 @@
             <!-- BEGIN: Your slides -->
 
             <deckgo-slide-title>
-                <h1 slot="title">{{DECKDECKGO_TITLE}}</h1>
-                <div slot="content">
-                    <h3>{{DECKDECKGO_DESCRIPTION}}</h3>
+                <h1 slot="title">DeckDeckGo</h1>
+                <div no-shadow slot="content">
+                    <h3>Create a lightweight presentation using <strong>Web Components</strong> 🚀</h3>
                 </div>
             </deckgo-slide-title>
 
+            <deckgo-slide-content style="--background: white; --color: var(--ion-color-tertiary); --ion-item-background: white;">
+                <h2 slot="title">Features</h2>
+                <ion-list slot="content" lines="none" padding-top>
+                    <ion-item style="--color: var(--ion-color-dark);">
+                        <ion-label text-wrap>✏️ Edit your presentation with <strong>HTML</strong> or <strong>Markdown</strong></ion-label>
+                    </ion-item>
+
+                    <ion-item style="--color: var(--ion-color-dark);">
+                        <ion-label text-wrap>📰️ Use predefined <strong>templates</strong></ion-label>
+                    </ion-item>
+
+                    <ion-item style="--color: var(--ion-color-dark);">
+                        <ion-label text-wrap>🌈 <strong>Style</strong> your presentation quickly</ion-label>
+                    </ion-item>
+
+                    <ion-item style="--color: var(--ion-color-dark);">
+                        <ion-label text-wrap>🌅 Create lightweight presentation where images are <strong>lazy</strong> loaded</ion-label>
+                    </ion-item>
+
+                    <ion-item style="--color: var(--ion-color-dark);">
+                        <ion-label text-wrap>📱 Ship your presentation as a <strong>Progressive Web App</strong></ion-label>
+                    </ion-item>
+
+                    <ion-item style="--color: var(--ion-color-dark);">
+                        <ion-label text-wrap>🎁 Free and <strong>open source</strong></ion-label>
+                    </ion-item>
+                </ion-list>
+            </deckgo-slide-content>
+
+            <deckgo-slide-split style="--slide-split-align: center; --slide-split-text-align: center; --slide-split-background-end: white; --slide-split-color-end: var(--ion-color-tertiary);">
+                <h1 slot="title">Progressive Web App</h1>
+                <h3 slot="start">Publish your presentation as a <strong>Progressive Web App</strong> with <strong>offline</strong> support</h3>
+                <div slot="end" style="text-align: center; width: 100%;">
+                    <img data-src="https://deckdeckgo.com/assets/img/deckdeckgo-homecoming.png" style="width: 20vw;" alt="Publish your presentation as a Progressive Web App with offline support"/>
+                </div>
+            </deckgo-slide-split>
+
+            <deckgo-slide-split style="--slide-split-align: center; --slide-split-text-align: center; --slide-split-background-start: white; --slide-split-color-start: var(--ion-color-tertiary);">
+                <h1 slot="title">Remote Control</h1>
+                <h3 slot="end"><strong>Interact</strong> in real-time with your presentation using the <a href="https://deckdeckgo.app" rel="noreferrer noopener" target="_blank"><strong>remote control</strong></a></h3>
+                <div slot="start" style="text-align: center; width: 100%;">
+                    <img data-src="https://deckdeckgo.com/assets/img/deckdeckgo-remote-control.png" style="width: 20vw;" alt="Interact in real-time with your presentation using the remote control"/>
+                </div>
+            </deckgo-slide-split>
+
+            <deckgo-slide-author img-src="https://secure.meetupstatic.com/photos/member/9/c/4/2/member_272620002.jpeg">
+                <h1 slot="title">Templates</h1>
+                <div slot="author">
+                    <h2>Templates</h2>
+                    <p>Use predefined slides for quick editing ⚡ Like this template to introduce the author of the talk 🎤</p>
+                </div>
+                <div slot="social-link"><deckgo-social twitter="daviddalbusco"><ion-icon alt="David on Twitter" slot="icon" name="logo-twitter"></ion-icon> twitter</deckgo-social></div>
+                <div slot="social-link"><deckgo-social linkedin="david-dal-busco/"><ion-icon alt="David on Linkedin" slot="icon" name="logo-linkedin"></ion-icon> linkedin</deckgo-social></div>
+                <div slot="social-link"><deckgo-social medium="david.dalbusco"><img style="width: 1em;" alt="David on Medium" slot="icon" src="https://deckdeckgo.com/assets/img/medium-icon.svg"/> medium</deckgo-social></div>
+            </deckgo-slide-author>
+
+            <deckgo-slide-gif style="background: white;" src="https://media.giphy.com/media/xUA7baWfTjfHGLZc3e/giphy.gif" alt="Template for gif" fullscreen="true">
+                <h1 slot="title">Gif template</h1>
+                <h1 slot="header" style="font-weight: 300; --background: white; --color: var(--ion-color-dark); width: 60%;">Or this template...</h1>
+                <h2 slot="footer" style="font-weight: 300; --background: white; --color: var(--ion-color-dark);">...for GIFs</h2>
+            </deckgo-slide-gif>
+
+            <deckgo-slide-title reveal="true">
+                <h2 slot="title">Reveal</h2>
+                <p no-shadow slot="content">
+                    <span>A</span> <span>journey</span> <span>of a thousand miles</span> <span style="color: var(--ion-color-warning);"><strong>begins with a single step</strong> - </span> <span>Laozi</span>
+                </p>
+            </deckgo-slide-title>
+
             <deckgo-slide-title>
-                <h2 slot="title">Happy editing 😁</h2>
+                <h2 slot="title">Cherry on the cake 🍒🍰</h2>
                 <div slot="content">
-                    <p>
-                        <a href="https://deckdeckgo.com">DeckDeckGo</a> is free and open source 🎁
-                    </p>
+                    <p>Add any <strong>Ionic</strong> components to your presentation</p>
+                    <div padding-top>
+                        <ion-button onclick="presentModal()" shape="round" size="large">Like this button</ion-button>
+                    </div>
+                </div>
+            </deckgo-slide-title>
 
-                    <p>
-                        Find the documentation, the options, information about "editing" and templates in the DeckDeckGo's <a href="https://github.com/fluster/deckdeckgo">Github</a> repo
-                    </p>
+            <deckgo-slide-qrcode content="https://deckdeckgo.com" style="--deckgo-qrcode-color-fill: white;">
+                <h1 slot="title">QR Code</h1>
+                <p slot="content">Let your audience get your slides without any delay by displaying a QR Code pointing to your online deck</p>
+            </deckgo-slide-qrcode>
 
-                    <p>
-                        <a href="https://github.com/fluster/deckdeckgo"><ion-icon style="font-size: 5rem;" name="logo-github"></ion-icon></a>
+            <deckgo-slide-title style="--background: var(--ion-color-dark); --color: var(--ion-color-light);">
+                <h2 slot="title">Get started now 🔥</h2>
+                <div slot="content">
+                    <div style="padding: 32px;">
+                        <code style="background-image: var(--ion-color-dark);" padding>
+                            $ npm init deckdeckgo
+                        </code>
+                    </div>
+
+                    <p style="margin-bottom: 0; margin-top: 16px; font-size: 0.5em;">
+                        Created by David Dal Busco
+                    </p>
+                    <p no-margin no-padding style="font-size: 0.8em; margin-top: 8px;">
+                        <a href="https://twitter.com/daviddalbusco"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="https://www.linkedin.com/in/david-dal-busco/"><ion-icon name="logo-linkedin"></ion-icon></a>
                     </p>
                 </div>
             </deckgo-slide-title>

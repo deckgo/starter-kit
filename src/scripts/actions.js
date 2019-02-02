@@ -14,13 +14,17 @@ initActions = () => {
 
 function initActionButtons(slider) {
     return new Promise(async (resolve) => {
-        const mobile = await slider.isMobile();
+        const ionFab = document.querySelector('ion-fab');
 
-        if (mobile) {
-            const ionFab = document.querySelector('ion-fab');
+        if (ionFab) {
+            const mobile = await slider.isMobile();
 
-            if (ionFab) {
+            if (mobile) {
                 ionFab.style.setProperty('--deckgo-hide-on-mobile', 'none');
+            }
+
+            if (document.dir === 'rtl') {
+                ionFab.style.setProperty('direction', 'rtl');
             }
         }
 
