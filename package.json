@@ -28,7 +28,7 @@
     "css-loader": "^2.1.0",
     "deckdeckgo-webpack-plugins": "^1.0.0-alpha.2",
     "file-loader": "^3.0.1",
-    "html-webpack-plugin": "^4.0.0-beta.2",
+    "html-webpack-plugin": "^4.0.0-beta.5",
     "lite-server": "^2.4.0",
     "progress-bar-webpack-plugin": "^1.11.0",
     "style-loader": "^0.23.1",
