@@ -23,8 +23,14 @@ function initActionButtons(slider) {
                 ionFab.style.setProperty('--deckgo-hide-on-mobile', 'none');
             }
 
+            // Workaround: https://github.com/deckgo/deckdeckgo-starter/issues/31
             if (document.dir === 'rtl') {
-                ionFab.style.setProperty('direction', 'rtl');
+                const ionFabList = ionFab.querySelector('ion-fab-list[side="start"]');
+                if (ionFabList) {
+                    ionFabList.setAttribute('side', 'end');
+                }
+
+                ionFab.setAttribute('horizontal', 'start');
             }
         }
 
