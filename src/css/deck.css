@@ -4,7 +4,6 @@ deckgo-deck {
     --pager-text-color: var(--ion-color-primary-shade);
 
     --pager-margin-bottom: 18px;
-    --pager-margin-start: calc(10px + var(--ion-safe-area-right, 0px) + 5px);
 
     --pager-size: 40px;
 }
