@@ -7,3 +7,11 @@
 ion-content {
     --ion-background-color: transparent;
 }
+
+ion-fab {
+    direction: ltr;
+}
+
+ion-fab ion-fab-button.hide-on-mobile {
+    display: var(--deckgo-hide-on-mobile);
+}
