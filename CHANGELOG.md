@@ -1,3 +1,18 @@
+<a name="1.0.0-beta.15"></a>
+# [1.0.0-beta.15](https://github.com/fluster/deckdeckgo-starter/compare/v1.0.0-beta.14...v1.0.0-beta.15) (2019-02-03)
+
+### Features
+
+* RTL support 🌍
+* print fixed and improved 🖨️
+
+#### Notes regarding upgrade
+
+If you wish to upgrade your presentation, you could proceed as the following respectively follow the example of the DeckDeckGo's website:
+
+- print: Update print.css and slider.js as in ([e285235](https://github.com/deckgo/deckdeckgo-website/commit/e2852354f52179262491a6ca5afdcffff8213adb))
+- RTL: upgrade libs and other files as in ([e442cb5](https://github.com/deckgo/deckdeckgo-website/commit/e442cb575ced2d53c791b3e8bafddcabf54fb8d5))
+
 <a name="1.0.0-beta.14"></a>
 # [1.0.0-beta.14](https://github.com/fluster/deckdeckgo-starter/compare/v1.0.0-beta.13...v1.0.0-beta.14) (2019-01-27)
 
