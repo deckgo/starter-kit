@@ -31,8 +31,8 @@ The [DeckDeckGo website](https://github.com/deckgo/deckdeckgo-website) is a full
 To develop and run this starter kit locally, proceed as following:
 
 ```
-git clone https://github.com/deckgo/deckdeckgo
-cd deckdeckgo
+git clone https://github.com/deckgo/deckdeckgo-starter
+cd deckdeckgo-starter
 npm install
 npm run start
 ```
