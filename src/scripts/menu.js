@@ -15,8 +15,8 @@ buildMenuListActions = () => {
     return new Promise(async (resolve) => {
         let result = '';
 
-        result += '<ion-item ion-item button onclick="howItWorks()" color="primary" style="--border-style: none;"><ion-icon name="help" slot="end"></ion-icon><ion-label>How it works</ion-label></ion-item>';
-        result += '<ion-item ion-item button onclick="openShare()" color="primary" style="--border-style: none;"><ion-icon name="share" slot="end"></ion-icon><ion-label>Share</ion-label></ion-item>';
+        result += '<ion-item ion-item button onclick="howItWorks()" style="--border-style: none;"><ion-icon name="help" slot="end"></ion-icon><ion-label>How it works</ion-label></ion-item>';
+        result += '<ion-item ion-item button onclick="openShare()" style="--border-style: none;"><ion-icon name="share" slot="end"></ion-icon><ion-label>Share</ion-label></ion-item>';
 
         resolve(result);
     });
