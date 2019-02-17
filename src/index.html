@@ -75,7 +75,7 @@
     <ion-content force-overscroll="false" scroll-y="false">
         <deckgo-deck id="slider" pager-percentage="false">
 
-            <!-- BEGIN: Your slides -->
+            <!-- BEGIN: Edit your slides -->
 
             <deckgo-slide-title>
                 <h1 slot="title">DeckDeckGo</h1>
@@ -109,7 +109,7 @@
                 </ion-list>
             </deckgo-slide-content>
 
-            <deckgo-slide-split style="--slide-split-align: center; --slide-split-text-align: center; --slide-split-background-end: white; --slide-split-color-end: var(--ion-color-tertiary);">
+            <deckgo-slide-split style="color: var(--ion-color-tertiary); --slide-split-color-start: white; --slide-split-align: center; --slide-split-text-align: center; --slide-split-background-end: white; --slide-split-color-end: var(--ion-color-tertiary);">
                 <h1 slot="title">Progressive Web App</h1>
                 <h3 slot="start">Publish your presentation as a <strong>Progressive Web App</strong> with <strong>offline</strong> support</h3>
                 <div slot="end" style="text-align: center; width: 100%;">
@@ -167,7 +167,7 @@
                         Dive deeper with the <a href="https://docs.deckdeckgo.com">Getting Started guide</a>
                     </p>
 
-                    <p style="margin-bottom: 0; margin-top: 32px; font-size: 0.5em;">
+                    <p style="margin-bottom: 0; margin-top: 48px; font-size: 0.5em;">
                         Created by David Dal Busco
                     </p>
                     <p no-margin no-padding style="font-size: 0.8em; margin-top: 8px;">
@@ -177,7 +177,9 @@
                 </div>
             </deckgo-slide-title>
 
-            <!-- END: Your slides -->
+            <!-- END: Edit your slides -->
+
+            <a href="#" onclick="openMenu(event)" slot="actions" style="color: inherit;"><ion-icon name="more"></ion-icon></a>
 
         </deckgo-deck>
 
@@ -196,11 +198,9 @@
             <ion-fab-button color="primary" onclick="previousSlide()"><ion-icon name="arrow-back"></ion-icon></ion-fab-button>
         </ion-fab-list>
         <ion-fab-list side="top">
-            <ion-fab-button color="primary" onclick="presentAlert()"><ion-icon name="help"></ion-icon></ion-fab-button>
             <ion-fab-button id="buttonSlideNotes" color="primary" onclick="displaySlideNotes()"><ion-icon name="clipboard"></ion-icon></ion-fab-button>
             <ion-fab-button class="hide-on-mobile" color="primary" onclick="doPrint()"><ion-icon name="print"></ion-icon></ion-fab-button>
             <ion-fab-button color="primary" onclick="reconnectRemoteControl()"><ion-icon name="link"></ion-icon></ion-fab-button>
-            <ion-fab-button color="primary" onclick="window.open('https://github.com/deckgo/deckdeckgo', '_blank');"><ion-icon name="logo-github"></ion-icon></ion-fab-button>
         </ion-fab-list>
     </ion-fab>
 
@@ -208,6 +208,14 @@
     <ion-popover-controller></ion-popover-controller>
     <ion-modal-controller></ion-modal-controller>
     <ion-alert-controller></ion-alert-controller>
+
+    <web-social-share show="false" style="--web-social-share-backdrop-opacity: 0.5;">
+        <ion-icon name="logo-twitter" slot="twitter" style="color: #00aced; width: 1.4rem; height: 1.4rem;"></ion-icon>
+        <ion-icon name="logo-reddit" slot="reddit" style="width: 1.4rem; height: 1.4rem;"></ion-icon>
+        <ion-icon name="logo-linkedin" slot="linkedin" style="color: #0077b5; width: 1.4rem; height: 1.4rem;"></ion-icon>
+        <ion-icon name="mail" slot="email" style="color: #ff8ea3; width: 1.4rem; height: 1.4rem;"></ion-icon>
+        <ion-icon name="logo-whatsapp" slot="whatsapp" style="color: #25D366; width: 1.4rem; height: 1.4rem;"></ion-icon>
+    </web-social-share>
 </ion-app>
 
 <noscript>

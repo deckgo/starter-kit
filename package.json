@@ -40,12 +40,13 @@
   "dependencies": {
     "@ionic/core": "^4.0.1",
     "@webcomponents/custom-elements": "^1.2.1",
-    "deckdeckgo": "^1.0.0-beta.26",
+    "deckdeckgo": "^1.0.0-beta.27",
     "deckdeckgo-charts": "^1.0.0-alpha.5",
     "deckdeckgo-highlight-code": "^1.0.0-alpha.11",
     "deckdeckgo-qrcode": "^1.0.0-alpha.6",
     "deckdeckgo-remote": "^1.0.0-alpha.5",
-    "ionicons": "^4.5.1"
+    "ionicons": "^4.5.1",
+    "web-social-share": "^5.0.0"
   },
   "keywords": [
     "ionic",
