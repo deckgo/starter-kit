@@ -1,3 +1,16 @@
+<a name="1.0.0-beta.17"></a>
+# [1.0.0-beta.17](https://github.com/fluster/deckdeckgo-starter/compare/v1.0.0-beta.16...v1.0.0-beta.17) (2019-02-17)
+
+### Features
+
+* add social sharing and popover menu ([#30](https://github.com/deckgo/deckdeckgo-starter/issues/30))
+* improve status bar color ([#54888f6](https://github.com/deckgo/deckdeckgo-starter/commit/54888f6b31a1421503c49c0ae9340c19ebb5f57c))
+
+### Fix
+
+* unexpected token < ([#33](https://github.com/deckgo/deckdeckgo-starter/issues/33))
+* jump to slide only list slides ([8ccded3](https://github.com/deckgo/deckdeckgo-starter/commit/8ccded373641d139c0fd4f99e2c19a6d782e3c91))
+
 <a name="1.0.0-beta.16"></a>
 # [1.0.0-beta.16](https://github.com/fluster/deckdeckgo-starter/compare/v1.0.0-beta.15...v1.0.0-beta.16) (2019-02-14)
 
