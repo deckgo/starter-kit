@@ -24,7 +24,7 @@ buildSlidesListActions = () => {
                 if (slide.tagName && slide.tagName.toLowerCase().indexOf('deckgo-slide') > -1) {
                     const title = slide.querySelector('[slot="title"]');
 
-                    const text = 'Slide ' + i + (title ? ': ' + title.innerHTML : '');
+                    const text = 'Slide ' + (i + 1) + (title ? ': ' + title.innerHTML : '');
 
                     result += '<ion-item ion-item button onclick="jumpToSlide(' + i + ')" color="primary"><ion-label>' + text + '</ion-label></ion-item>';
 

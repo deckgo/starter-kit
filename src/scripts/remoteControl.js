@@ -22,6 +22,11 @@ remoteEvent = async (event) => {
             await slider.slidePrev(slideAnimation, slideAnimation);
         } else if (type === 'slide_action') {
             await youtubePlayPause(event);
+        } else if (type === 'slide_to') {
+            const index = event.detail.index;
+            if (index >= 0) {
+                await slider.slideTo(index, 0);
+            }
         }
 
         resolve();

@@ -40,7 +40,7 @@
   "dependencies": {
     "@ionic/core": "^4.0.1",
     "@webcomponents/custom-elements": "^1.2.1",
-    "deckdeckgo": "^1.0.0-beta.27",
+    "deckdeckgo": "^1.0.0-beta.28",
     "deckdeckgo-charts": "^1.0.0-alpha.5",
     "deckdeckgo-highlight-code": "^1.0.0-alpha.11",
     "deckdeckgo-qrcode": "^1.0.0-alpha.6",
