@@ -22,30 +22,30 @@
     "url": "git://github.com/fluster/deckdeckgo-starter.git"
   },
   "devDependencies": {
-    "clean-webpack-plugin": "^1.0.0",
+    "clean-webpack-plugin": "^2.0.1",
     "concurrently": "^4.1.0",
-    "copy-webpack-plugin": "^4.6.0",
-    "css-loader": "^2.1.0",
+    "copy-webpack-plugin": "^5.0.1",
+    "css-loader": "^2.1.1",
     "deckdeckgo-webpack-plugins": "^1.0.0-alpha.2",
     "file-loader": "^3.0.1",
     "html-webpack-plugin": "^4.0.0-beta.5",
     "lite-server": "^2.4.0",
-    "progress-bar-webpack-plugin": "^1.11.0",
+    "progress-bar-webpack-plugin": "^1.12.1",
     "style-loader": "^0.23.1",
-    "webpack": "^4.29.3",
-    "webpack-cli": "^3.2.3",
-    "workbox-webpack-plugin": "^3.6.3"
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "workbox-webpack-plugin": "^4.1.1"
   },
   "license": "MIT",
   "dependencies": {
-    "@ionic/core": "^4.0.1",
+    "@ionic/core": "^4.1.1",
     "@webcomponents/custom-elements": "^1.2.1",
     "deckdeckgo": "^1.0.0-beta.29",
     "deckdeckgo-charts": "^1.0.0-alpha.5",
     "deckdeckgo-highlight-code": "^1.0.0-alpha.11",
     "deckdeckgo-qrcode": "^1.0.0-alpha.6",
     "deckdeckgo-remote": "^1.0.0-alpha.5",
-    "ionicons": "^4.5.1",
+    "ionicons": "^4.5.5",
     "web-social-share": "^5.0.0"
   },
   "keywords": [

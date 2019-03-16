@@ -31,7 +31,7 @@ const config = {
 };
 
 const plugins = [
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
         hash: true,
         inject: true,
