@@ -32,7 +32,7 @@ const config = {
 
 const plugins = [
     new CleanWebpackPlugin({
-        cleanStaleWebpackAssets: true
+        cleanStaleWebpackAssets: false
     }),
     new HtmlWebpackPlugin({
         hash: true,
