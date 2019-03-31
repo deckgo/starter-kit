@@ -17,6 +17,7 @@ import './scripts/modal.js';
 import './scripts/remoteControl.js';
 import './scripts/actions.js';
 import './scripts/menu.js';
+import './scripts/history.js';
 
 import { defineCustomElements as ionicElements } from '@ionic/core/loader';
 ionicElements(window);
@@ -41,6 +42,9 @@ deckDeckGoElements(window).then(async () => {
 
     await postLoading();
     await initActions();
+
+    await postLoadingJumpTo();
+    await initDeckHistoryWatch();
 
     await webSocialShareElements(window);
 

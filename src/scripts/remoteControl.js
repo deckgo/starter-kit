@@ -17,15 +17,18 @@ remoteEvent = async (event) => {
         if (type === 'next_slide') {
             const slideAnimation = event.detail.slideAnimation;
             await slider.slideNext(slideAnimation, slideAnimation);
+            await pushStateSlideIndex(slider);
         } else if (type === 'prev_slide') {
             const slideAnimation = event.detail.slideAnimation;
             await slider.slidePrev(slideAnimation, slideAnimation);
+            await pushStateSlideIndex(slider);
         } else if (type === 'slide_action') {
             await youtubePlayPause(event);
         } else if (type === 'slide_to') {
             const index = event.detail.index;
             if (index >= 0) {
                 await slider.slideTo(index, 0);
+                await pushStateSlideIndex(slider);
             }
         }
 
