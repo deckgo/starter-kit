@@ -1,3 +1,11 @@
+<a name="1.0.0-beta.18"></a>
+# [1.0.0-beta.18](https://github.com/fluster/deckdeckgo-starter/compare/v1.0.0-beta.17...v1.0.0-beta.18) (2019-03-31)
+
+### Features
+
+* push and pop history state to keep track of the slide index, useful when developing your presentation ([#37](https://github.com/deckgo/deckdeckgo-starter/issues/37))
+* don't open automatically the browser on start ([#35](https://github.com/deckgo/deckdeckgo-starter/issues/35))
+
 <a name="1.0.0-beta.17"></a>
 # [1.0.0-beta.17](https://github.com/fluster/deckdeckgo-starter/compare/v1.0.0-beta.16...v1.0.0-beta.17) (2019-02-17)
 
