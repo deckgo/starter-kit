@@ -51,7 +51,7 @@ pushStateSlideIndex = async (slider) => {
     const urlIndex = url && url.searchParams ? url.searchParams.get('index') : -1;
 
     if ((urlIndex === null || parseInt(urlIndex, 0) !== index) && index >= 0) {
-        history.pushState({slideIndex: index}, null, index > 0 ? "?index=" + index : null);
+        history.pushState({slideIndex: index}, null, index > 0 ? "?index=" + index : '');
     }
 };
 
