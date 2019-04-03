@@ -12,7 +12,7 @@ const webpack = require('webpack');
 const path = require('path');
 
 const config = {
-    entry: './src/index.js',
+    entry: path.resolve(__dirname, 'src', 'index.js'),
     output: {
         filename: '[name].[chunkhash].js',
         path: path.resolve(__dirname, 'dist')
@@ -37,7 +37,7 @@ const plugins = [
     new HtmlWebpackPlugin({
         hash: true,
         inject: true,
-        template: './src/index.html',
+        template: path.resolve(__dirname, 'src', 'index.html'),
         path: path.join(__dirname, '../dist/'),
         filename: 'index.html'
     }),
