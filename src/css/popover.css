@@ -6,3 +6,7 @@ ion-popover {
 ion-popover ion-list-header {
     --color: var(--ion-color-dark);
 }
+
+ion-popover ion-item {
+    --color: var(--ion-color-dark);
+}

@@ -25,6 +25,8 @@ buildMenuListActions = () => {
 customElements.define('menu-list', MenuList);
 
 openMenu = async (ev) => {
+    ev.preventDefault();
+
     const popoverController = document.querySelector('ion-popover-controller');
 
     if (!popoverController) {
