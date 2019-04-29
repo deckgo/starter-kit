@@ -54,4 +54,8 @@ ion-label, ion-label[text-wrap].sc-ion-label-md-h, p {
     h3 {
         font-size: 1.2em;
     }
+
+    deckgo-deck {
+        --deckgo-highlight-code-font-size: 1em;
+    }
 }
