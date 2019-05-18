@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/fluster/deckdeckgo-starter.git"
+    "url": "git://github.com/deckgo/deckdeckgo-starter.git"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^2.0.2",
