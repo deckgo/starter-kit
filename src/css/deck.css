@@ -8,7 +8,7 @@ deckgo-deck {
     --pager-size: 40px;
 }
 
-deckgo-deck div[slot="background"] {
+deckgo-deck > * div[slot="background"] {
     position: absolute;
     top: 0;
     left: 0;
@@ -17,4 +17,17 @@ deckgo-deck div[slot="background"] {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+deckgo-deck :not([slot="background"]) > deckgo-lazy-img {
+    --deckgo-lazy-img-padding: 16px;
+}
+
+deckgo-deck [slot="background"] > deckgo-lazy-img {
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --deckgo-lazy-img-min-width: 100%;
 }
