@@ -1,5 +1,12 @@
+<a name="1.0.0-beta.20"></a>
+# [1.0.0-beta.20](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-beta.19...v1.0.0-beta.29) (2019-05-24)
+
+### Libs
+
+* update libs including the DeckDeckGo scope org packages
+
 <a name="1.0.0-beta.19"></a>
-# [1.0.0-beta.19](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-beta.17...v1.0.0-beta.18) (2019-03-31)
+# [1.0.0-beta.19](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-beta.18...v1.0.0-beta.19) (2019-03-31)
 
 ### Features
 
