@@ -26,11 +26,11 @@ import { defineCustomElements as ioniconsElements } from 'ionicons/dist/loader';
 ioniconsElements(window);
 
 // Init DeckDeckGo elements
-import { defineCustomElements as deckDeckGoElements } from 'deckdeckgo/dist/loader';
-import { defineCustomElements as deckDeckGoRemoteElements } from 'deckdeckgo-remote/dist/loader';
-import { defineCustomElements as deckDeckGoChartsElements } from 'deckdeckgo-charts/dist/loader';
-import { defineCustomElements as deckDeckGoQRCodeElements } from 'deckdeckgo-qrcode/dist/loader';
-import { defineCustomElements as deckDeckGoHighlightCodeElements } from 'deckdeckgo-highlight-code/dist/loader';
+import { defineCustomElements as deckDeckGoElements } from '@deckdeckgo/core/dist/loader';
+import { defineCustomElements as deckDeckGoRemoteElements } from '@deckdeckgo/remote/dist/loader';
+import { defineCustomElements as deckDeckGoChartsElements } from '@deckdeckgo/charts/dist/loader';
+import { defineCustomElements as deckDeckGoQRCodeElements } from '@deckdeckgo/qrcode/dist/loader';
+import { defineCustomElements as deckDeckGoHighlightCodeElements } from '@deckdeckgo/highlight-code/dist/loader';
 
 // Init web-social-share
 import { defineCustomElements as webSocialShareElements } from 'web-social-share/dist/loader';
