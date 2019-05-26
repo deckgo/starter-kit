@@ -38,13 +38,13 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@ionic/core": "^4.4.2",
-    "@webcomponents/custom-elements": "^1.2.4",
-    "@deckdeckgo/core": "^1.0.0-beta.35",
     "@deckdeckgo/charts": "^1.0.0-alpha.6",
+    "@deckdeckgo/core": "^1.0.0-beta.35",
     "@deckdeckgo/highlight-code": "^1.0.0-alpha.15",
     "@deckdeckgo/qrcode": "^1.0.0-alpha.7",
-    "@deckdeckgo/remote": "^1.0.0-alpha.9",
+    "@deckdeckgo/remote": "^1.0.0-alpha.10",
+    "@ionic/core": "^4.4.2",
+    "@webcomponents/custom-elements": "^1.2.4",
     "ionicons": "^4.5.8",
     "web-social-share": "^5.0.0"
   },
