@@ -77,7 +77,7 @@ function getRemoteControlModalContent() {
         </ion-item>
     </ion-list>
   
-    <p class="ion-padding-start ion-padding-end" style="margin: 0; font-size: 12px;">Remote control your presentation with your phone or any devices. Scan the following QR Code to open directly your deck or get the Progressive Web Apps at <a href="https://deckdeckgo.app" target="_blank" style="color: var(--ion-color-tertiary);">https://deckdeckgo.app <ion-icon name="open" style="color: var(--ion-color-tertiary); vertical-align: bottom;"></ion-icon></a> and find <mark style="background: transparent; color: var(--ion-color-tertiary); font-weight: 500;">${remoteRoom}</mark>.</p>
+    <p class="ion-padding-start ion-padding-end" style="margin: 0; font-size: 12px;">Remote control your presentation with your phone or any devices. Scan the following QR Code to connect directly your deck or get the Progressive Web Apps at <a href="https://deckdeckgo.app" target="_blank" style="color: var(--ion-color-tertiary);">https://deckdeckgo.app <ion-icon name="open" style="color: var(--ion-color-tertiary); vertical-align: bottom;"></ion-icon></a> and find <mark style="background: transparent; color: var(--ion-color-tertiary); font-weight: 500;">${remoteRoom}</mark>.</p>
 
     <p class="ion-padding-start ion-padding-end" style="margin: 0;"><small style="font-size: 12px;">If you can't connect or if you lost the connection, toggle off and on the connection to refresh it.</small></p>
 
