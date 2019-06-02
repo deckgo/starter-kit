@@ -10,3 +10,7 @@ ion-popover ion-list-header {
 ion-popover ion-item {
     --color: var(--ion-color-dark);
 }
+
+ion-popover[class*="sc-ion-popover"] {
+    --width: 280px;
+}

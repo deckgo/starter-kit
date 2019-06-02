@@ -17,6 +17,7 @@ buildMenuListActions = () => {
 
         result += '<ion-item ion-item button onclick="howItWorks()" style="--border-style: none;"><ion-icon name="help" slot="end"></ion-icon><ion-label>How it works</ion-label></ion-item>';
         result += '<ion-item ion-item button onclick="openShare()" style="--border-style: none;"><ion-icon name="share" slot="end"></ion-icon><ion-label>Share</ion-label></ion-item>';
+        result += '<ion-item ion-item button onclick="openLink(\'https://deckdeckgo.com\')" style="--border-style: none;"><ion-icon src="/assets/icons/deckdeckgo.svg" ariaLabel="DeckDeckGo" slot="end"></ion-icon><ion-label>Created with DeckDeckGo</ion-label></ion-item>';
 
         resolve(result);
     });
@@ -107,5 +108,10 @@ openShare = async () => {
 
     webSocialShare.show = true;
 
+    await document.querySelector('ion-popover-controller').dismiss();
+};
+
+openLink = async (link) => {
+    window.open(link, '_blank');
     await document.querySelector('ion-popover-controller').dismiss();
 };
