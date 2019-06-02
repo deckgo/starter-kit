@@ -22,7 +22,7 @@
     "url": "git://github.com/deckgo/deckdeckgo-starter.git"
   },
   "devDependencies": {
-    "clean-webpack-plugin": "^2.0.2",
+    "clean-webpack-plugin": "^3.0.0",
     "concurrently": "^4.1.0",
     "copy-webpack-plugin": "^5.0.3",
     "css-loader": "^2.1.1",
