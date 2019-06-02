@@ -4,16 +4,21 @@ import './css/variables.css';
 import './css/theme.css';
 import './css/deck.css';
 import './css/font.css';
+import './css/modal.css';
 import './css/popover.css';
 import './css/print.css';
 import './css/alert.css';
 
 import '@webcomponents/custom-elements';
 
+import * as manifestData from './manifest.json';
+window.ROOM_NAME = manifestData.name;
+
 import './scripts/loading.js';
 import './scripts/slider.js';
 import './scripts/sliderJumpTo.js';
-import './scripts/modal.js';
+import './scripts/modalNotes.js';
+import './scripts/modalRemoteControl.js';
 import './scripts/remoteControl.js';
 import './scripts/actions.js';
 import './scripts/menu.js';
