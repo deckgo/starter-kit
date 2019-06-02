@@ -68,7 +68,7 @@ function getRemoteControlModalContent() {
     } else {
 
         const remoteRoom = getRemoteControlRoom();
-        const qrCodeLink = `https://deckdeckgo.app/${remoteRoom ? `remote/${remoteRoom}` : ''}`;
+        const qrCodeLink = `https://deckdeckgo.app/${remoteRoom && remoteRoom !== '' ? `remote/${remoteRoom}` : ''}`;
 
         return `<ion-list style="ion-no-margin">
         <ion-item style="--border-color: transparent; color: black;">
