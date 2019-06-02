@@ -58,6 +58,21 @@ reconnectRemoteControl = () => {
     });
 };
 
+disconnectRemoteControl = () => {
+    return new Promise(async (resolve) => {
+        const deckgoRemoteElement = document.querySelector("deckgo-remote");
+
+        if (!deckgoRemoteElement) {
+            resolve();
+            return;
+        }
+
+        await deckgoRemoteElement.disconnect();
+
+        resolve();
+    });
+};
+
 initRemote = async () => {
     return new Promise(async (resolve) => {
         if (process.env.NO_REMOTE) {
