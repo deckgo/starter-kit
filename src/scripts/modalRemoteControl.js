@@ -70,16 +70,16 @@ function getRemoteControlModalContent() {
         const remoteRoom = getRemoteControlRoom();
         const qrCodeLink = `https://deckdeckgo.app/${remoteRoom ? `remote/${remoteRoom}` : ''}`;
 
-        return `<ion-list>
+        return `<ion-list style="ion-no-margin">
         <ion-item style="--border-color: transparent; color: black;">
             <ion-label class="ion-text-wrap">Toggle to disable or enable the remote control</ion-label> 
-            <ion-toggle slot="end" checked="true" color="tertiary" style="--background: var(--ion-color-light); --handle-background: white;"></ion-toggle>
+            <ion-toggle slot="end" checked="true" color="tertiary" style="--background: var(--ion-color-light); --handle-background: white; --handle-background-checked: white;"></ion-toggle>
         </ion-item>
     </ion-list>
   
-    <p class="ion-padding-start ion-padding-end" style="margin: 0; font-size: 12px;">Remote control your presentation with your phone or any devices. Scan the following QR Code to connect directly your deck or get the Progressive Web Apps at <a href="https://deckdeckgo.app" target="_blank" style="color: var(--ion-color-tertiary);">https://deckdeckgo.app <ion-icon name="open" style="color: var(--ion-color-tertiary); vertical-align: bottom;"></ion-icon></a> and find <mark style="background: transparent; color: var(--ion-color-tertiary); font-weight: 500;">${remoteRoom}</mark>.</p>
+    <p class="ion-padding-start ion-padding-end" style="margin: 0; font-size: 16px;">Remote control this presentation with your phone or any devices. Scan the following QR Code to open it directly or get the Progressive Web Apps at <a href="https://deckdeckgo.app" target="_blank" style="color: var(--ion-color-tertiary);">https://deckdeckgo.app <ion-icon name="open" style="color: var(--ion-color-tertiary); vertical-align: bottom;"></ion-icon></a> and find <mark style="background: transparent; color: var(--ion-color-tertiary); font-weight: 500;">${remoteRoom}</mark>.</p>
 
-    <p class="ion-padding-start ion-padding-end" style="margin: 0;"><small style="font-size: 12px;">If you can't connect or if you lost the connection, toggle off and on the connection to refresh it.</small></p>
+    <p class="ion-padding-start ion-padding-end" style="margin-bottom: 0; font-size: 16px;">If you can't connect or if you lost the connection, toggle off and on the connection to refresh it.</p>
 
     <div class="qrcode-container" style="display: flex; justify-content: center;  --deckgo-qrcode-size: 300px; --deckgo-qrcode-color-fill: var(--ion-color-tertiary);">
         <deckgo-qrcode content="${qrCodeLink}">
