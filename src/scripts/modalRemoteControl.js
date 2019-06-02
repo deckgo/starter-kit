@@ -53,9 +53,9 @@ handleRemoteControlState = ($event) => {
         }
 
         if($event.detail.checked) {
-            reconnectRemoteControl();
+            await reconnectRemoteControl();
         } else {
-            disconnectRemoteControl();
+            await disconnectRemoteControl();
         }
 
         resolve();
