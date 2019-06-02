@@ -55,4 +55,4 @@ displaySlideNotes = async () => {
 
     // present the modal
     await modalElement.present();
-}
+};

@@ -13,7 +13,7 @@ import '@webcomponents/custom-elements';
 import './scripts/loading.js';
 import './scripts/slider.js';
 import './scripts/sliderJumpTo.js';
-import './scripts/modal.js';
+import './scripts/modalNotes.js';
 import './scripts/remoteControl.js';
 import './scripts/actions.js';
 import './scripts/menu.js';
