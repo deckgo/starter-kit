@@ -85,9 +85,6 @@ module.exports = (env, argv) => {
         };
     }
 
-    // Following value will be updated by the create-deckdeckgo CLI
-    processEnv['process.env']['ROOM_NAME'] = JSON.stringify('{{DECKDECKGO_TITLE}}');
-
     if (env && env.noRemote) {
         processEnv['process.env']['NO_REMOTE'] = true;
     }

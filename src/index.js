@@ -11,6 +11,9 @@ import './css/alert.css';
 
 import '@webcomponents/custom-elements';
 
+import * as manifestData from './manifest.json';
+window.ROOM_NAME = manifestData.name;
+
 import './scripts/loading.js';
 import './scripts/slider.js';
 import './scripts/sliderJumpTo.js';

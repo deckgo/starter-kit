@@ -137,7 +137,7 @@ function initRemoteRoomServer(slides) {
             // In case the presentation is published and many users are browsing it, this enhance the change to have single id
             // Or hash or timestamp would be better, but for the time being, a random number is readable and probably enough
             const roomNumber = Math.floor(Math.random() * 999);
-            deckgoRemoteElement.room = process.env.ROOM_NAME ? `${process.env.ROOM_NAME} #${roomNumber}` : `DeckDeckGo #${roomNumber}`;
+            deckgoRemoteElement.room = ROOM_NAME ? `${ROOM_NAME} #${roomNumber}` : `DeckDeckGo #${roomNumber}`;
         }
 
         // SIGNALING_SERVER is declared by Webpack, see webpack.config.js
