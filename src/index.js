@@ -23,6 +23,7 @@ import './scripts/remoteControl.js';
 import './scripts/actions.js';
 import './scripts/menu.js';
 import './scripts/history.js';
+import './scripts/fullscreen.js';
 
 import { defineCustomElements as ionicElements } from '@ionic/core/loader';
 ionicElements(window);
@@ -47,6 +48,7 @@ deckDeckGoElements(window).then(async () => {
 
     await postLoading();
     await initActions();
+    await initFullscreen();
 
     await postLoadingJumpTo();
     await initDeckHistoryWatch();
