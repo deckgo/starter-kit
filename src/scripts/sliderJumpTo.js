@@ -22,9 +22,7 @@ buildSlidesListActions = () => {
 
             for (const slide of slides) {
                 if (slide.tagName && slide.tagName.toLowerCase().indexOf('deckgo-slide') > -1) {
-                    const title = slide.querySelector('[slot="title"]');
-
-                    const text = 'Slide ' + (i + 1) + (title ? ': ' + title.innerHTML : '');
+                    const text = getSlideTitle(slide, i);
 
                     result += '<ion-item ion-item button onclick="jumpToSlide(' + i + ')" color="primary"><ion-label>' + text + '</ion-label></ion-item>';
 
@@ -36,6 +34,32 @@ buildSlidesListActions = () => {
         resolve(result);
     });
 };
+
+function getSlideTitle(slide, index) {
+    if (!slide) {
+        return 'Slide ' + (index + 1);
+    }
+
+    const title = slide.querySelector('[slot="title"]');
+
+    if (title && title.textContent !== '') {
+        return title.textContent;
+    } else {
+        const start = slide.querySelector('[slot="start"],[slot="header"]');
+
+        if (start && start.textContent !== '') {
+            return start.textContent;
+        } else {
+            const end = slide.querySelector('[slot="end"],[slot="footer"]');
+
+            if (end && end.textContent !== '') {
+                return end.textContent;
+            } else {
+                return 'Slide ' + (index + 1);
+            }
+        }
+    }
+}
 
 jumpToSlide = async (index) => {
     await document.getElementById('slider').slideTo(index, 0);
