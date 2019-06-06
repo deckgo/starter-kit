@@ -86,9 +86,11 @@ openShare = async () => {
 
 function shareMobile() {
     return new Promise(async (resolve) => {
+        const shareUrl = `${window.location.protocol}//${window.location.host}${window.location.pathname}`;
+
         await navigator.share({
             title: document.title,
-            url: window.location.href,
+            url: shareUrl,
         });
 
         resolve();
@@ -103,31 +105,33 @@ function shareDesktop() {
             return;
         }
 
+        const shareUrl = `${window.location.protocol}//${window.location.host}${window.location.pathname}`;
+
         const share = {
             displayNames: true,
             config: [{
                 twitter: {
-                    socialShareUrl: window.location.href,
+                    socialShareUrl: shareUrl,
                     socialSharePopupWidth: 300,
                     socialSharePopupHeight: 400
                 }
             },{
                 reddit: {
-                    socialShareUrl: window.location.href,
+                    socialShareUrl: shareUrl,
                     socialSharePopupWidth: 300,
                     socialSharePopupHeight: 500
                 }
             },{
                 linkedin: {
-                    socialShareUrl: window.location.href
+                    socialShareUrl: shareUrl
                 }
             },,{
                 email: {
-                    socialShareBody: window.location.href
+                    socialShareBody: shareUrl
                 }
             }, {
                 whatsapp: {
-                    socialShareUrl: window.location.href
+                    socialShareUrl: shareUrl
                 }
             }]
         };
