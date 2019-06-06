@@ -125,7 +125,7 @@ function shareDesktop() {
                 linkedin: {
                     socialShareUrl: shareUrl
                 }
-            },,{
+            },{
                 email: {
                     socialShareBody: shareUrl
                 }
