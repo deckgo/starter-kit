@@ -46,7 +46,7 @@
     "@ionic/core": "^4.5.0-dev.201905311531.e014c6a",
     "@webcomponents/custom-elements": "^1.2.4",
     "ionicons": "^4.5.8",
-    "web-social-share": "^5.0.0"
+    "web-social-share": "^5.1.0"
   },
   "keywords": [
     "ionic",
