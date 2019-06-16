@@ -1,0 +1,9 @@
+deckgo-deck {
+    --pager-background: var(--ion-color-tertiary-tint);
+    --pager-color: var(--ion-color-primary-shade);
+    --pager-text-color: var(--ion-color-primary-shade);
+
+    --pager-margin-bottom: 18px;
+
+    --pager-size: 40px;
+}
