@@ -1,5 +1,33 @@
+<a name="1.0.0-beta.21"></a>
+# [1.0.0-beta.21](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-beta.20...v1.0.0-beta.21) (2019-06-24)
+
+### Features
+
+* update with animated charts
+* sync fonts and containers with starter kit and studio
+* share without parameters
+* better title handling for slides navigation display
+* hide actions in fullscreen in case of inactivity
+* remote control modal and QR core to open the remote control
+* ROOM_NAME from the manifest.json
+* add a random number next to the room name
+* deep link remote control url
+* add aria label for accessibility
+
+### Libs
+
+* migrate to libs developed with Stencil One
+
+### Style
+
+* code font-size inherit
+
+### Fixes
+
+* short white background while loading ion-content
+
 <a name="1.0.0-beta.20"></a>
-# [1.0.0-beta.20](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-beta.19...v1.0.0-beta.29) (2019-05-24)
+# [1.0.0-beta.20](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-beta.19...v1.0.0-beta.20) (2019-05-24)
 
 ### Libs
 
