@@ -38,8 +38,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@deckdeckgo/charts": "^1.0.0-alpha.7",
-    "@deckdeckgo/core": "^1.0.0-beta.39-3",
+    "@deckdeckgo/charts": "^1.0.0-alpha.8",
+    "@deckdeckgo/core": "^1.0.0-beta.40",
     "@deckdeckgo/highlight-code": "^1.0.0-alpha.16",
     "@deckdeckgo/lazy-img": "^1.0.0-alpha.7",
     "@deckdeckgo/qrcode": "^1.0.0-alpha.8",
