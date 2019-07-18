@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
-    "concurrently": "^4.1.0",
+    "concurrently": "^4.1.1",
     "copy-webpack-plugin": "^5.0.3",
     "css-loader": "^3.0.0",
     "deckdeckgo-webpack-plugins": "^1.0.0-alpha.6",
@@ -32,22 +32,22 @@
     "lite-server": "^2.5.3",
     "progress-bar-webpack-plugin": "^1.12.1",
     "style-loader": "^0.23.1",
-    "webpack": "^4.32.2",
-    "webpack-cli": "^3.3.4",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6",
     "workbox-webpack-plugin": "^4.3.1"
   },
   "license": "MIT",
   "dependencies": {
     "@deckdeckgo/charts": "^1.0.0-alpha.8",
-    "@deckdeckgo/core": "^1.0.0-beta.40",
+    "@deckdeckgo/core": "^1.0.0-beta.41",
     "@deckdeckgo/highlight-code": "^1.0.0-alpha.16",
-    "@deckdeckgo/lazy-img": "^1.0.0-alpha.7",
-    "@deckdeckgo/qrcode": "^1.0.0-alpha.8",
+    "@deckdeckgo/lazy-img": "^1.0.0-alpha.10",
+    "@deckdeckgo/qrcode": "^1.0.0-alpha.9",
     "@deckdeckgo/remote": "^1.0.0-alpha.11",
-    "@ionic/core": "^4.5.0-dev.201905311531.e014c6a",
+    "@ionic/core": "^4.6.2",
     "@webcomponents/custom-elements": "^1.2.4",
-    "ionicons": "^4.5.8",
-    "web-social-share": "^6.0.0"
+    "ionicons": "^4.6.1",
+    "web-social-share": "^6.1.0"
   },
   "keywords": [
     "ionic",
