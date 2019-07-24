@@ -15,9 +15,10 @@ buildMenuListActions = () => {
     return new Promise(async (resolve) => {
         let result = '';
 
-        result += '<ion-item ion-item button onclick="howItWorks()" style="--border-style: none;"><ion-icon name="help" ariaLabel="How it works" slot="end"></ion-icon><ion-label>How it works</ion-label></ion-item>';
-        result += '<ion-item ion-item button onclick="openShare()" style="--border-style: none;"><ion-icon name="share" ariaLabel="Share this presentation" slot="end"></ion-icon><ion-label>Share</ion-label></ion-item>';
-        result += '<ion-item ion-item button onclick="openLink(\'https://deckdeckgo.com\')" style="--border-style: none;"><ion-icon src="/assets/icons/deckdeckgo.svg" ariaLabel="DeckDeckGo" slot="end"></ion-icon><ion-label>Created with DeckDeckGo</ion-label></ion-item>';
+        result += '<ion-item ion-item button detail="false" onclick="displaySlideNotes()" color="primary" style="--border-style: none;"><ion-icon name="clipboard" ariaLabel="Display slide notes" slot="end"></ion-icon><ion-label>Display slide notes</ion-label></ion-item>';
+        result += '<ion-item ion-item button detail="false" onclick="displayRemoteControl()" color="primary" style="--border-style: none;"><ion-icon name="phone-portrait" ariaLabel="Remote control" slot="end"></ion-icon><ion-label>Remote control</ion-label></ion-item>';
+        result += '<ion-item ion-item button detail="false" onclick="openShare()" color="primary" style="--border-style: none;"><ion-icon name="share" ariaLabel="Share this presentation" slot="end"></ion-icon><ion-label>Share</ion-label></ion-item>';
+        result += '<ion-item ion-item button detail="false" onclick="openLink(\'https://deckdeckgo.com\')" style="--border-style: none; --ion-item-background: white;"><ion-icon src="/assets/icons/deckdeckgo.svg" ariaLabel="DeckDeckGo" slot="end"></ion-icon><ion-label>Created with DeckDeckGo</ion-label></ion-item>';
 
         resolve(result);
     });
@@ -43,29 +44,6 @@ openMenu = async (ev) => {
     });
 
     await popover.present();
-};
-
-howItWorks = async () => {
-    await presentHowItWorks();
-    await document.querySelector('ion-popover-controller').dismiss();
-};
-
-presentHowItWorks = async () => {
-    const alertController = document.querySelector('ion-alert-controller');
-
-    if (!alertController) {
-        return;
-    }
-
-    await alertController.componentOnReady();
-
-    const alert = await alertController.create({
-        header: 'How does it work?',
-        message: 'To navigate, just swipe the slides, use the left and right arrows keys of your keyboard or use the actions available at the bottom right',
-        buttons: ['OK']
-    });
-
-    await alert.present();
 };
 
 openLink = async (link) => {

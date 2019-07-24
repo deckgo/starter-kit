@@ -11,6 +11,7 @@ ion-content {
 
 ion-fab {
     direction: ltr;
+    display: flex;
 }
 
 ion-fab ion-fab-button.hide-on-mobile {
