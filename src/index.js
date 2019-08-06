@@ -9,6 +9,7 @@ import './css/modal.css';
 import './css/popover.css';
 import './css/print.css';
 import './css/alert.css';
+import './css/img.css';
 
 import '@webcomponents/custom-elements';
 
