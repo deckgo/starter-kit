@@ -111,7 +111,7 @@
 
             <deckgo-slide-split style="color: var(--ion-color-tertiary); --slide-split-color-start: white; --slide-split-align: center; --slide-split-text-align: center; --slide-split-background-end: white; --slide-split-color-end: var(--ion-color-tertiary);">
                 <h1 slot="title">Progressive Web App</h1>
-                <h3 slot="start">Publish your presentation as a <strong>Progressive Web App</strong> with <strong>offline</strong> support</h3>
+                <h3 slot="start" style="color: var(--ion-color-dark);">Publish your presentation as a <strong>Progressive Web App</strong> with <strong>offline</strong> support</h3>
                 <div slot="end" style="text-align: center; width: 100%;">
                     <img data-src="https://deckdeckgo.com/assets/img/deckdeckgo-homecoming.png" style="width: 20vw;" alt="Publish your presentation as a Progressive Web App with offline support"/>
                 </div>
@@ -125,7 +125,7 @@
                 </div>
                 <div slot="social-link"><deckgo-social twitter="daviddalbusco"><ion-icon alt="David on Twitter" slot="icon" name="logo-twitter" margin-start margin-end></ion-icon> twitter</deckgo-social></div>
                 <div slot="social-link"><deckgo-social linkedin="david-dal-busco/"><ion-icon alt="David on Linkedin" slot="icon" name="logo-linkedin" margin-start margin-end></ion-icon> linkedin</deckgo-social></div>
-                <div slot="social-link"><deckgo-social medium="david.dalbusco"><img style="width: 1em;" alt="David on Medium" slot="icon" src="https://deckdeckgo.com/assets/img/medium-icon.svg" margin-start margin-end/> medium</deckgo-social></div>
+                <div slot="social-link"><deckgo-social medium="david.dalbusco"><img style="width: 1em;" alt="David on Medium" slot="icon" src="https://deckdeckgo.com/assets/icons/medium.svg" margin-start margin-end/> medium</deckgo-social></div>
             </deckgo-slide-author>
 
             <deckgo-slide-chart type="line" grid="true" date-pattern="dd.MM.yyyy" animation="true"
@@ -147,7 +147,7 @@
                 </p>
             </deckgo-slide-title>
 
-            <deckgo-slide-qrcode content="https://deckdeckgo.com" style="--deckgo-qrcode-color-fill: white;">
+            <deckgo-slide-qrcode content="https://deckdeckgo.com" style="--deckgo-qrcode-color-fill: black;">
                 <h1 slot="title">QR Code</h1>
                 <p slot="content">Display a QR code to let your audience get your slides as a PWA without any delay</p>
             </deckgo-slide-qrcode>
@@ -186,10 +186,25 @@
     </ion-content>
 
     <ion-fab vertical="bottom" horizontal="end" slot="fixed" id="navigation">
-        <ion-fab-button color="primary" size="small" onclick="previousSlide()"><ion-icon name="arrow-back" ariaLabel="Previous slide" style="font-size: 1.4em;"></ion-icon></ion-fab-button>
-        <ion-fab-button color="primary" size="small" onclick="nextSlide()"><ion-icon name="arrow-forward" ariaLabel="Next slide" style="font-size: 1.4em;"></ion-icon></ion-fab-button>
-        <ion-fab-button color="primary" size="small" onclick="presentSlidePicker()"><ion-icon name="list" md="md-list" ios="md-list" ariaLabel="Jump to a particular slide" style="font-size: 1.4em;"></ion-icon></ion-fab-button>
-        <ion-fab-button class="hide-on-mobile" color="primary" size="small" onclick="toggleFullScreen()"><ion-icon name="expand" ariaLabel="Full screen" style="font-size: 1.4em;"></ion-icon></ion-fab-button>
+        <button onclick="previousSlide()" class="navigation ion-activatable">
+            <ion-ripple-effect></ion-ripple-effect>
+            <ion-icon name="arrow-back" ariaLabel="Previous slide" style="font-size: 1.4em;"></ion-icon>
+        </button>
+
+        <button onclick="nextSlide()" class="navigation ion-activatable">
+            <ion-ripple-effect></ion-ripple-effect>
+            <ion-icon name="arrow-forward" ariaLabel="Next slide" style="font-size: 1.4em;"></ion-icon>
+        </button>
+
+        <button onclick="presentSlidePicker()" class="navigation ion-activatable">
+            <ion-ripple-effect></ion-ripple-effect>
+            <ion-icon name="list" md="md-list" ios="md-list" ariaLabel="Jump to a particular slide" style="font-size: 1.4em;"></ion-icon>
+        </button>
+
+        <button onclick="toggleFullScreen()" class="navigation ion-activatable hide-on-mobile">
+            <ion-ripple-effect></ion-ripple-effect>
+            <ion-icon name="expand" ariaLabel="Full screen" style="font-size: 1.4em;"></ion-icon>
+        </button>
     </ion-fab>
 
     <!-- Ionic components anchors -->
