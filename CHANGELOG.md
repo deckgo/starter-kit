@@ -1,3 +1,30 @@
+<a name="1.0.0-beta.22"></a>
+# [1.0.0-beta.22](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-beta.21...v1.0.0-beta.22) (2019-08-15)
+
+### Breaking Changes
+
+* add new components `<deckgo-reveal/>` and `<deckgo-reveal-list/>` to make elements and texts appear one line at a time ([#224](https://github.com/deckgo/deckdeckgo/issues/224))
+
+#### How to migrate?
+
+1. Remove all attributes `reveal="true"` you would have set on any of your slides
+
+2. Wrap the new above components around your elements, which should appear one at a time, as highlighted in the new [documentation](https://docs.deckdeckgo.com/edit/reveal).
+
+## Features
+
+* no more fab list for the actions and remove print
+* replace chapters icon
+
+### Style
+
+* display link in presentation
+* default deck background and color
+
+### Fix
+
+* replace ion-fab-button with button 
+
 <a name="1.0.0-beta.21"></a>
 # [1.0.0-beta.21](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-beta.20...v1.0.0-beta.21) (2019-06-24)
 
