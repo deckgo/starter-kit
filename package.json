@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
-    "concurrently": "^4.1.1",
+    "concurrently": "^4.1.2",
     "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^3.2.0",
     "deckdeckgo-webpack-plugins": "^1.0.0-alpha.6",
@@ -32,8 +32,8 @@
     "lite-server": "^2.5.4",
     "progress-bar-webpack-plugin": "^1.12.1",
     "style-loader": "^1.0.0",
-    "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.6",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7",
     "workbox-webpack-plugin": "^4.3.1"
   },
   "license": "MIT",
@@ -44,9 +44,9 @@
     "@deckdeckgo/lazy-img": "^1.0.0-alpha.12",
     "@deckdeckgo/qrcode": "^1.0.0-alpha.9",
     "@deckdeckgo/remote": "^1.0.0-alpha.11",
-    "@ionic/core": "^4.7.4",
+    "@ionic/core": "^4.8.1",
     "@webcomponents/custom-elements": "^1.2.4",
-    "ionicons": "^4.6.2",
+    "ionicons": "^4.6.3",
     "web-social-share": "^6.2.0"
   },
   "keywords": [
