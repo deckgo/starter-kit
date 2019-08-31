@@ -12,6 +12,7 @@
 ### Style
 
 * background images fullscreen
+* default background theme color `white`
 
 ### Libs
 
