@@ -1,3 +1,30 @@
+<a name="1.0.0-rc.1"></a>
+# [1.0.0-rc.1](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-beta.22...v1.0.0-rc.1) (2019-08-31)
+
+### Breaking Changes
+
+* extract slides and extra components to separate components ([#230](https://github.com/deckgo/deckdeckgo/issues/230))
+
+### Fix
+
+* overscroll auto best suited for windows and linux
+
+### Style
+
+* background images fullscreen
+
+### Libs
+
+* update to most recent dependencies
+
+### Note about v1.0.0-rc.1
+
+The first users began to test, and to create content in, our web open source editor for presentations (`studio`)
+
+#### How to migrate?
+
+Basically, you have to install the `slides` which have been pulled out of the `core` components. This starter kit has been updated, you could either have a look to it or check the [documentation](https://docs.deckdeckgo.com) which has been updated too.
+
 <a name="1.0.0-beta.22"></a>
 # [1.0.0-beta.22](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-beta.21...v1.0.0-beta.22) (2019-08-15)
 
