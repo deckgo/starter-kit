@@ -1,3 +1,10 @@
+<a name="1.0.0-rc.1-1"></a>
+# [1.0.0-rc.1-1](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.1...v1.0.0-rc.1-1) (2019-08-31)
+
+### Lib
+
+* update `@deckdeckgo/slide-youtube`
+
 <a name="1.0.0-rc.1"></a>
 # [1.0.0-rc.1](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-beta.22...v1.0.0-rc.1) (2019-08-31)
 
