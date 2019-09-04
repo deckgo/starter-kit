@@ -4,6 +4,7 @@
 ### Features
 
 * better centering of the content on mobile devices
+* sync with studio for the image selector with attribute instead of class
 
 <a name="1.0.0-rc.1-2"></a>
 # [1.0.0-rc.1-2](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.1-1...v1.0.0-rc.1-2) (2019-09-02)
