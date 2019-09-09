@@ -49,7 +49,7 @@
     "@deckdeckgo/slide-code": "^1.0.0-rc.1",
     "@deckdeckgo/slide-content": "^1.0.0-rc.1",
     "@deckdeckgo/slide-countdown": "^1.0.0-rc.1",
-    "@deckdeckgo/slide-gif": "^1.0.0-rc.1",
+    "@deckdeckgo/slide-gif": "^1.0.0-rc.1-1",
     "@deckdeckgo/slide-qrcode": "^1.0.0-rc.1",
     "@deckdeckgo/slide-split": "^1.0.0-rc.1",
     "@deckdeckgo/slide-title": "^1.0.0-rc.1",
