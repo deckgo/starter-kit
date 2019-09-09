@@ -1,3 +1,11 @@
+<a name="1.0.0-rc.1-4"></a>
+# [1.0.0-rc.1-4](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.1-3...v1.0.0-rc.1-4) (2019-09-09)
+
+### Fix
+
+* workaround to resize `ion-app`
+* fix slide gif height
+
 <a name="1.0.0-rc.1-3"></a>
 # [1.0.0-rc.1-3](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.1-2...v1.0.0-rc.1-3) (2019-09-04)
 
