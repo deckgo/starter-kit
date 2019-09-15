@@ -224,6 +224,16 @@
     </ion-content>
 
     <ion-fab vertical="bottom" horizontal="end" slot="fixed" id="navigation">
+        <button id="play" onclick="playPause('play', true)" class="navigation ion-activatable" style="display: none;">
+            <ion-ripple-effect></ion-ripple-effect>
+            <ion-icon name="play" aria-label="Play video" style="font-size: 1.4em;"></ion-icon>
+        </button>
+
+        <button id="pause" onclick="playPause('pause', true)" class="navigation ion-activatable" style="display: none;">
+            <ion-ripple-effect></ion-ripple-effect>
+            <ion-icon name="pause" aria-label="Pause video" style="font-size: 1.4em;"></ion-icon>
+        </button>
+
         <button onclick="previousSlide()" class="navigation ion-activatable">
             <ion-ripple-effect></ion-ripple-effect>
             <ion-icon name="arrow-back" aria-label="Previous slide" style="font-size: 1.4em;"></ion-icon>

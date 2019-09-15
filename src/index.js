@@ -29,6 +29,7 @@ import './scripts/menu.js';
 import './scripts/history.js';
 import './scripts/fullscreen.js';
 import './scripts/resize.js';
+import './scripts/actionPlayPause.js';
 
 import { defineCustomElements as ionicElements } from '@ionic/core/loader';
 ionicElements(window);
