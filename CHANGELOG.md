@@ -1,3 +1,10 @@
+<a name="1.0.0-rc.2"></a>
+# [1.0.0-rc.2](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.1-4...v1.0.0-rc.2) (2019-09-15)
+
+### Features
+
+* add `play` and `pause` for videos
+
 <a name="1.0.0-rc.1-4"></a>
 # [1.0.0-rc.1-4](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.1-3...v1.0.0-rc.1-4) (2019-09-09)
 
