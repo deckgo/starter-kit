@@ -1,4 +1,11 @@
 <a name="1.0.0-rc.2-1"></a>
+# [1.0.0-rc.2-2](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.2-1...v1.0.0-rc.2-2) (2019-09-16)
+
+### Fix
+
+* wrong animated tag selection
+
+<a name="1.0.0-rc.2-1"></a>
 # [1.0.0-rc.2-1](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.2...v1.0.0-rc.2-1) (2019-09-16)
 
 ### Templates
