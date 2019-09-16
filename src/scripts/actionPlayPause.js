@@ -13,7 +13,7 @@ playPause = (action, forwardToRemote) => {
 
         if (!actionSlideElement ||
             (actionSlideElement.tagName !== 'deckgo-slide-youtube'.toUpperCase() &&
-                actionSlideElement.tagName !== 'deckgo-slide-big-img'.toUpperCase())) {
+                actionSlideElement.tagName !== 'deckgo-slide-video'.toUpperCase())) {
             resolve();
             return;
         }
