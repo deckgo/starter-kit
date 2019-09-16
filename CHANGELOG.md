@@ -1,3 +1,10 @@
+<a name="1.0.0-rc.2-1"></a>
+# [1.0.0-rc.2-1](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.2...v1.0.0-rc.2-1) (2019-09-16)
+
+### Templates
+
+* import and add new slide templates `big-img` and `video`
+
 <a name="1.0.0-rc.2"></a>
 # [1.0.0-rc.2](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.1-4...v1.0.0-rc.2) (2019-09-15)
 
