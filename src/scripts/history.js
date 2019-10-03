@@ -1,5 +1,12 @@
+const keepHistory = process.env.KEEP_HISTORY;
+
 postLoadingJumpTo = () => {
     return new Promise(async (resolve) => {
+        if (!keepHistory) {
+            resolve();
+            return;
+        }
+
         const slider = document.getElementById('slider');
 
         if (slider) {
@@ -14,6 +21,11 @@ postLoadingJumpTo = () => {
 
 initDeckHistoryWatch = () => {
     return new Promise(async (resolve) => {
+        if (!keepHistory) {
+            resolve();
+            return;
+        }
+
         const slider = document.getElementById('slider');
 
         if (slider) {
@@ -41,7 +53,7 @@ initDeckHistoryWatch = () => {
 };
 
 pushStateSlideIndex = async (slider) => {
-    if (!history) {
+    if (!history || !keepHistory) {
         return;
     }
 
@@ -56,6 +68,10 @@ pushStateSlideIndex = async (slider) => {
 };
 
 jumpToSlideIndexWithUrl = async (speed) => {
+    if (!keepHistory) {
+        return;
+    }
+
     const url = new URL(window.location.href);
     const index = url && url.searchParams ? url.searchParams.get('index') : -1;
 
