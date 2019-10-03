@@ -1,4 +1,15 @@
-<a name="1.0.0-rc.2-1"></a>
+<a name="1.0.0-rc.2-3"></a>
+# [1.0.0-rc.2-3](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.2-2...v1.0.0-rc.2-3) (2019-10-03)
+
+### Features
+
+* keep history only when while developing presentation ([#43](https://github.com/deckgo/deckdeckgo-starter/issues/43))
+
+### Fix
+
+* update webpack plugin for the notes
+
+<a name="1.0.0-rc.2-2"></a>
 # [1.0.0-rc.2-2](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.2-1...v1.0.0-rc.2-2) (2019-09-16)
 
 ### Fix
