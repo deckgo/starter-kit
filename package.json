@@ -1,6 +1,6 @@
 {
   "name": "deckdeckgo-starter",
-  "version": "1.0.0-rc.2-2",
+  "version": "1.0.0-rc.2-3",
   "description": "The Progressive Web App alternative for simple presentations",
   "homepage": "https://deckdeckgo.com",
   "scripts": {
