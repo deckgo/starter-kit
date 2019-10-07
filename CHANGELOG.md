@@ -1,3 +1,15 @@
+<a name="1.0.0-rc.3"></a>
+# [1.0.0-rc.3](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.2-3...v1.0.0-rc.3) (2019-10-07)
+
+### Features
+
+* load slide QR code in studio starter kit
+
+### Libs
+
+* update last DeckDeckgo libs
+* update @webcomponents/custom-elements
+
 <a name="1.0.0-rc.2-3"></a>
 # [1.0.0-rc.2-3](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.2-2...v1.0.0-rc.2-3) (2019-10-03)
 
