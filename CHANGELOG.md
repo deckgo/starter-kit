@@ -1,3 +1,10 @@
+<a name="1.0.0-rc.4"></a>
+# [1.0.0-rc.4](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.3...v1.0.0-rc.4) (In progress)
+
+### Features
+
+* update template split with `vertical` option
+
 <a name="1.0.0-rc.3"></a>
 # [1.0.0-rc.3](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.2-3...v1.0.0-rc.3) (2019-10-07)
 
