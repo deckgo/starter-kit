@@ -1,3 +1,10 @@
+<a name="1.0.0-rc.4-1"></a>
+# [1.0.0-rc.4-1](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.4...v1.0.0-rc.4-1) (2019-10-20)
+
+### Fix
+
+* bar chart label ES5 compatibility
+
 <a name="1.0.0-rc.4"></a>
 # [1.0.0-rc.4](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.3...v1.0.0-rc.4) (2019-10-20)
 
