@@ -38,7 +38,6 @@ window.addEventListener('unload', () => {
     }
 
     if ('ResizeObserver' in window) {
-        console.log('here', resizerObserver);
         if (resizerObserver) {
             resizerObserver.unobserve(document.documentElement);
             resizerObserver.disconnect();

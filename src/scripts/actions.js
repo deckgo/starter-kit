@@ -75,8 +75,6 @@ initActionPlayPause = (deck) => {
             return;
         }
 
-        console.log('here', actionSlideElement, playButton);
-
         if (playButton) {
             playButton.style.display = 'initial';
         }
