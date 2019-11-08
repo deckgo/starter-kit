@@ -6,13 +6,13 @@ Cherry on the cake 🍒🎂 [DeckDeckGo] comes with a [Progressive Web App](http
 
 ## Table of contents
 
-- [Stater Kit](#stater-kit)
+- [Starter Kit](#starter-kit)
 - [Getting Started](#getting-started)
 - [Example](#example)
 - [Develop](#develop)
 - [License](#license)
 
-## Stater Kit
+## Starter Kit
 
 This project is the starter kit of [DeckDeckGo].
 
