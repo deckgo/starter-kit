@@ -12,7 +12,7 @@ Cherry on the cake 🍒🎂 [DeckDeckGo] comes with a [Progressive Web App](http
 - [Develop](#develop)
 - [License](#license)
 
-## Stater Kit
+## Starter Kit
 
 This project is the starter kit of [DeckDeckGo].
 
