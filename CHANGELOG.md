@@ -1,3 +1,15 @@
+<a name="1.0.0-rc.5"></a>
+# [1.0.0-rc.5](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.4-2...v1.0.0-rc.5) (2019-11-10)
+
+### Features
+
+* sync the content with the remote
+* update events to match the new remote UX
+
+### Fix
+
+* typo and anchor
+
 <a name="1.0.0-rc.4-2"></a>
 # [1.0.0-rc.4-2](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.4-1...v1.0.0-rc.4-2) (2019-10-21)
 
