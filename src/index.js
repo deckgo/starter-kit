@@ -2,9 +2,6 @@ import '@ionic/core/css/ionic.bundle.css';
 
 import './css/variables.css';
 import './css/theme.css';
-import './css/deck.css';
-import './css/font.css';
-import './css/rtl.css';
 import './css/pager.css';
 import './css/modal.css';
 import './css/popover.css';
@@ -12,6 +9,10 @@ import './css/print.css';
 import './css/alert.css';
 import './css/img.css';
 import './css/button.css';
+
+import '../node_modules/@deckdeckgo/deck-utils/styles/deckdeckgo-deck.css';
+import '../node_modules/@deckdeckgo/deck-utils/styles/deckdeckgo-deck-fonts.css';
+import '../node_modules/@deckdeckgo/deck-utils/styles/deckdeckgo-deck-rtl.css';
 
 import '@webcomponents/custom-elements';
 
