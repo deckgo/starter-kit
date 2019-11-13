@@ -1,3 +1,10 @@
+<a name="1.0.0-rc.5-1"></a>
+# [1.0.0-rc.5-1](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.5...v1.0.0-rc.5-1) (2019-11-13)
+
+### Fix
+
+* fix notes displayed on template split
+
 <a name="1.0.0-rc.5"></a>
 # [1.0.0-rc.5](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.4-2...v1.0.0-rc.5) (2019-11-10)
 
