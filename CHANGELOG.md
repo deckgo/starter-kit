@@ -1,3 +1,10 @@
+<a name="1.0.0-rc.5-2"></a>
+# [1.0.0-rc.5-2](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.5-1...v1.0.0-rc.5-2) (2019-11-23)
+
+### Features
+
+- remove plugins not used for studio (related to studio issues [#355](https://github.com/deckgo/deckdeckgo/issues/355))
+
 <a name="1.0.0-rc.5-1"></a>
 # [1.0.0-rc.5-1](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.5...v1.0.0-rc.5-1) (2019-11-13)
 
