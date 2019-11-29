@@ -61,7 +61,7 @@ module.exports = (env, argv) => {
             ignoreURLParametersMatching: [/./],
 
             runtimeCaching: [{
-                urlPattern: new RegExp(/.*\.(?:png|jpg|jpeg|svg|webp|gif)/),
+                urlPattern: new RegExp(/^(?!.*giphy)(?=.*(?:png|jpg|jpeg|svg|webp|gif)).*/),
                 handler: 'CacheFirst',
                 options: {
                     cacheName: 'images',
@@ -69,7 +69,17 @@ module.exports = (env, argv) => {
                         maxEntries: 60,
                         maxAgeSeconds: 30 * 24 * 60 * 60 // 30 days
                     },
-                },
+                }
+            },{
+                urlPattern: new RegExp(/^(?=.*giphy)(?=.*(?:png|jpg|jpeg|svg|webp|gif)).*/),
+                handler: 'StaleWhileRevalidate',
+                options: {
+                    cacheName: 'images',
+                    expiration: {
+                        maxEntries: 60,
+                        maxAgeSeconds: 30 * 24 * 60 * 60 // 30 days
+                    },
+                }
             }]
         }));
         plugins.push(new DeckDeckGoInfoPlugin());
