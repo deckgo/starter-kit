@@ -58,7 +58,19 @@ module.exports = (env, argv) => {
 
     if (argv.mode === 'production') {
         plugins.push(new GenerateSW({
-            ignoreURLParametersMatching: [/./]
+            ignoreURLParametersMatching: [/./],
+
+            runtimeCaching: [{
+                urlPattern: new RegExp(/.*\.(?:png|jpg|jpeg|svg|webp|gif)/),
+                handler: 'CacheFirst',
+                options: {
+                    cacheName: 'images',
+                    expiration: {
+                        maxEntries: 60,
+                        maxAgeSeconds: 30 * 24 * 60 * 60 // 30 days
+                    },
+                },
+            }]
         }));
         plugins.push(new DeckDeckGoInfoPlugin());
 
