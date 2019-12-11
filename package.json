@@ -1,6 +1,6 @@
 {
   "name": "deckdeckgo-starter",
-  "version": "1.0.0-rc.6-1",
+  "version": "1.0.0-rc.6-2",
   "description": "The Progressive Web App alternative for simple presentations",
   "homepage": "https://deckdeckgo.com",
   "scripts": {
@@ -23,9 +23,9 @@
   },
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
-    "concurrently": "^5.0.0",
-    "copy-webpack-plugin": "^5.0.5",
-    "css-loader": "^3.2.1",
+    "concurrently": "^5.0.1",
+    "copy-webpack-plugin": "^5.1.0",
+    "css-loader": "^3.3.0",
     "deckdeckgo-webpack-plugins": "^1.0.0-rc.2-1",
     "file-loader": "^5.0.2",
     "html-webpack-plugin": "^4.0.0-beta.11",
@@ -39,7 +39,7 @@
   "license": "MIT",
   "dependencies": {
     "@deckdeckgo/charts": "^1.0.0-rc.5",
-    "@deckdeckgo/core": "^1.0.0-rc.2-1",
+    "@deckdeckgo/core": "^1.0.0-rc.3-3",
     "@deckdeckgo/deck-utils": "^1.0.0-rc.2",
     "@deckdeckgo/highlight-code": "^1.0.0-rc.1-3",
     "@deckdeckgo/lazy-img": "^1.0.0-rc.2-1",
