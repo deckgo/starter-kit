@@ -1,3 +1,11 @@
+<a name="1.0.0-rc.6-5"></a>
+# [1.0.0-rc.6-5](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.6-4...v1.0.0-rc.6-5) (2020-01-04)
+
+### Features
+
+* use new component `<deckgo-social/>`
+* update `author` slide ("flex-wrap")
+
 <a name="1.0.0-rc.6-4"></a>
 # [1.0.0-rc.6-4](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.6-3...v1.0.0-rc.6-4) (2019-12-13)
 
