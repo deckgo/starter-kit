@@ -1,3 +1,10 @@
+<a name="1.0.0-rc.6-7"></a>
+# [1.0.0-rc.6-7](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.6-6...v1.0.0-rc.6-7) (2020-01-08)
+
+### Features
+
+* use new component `<deckgo-youtube/>`
+
 <a name="1.0.0-rc.6-6"></a>
 # [1.0.0-rc.6-5](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.6-5...v1.0.0-rc.6-6) (2020-01-05)
 
