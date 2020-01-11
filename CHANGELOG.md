@@ -1,3 +1,15 @@
+<a name="1.0.0-rc.6-8"></a>
+# [1.0.0-rc.6-8](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.6-7...v1.0.0-rc.6-8) (2020-01-11)
+
+### Features
+
+* swipe slides with Tab
+
+### Fix
+
+* `<deckgo-lazy-img/>` lazy load correctly `svg`
+* `<deckgo-youtube/>` component was not correctly loaded
+
 <a name="1.0.0-rc.6-7"></a>
 # [1.0.0-rc.6-7](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.6-6...v1.0.0-rc.6-7) (2020-01-08)
 
