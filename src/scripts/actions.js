@@ -18,6 +18,10 @@ initActions = () => {
             slider.addEventListener('slideToChange', async (event) => {
                 await initActionPlayPause(slider);
             });
+
+            document.addEventListener('keydown', async ($event) => {
+                await handleTabOnKeydown($event, slider);
+            });
         }
 
         resolve();
@@ -81,6 +85,30 @@ initActionPlayPause = (deck) => {
 
         if (pauseButton) {
             pauseButton.style.display = 'none';
+        }
+
+        resolve();
+    });
+};
+
+function handleTabOnKeydown($event, slider) {
+    return new Promise(async (resolve) => {
+        if (!$event || !slider) {
+            resolve();
+            return;
+        }
+
+        if  ($event.code !== 'Tab') {
+            resolve();
+            return;
+        }
+
+        $event.preventDefault();
+
+        if ($event.shiftKey) {
+            await slider.slidePrev();
+        } else {
+            await slider.slideNext();
         }
 
         resolve();
