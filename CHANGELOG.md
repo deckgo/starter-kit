@@ -1,3 +1,10 @@
+<a name="1.0.0-rc.6-9"></a>
+# [1.0.0-rc.6-9](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.6-8...v1.0.0-rc.6-9) (2020-01-20)
+
+### Features
+
+* attach click event after load (avoid inline scripts)
+
 <a name="1.0.0-rc.6-8"></a>
 # [1.0.0-rc.6-8](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.6-7...v1.0.0-rc.6-8) (2020-01-11)
 
