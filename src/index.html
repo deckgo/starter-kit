@@ -224,7 +224,7 @@
 
             <!-- END: Edit your slides -->
 
-            <a slot="actions" href="#" onclick="openMenu(event)" style="color: inherit;"><ion-icon name="more"></ion-icon></a>
+            <button slot="actions" style="color: inherit; outline: none;"><ion-icon name="more"></ion-icon></button>
 
         </deckgo-deck>
 
@@ -233,32 +233,32 @@
     </ion-content>
 
     <ion-fab vertical="bottom" horizontal="end" slot="fixed" id="navigation">
-        <button id="play" onclick="playPause('play', true)" class="navigation ion-activatable" style="display: none;">
+        <button id="play" class="navigation ion-activatable" style="display: none;">
             <ion-ripple-effect></ion-ripple-effect>
             <ion-icon name="play" aria-label="Play video" style="font-size: 1.4em;"></ion-icon>
         </button>
 
-        <button id="pause" onclick="playPause('pause', true)" class="navigation ion-activatable" style="display: none;">
+        <button id="pause" class="navigation ion-activatable" style="display: none;">
             <ion-ripple-effect></ion-ripple-effect>
             <ion-icon name="pause" aria-label="Pause video" style="font-size: 1.4em;"></ion-icon>
         </button>
 
-        <button onclick="previousSlide()" class="navigation ion-activatable">
+        <button id="previous" class="navigation ion-activatable">
             <ion-ripple-effect></ion-ripple-effect>
             <ion-icon name="arrow-back" aria-label="Previous slide" style="font-size: 1.4em;"></ion-icon>
         </button>
 
-        <button onclick="nextSlide()" class="navigation ion-activatable">
+        <button id="next" class="navigation ion-activatable">
             <ion-ripple-effect></ion-ripple-effect>
             <ion-icon name="arrow-forward" aria-label="Next slide" style="font-size: 1.4em;"></ion-icon>
         </button>
 
-        <button onclick="presentSlidePicker()" class="navigation ion-activatable">
+        <button id="slidePicker" class="navigation ion-activatable">
             <ion-ripple-effect></ion-ripple-effect>
             <ion-icon name="list" md="md-list" ios="md-list" aria-label="Jump to a particular slide" style="font-size: 1.4em;"></ion-icon>
         </button>
 
-        <button onclick="toggleFullScreen()" class="navigation ion-activatable hide-on-mobile">
+        <button id="fullScreen" class="navigation ion-activatable hide-on-mobile">
             <ion-ripple-effect></ion-ripple-effect>
             <ion-icon name="expand" aria-label="Full screen" style="font-size: 1.4em;"></ion-icon>
         </button>
