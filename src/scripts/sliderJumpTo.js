@@ -40,7 +40,7 @@ function getSlideTitle(slide, index) {
         return 'Slide ' + (index + 1);
     }
 
-    const title = slide.querySelector('[slot="title"]');
+    const title = slide.querySelector('[slot="title"],[slot="question"]');
 
     if (title && title.textContent !== '') {
         return title.textContent;
