@@ -1,6 +1,10 @@
 <a name="1.0.0-rc.6-9"></a>
 # [1.0.0-rc.6-9](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.6-8...v1.0.0-rc.6-9) (2020-01-20)
 
+### Fix
+
+* add "question" to list of titles for jump to slides
+
 ### Features
 
 * attach click event after load (avoid inline scripts)
