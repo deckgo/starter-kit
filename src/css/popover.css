@@ -9,8 +9,16 @@ ion-popover ion-list-header {
 
 ion-popover ion-item {
     --color: var(--ion-color-dark);
+    --inner-border-width: 0;
 }
 
 ion-popover[class*="sc-ion-popover"] {
-    --width: 280px;
+    --min-width: 60vw;
+    --height: 60vh;
+}
+
+ion-popover ion-list.list-ios {
+    margin-bottom: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }

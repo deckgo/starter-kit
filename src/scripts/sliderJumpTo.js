@@ -7,7 +7,7 @@ class SlidesList extends HTMLElement {
 
         const slidesListActions = await buildSlidesListActions();
 
-        this.innerHTML = '<ion-content><ion-list><ion-list-header>Jump to slide</ion-list-header>' + slidesListActions + '</ion-list></ion-content>';
+        this.innerHTML = '<ion-list><ion-list-header>Jump to slide</ion-list-header>' + slidesListActions + '</ion-list>';
     }
 }
 
