@@ -1,3 +1,18 @@
+<a name="1.0.0-rc.7"></a>
+# [1.0.0-rc.7](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.6-9...v1.0.0-rc.7) (2020-02-14)
+
+### Features
+
+* upgrade to Ionic v5
+* style "jump to slide" popover
+* add share to Hacker News
+* menu icon size
+
+### Fix
+
+* actions color
+* avoid inline script
+
 <a name="1.0.0-rc.6-9"></a>
 # [1.0.0-rc.6-9](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.6-8...v1.0.0-rc.6-9) (2020-01-20)
 
