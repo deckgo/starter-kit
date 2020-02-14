@@ -1,8 +1,4 @@
 displayRemoteControl = async () => {
-    // initialize controller
-    const modalController = document.querySelector('ion-modal-controller');
-    await modalController.componentOnReady();
-
     // create component to open
     const element = document.createElement('div');
     element.innerHTML = `
@@ -23,26 +19,26 @@ displayRemoteControl = async () => {
   </ion-content>
   `;
 
+    const modal = document.createElement('ion-modal');
+    modal.component = element;
+
+    document.body.appendChild(modal);
+
+    // present the modal
+    await modal.present();
+
     // listen for close event
-    const button = element.querySelector('ion-button');
+    const button = document.querySelector('ion-modal ion-button');
     button.addEventListener('click', async () => {
-        await modalController.dismiss();
+        await document.querySelector('ion-modal').dismiss();
     });
 
     // listen to toggle
-    const toggleElement = element.querySelector('ion-toggle');
+    const toggleElement = document.querySelector('ion-modal ion-toggle');
 
     if (toggleElement) {
         toggleElement.addEventListener('ionChange', $event => { handleRemoteControlState($event) });
     }
-
-    // create the modal
-    const modalElement = await modalController.create({
-        component: element
-    });
-
-    // present the modal
-    await modalElement.present();
 };
 
 handleRemoteControlState = ($event) => {
