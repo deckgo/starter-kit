@@ -7,7 +7,7 @@ class SlidesList extends HTMLElement {
 
         const slidesListActions = await buildSlidesListActions();
 
-        this.innerHTML = '<ion-list><ion-list-header>Jump to slide</ion-list-header>' + slidesListActions + '</ion-list>';
+        this.innerHTML = '<ion-content><ion-list><ion-list-header>Jump to slide</ion-list-header>' + slidesListActions + '</ion-list></ion-content>';
     }
 }
 
@@ -24,7 +24,7 @@ buildSlidesListActions = () => {
                 if (slide.tagName && slide.tagName.toLowerCase().indexOf('deckgo-slide') > -1) {
                     const text = getSlideTitle(slide, i);
 
-                    result += '<ion-item ion-item button color="primary"><ion-label>' + text + '</ion-label></ion-item>';
+                    result += '<ion-item ion-item button onclick="jumpToSlide(' + i + ')" color="primary"><ion-label>' + text + '</ion-label></ion-item>';
 
                     i++;
                 }
@@ -63,46 +63,18 @@ function getSlideTitle(slide, index) {
 
 jumpToSlide = async (index) => {
     await document.getElementById('slider').slideTo(index, 0);
-    await document.querySelector('ion-popover-controller').dismiss();
+    await document.querySelector('ion-popover').dismiss();
 };
 
 customElements.define('slides-list', SlidesList);
 
 presentSlidePicker = async () => {
-    const popoverController = document.querySelector('ion-popover-controller');
+    const popover = document.createElement('ion-popover');
+    popover.component = 'slides-list';
+    popover.translucent = true;
+    popover.cssClass = 'menu';
 
-    if (!popoverController) {
-        return;
-    }
+    document.body.appendChild(popover);
 
-    await popoverController.componentOnReady();
-
-    const popover = await popoverController.create({
-        component: 'slides-list',
-        translucent: true
-    });
-
-    await popover.present();
-
-    await bindSlidesListActions();
-};
-
-
-bindSlidesListActions = () => {
-    return new Promise(async (resolve) => {
-        if (!document) {
-            resolve();
-            return;
-        }
-
-        const items = document.querySelectorAll('slides-list ion-item.ion-activatable');
-
-        if (items) {
-            items.forEach((item, index) => {
-                item.addEventListener('click', async () => await jumpToSlide(index), true);
-            });
-        }
-
-        resolve();
-    });
+    return await popover.present();
 };

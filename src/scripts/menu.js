@@ -15,9 +15,9 @@ buildMenuListActions = () => {
     return new Promise(async (resolve) => {
         let result = '';
 
-        result += '<ion-item ion-item button detail="false" onclick="displaySlideNotes()" color="primary" style="--border-style: none;"><ion-icon name="clipboard" aria-label="Display slide notes" slot="end"></ion-icon><ion-label>Display slide notes</ion-label></ion-item>';
-        result += '<ion-item ion-item button detail="false" onclick="displayRemoteControl()" color="primary" style="--border-style: none;"><ion-icon name="phone-portrait" aria-label="Remote control" slot="end"></ion-icon><ion-label>Remote control</ion-label></ion-item>';
-        result += '<ion-item ion-item button detail="false" onclick="openShare()" color="primary" style="--border-style: none;"><ion-icon name="share" aria-label="Share this presentation" slot="end"></ion-icon><ion-label>Share</ion-label></ion-item>';
+        result += '<ion-item ion-item button detail="false" onclick="displaySlideNotes()" color="primary" style="--border-style: none;"><ion-icon name="clipboard-outline" aria-label="Display slide notes" slot="end"></ion-icon><ion-label>Display slide notes</ion-label></ion-item>';
+        result += '<ion-item ion-item button detail="false" onclick="displayRemoteControl()" color="primary" style="--border-style: none;"><ion-icon name="phone-portrait-outline" aria-label="Remote control" slot="end"></ion-icon><ion-label>Remote control</ion-label></ion-item>';
+        result += '<ion-item ion-item button detail="false" onclick="openShare()" color="primary" style="--border-style: none;"><ion-icon name="share-outline" aria-label="Share this presentation" slot="end"></ion-icon><ion-label>Share</ion-label></ion-item>';
         result += '<ion-item ion-item button detail="false" onclick="openLink(\'https://deckdeckgo.com\')" style="--border-style: none; --ion-item-background: white;"><ion-icon src="/assets/icons/deckdeckgo.svg" aria-label="DeckDeckGo" slot="end"></ion-icon><ion-label>Created with DeckDeckGo</ion-label></ion-item>';
 
         resolve(result);
@@ -29,26 +29,19 @@ customElements.define('menu-list', MenuList);
 openMenu = async (ev) => {
     ev.preventDefault();
 
-    const popoverController = document.querySelector('ion-popover-controller');
+    const popover = document.createElement('ion-popover');
+    popover.component = 'menu-list';
+    popover.translucent = true;
+    popover.event = ev;
 
-    if (!popoverController) {
-        return;
-    }
-
-    await popoverController.componentOnReady();
-
-    const popover = await popoverController.create({
-        component: 'menu-list',
-        translucent: true,
-        event: ev
-    });
+    document.body.appendChild(popover);
 
     await popover.present();
 };
 
 openLink = async (link) => {
     window.open(link, '_blank');
-    await document.querySelector('ion-popover-controller').dismiss();
+    await document.querySelector('ion-popover').dismiss();
 };
 
 
@@ -59,7 +52,7 @@ openShare = async () => {
         await shareDesktop();
     }
 
-    await document.querySelector('ion-popover-controller').dismiss();
+    await document.querySelector('ion-popover').dismiss();
 };
 
 function shareMobile() {
