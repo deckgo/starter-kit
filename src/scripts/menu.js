@@ -104,6 +104,10 @@ function shareDesktop() {
                 whatsapp: {
                     socialShareUrl: shareUrl
                 }
+            },{
+                hackernews: {
+                    socialShareUrl: shareUrl
+                }
             }]
         };
 
