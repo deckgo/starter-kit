@@ -55,6 +55,7 @@ import {defineCustomElements as deckDeckGoSlideQRCodeElements } from '@deckdeckg
 import {defineCustomElements as deckDeckGoSlideBigImgElements } from '@deckdeckgo/slide-big-img/dist/loader';
 import {defineCustomElements as deckDeckGoSlideVideoElements } from '@deckdeckgo/slide-video/dist/loader';
 import {defineCustomElements as deckDeckGoSlidePollElements } from '@deckdeckgo/slide-poll/dist/loader';
+import {defineCustomElements as deckDeckGoSlideAspectRatioElements } from '@deckdeckgo/slide-aspect-ratio/dist/loader';
 
 import { defineCustomElements as deckDeckGoRemoteElements } from '@deckdeckgo/remote/dist/loader';
 import { defineCustomElements as deckDeckGoChartsElements } from '@deckdeckgo/charts/dist/loader';
@@ -63,6 +64,7 @@ import { defineCustomElements as deckDeckGoHighlightCodeElements } from '@deckde
 import { defineCustomElements as deckDeckGoLazyImgElements } from '@deckdeckgo/lazy-img/dist/loader';
 import { defineCustomElements as deckDeckGoSocialElements } from '@deckdeckgo/social/dist/loader';
 import { defineCustomElements as deckDeckGoYoutubeElements } from '@deckdeckgo/youtube/dist/loader';
+import { defineCustomElements as deckDeckGoDragResizeRotateElements } from '@deckdeckgo/drag-resize-rotate/dist/loader';
 
 // Init web-social-share
 import { defineCustomElements as webSocialShareElements } from 'web-social-share/dist/loader';
@@ -74,6 +76,7 @@ deckDeckGoElements(window).then(async () => {
     await deckDeckGoLazyImgElements(window);
     await deckDeckGoSocialElements(window);
     await deckDeckGoYoutubeElements(window);
+    await deckDeckGoDragResizeRotateElements(window);
 
     const promises = [];
 
@@ -90,6 +93,7 @@ deckDeckGoElements(window).then(async () => {
     promises.push(deckDeckGoSlideBigImgElements(window));
     promises.push(deckDeckGoSlideVideoElements(window));
     promises.push(deckDeckGoSlidePollElements(window));
+    promises.push(deckDeckGoSlideAspectRatioElements(window));
 
     await Promise.all(promises);
 
