@@ -1,3 +1,12 @@
+<a name="1.0.0-rc.8"></a>
+# [1.0.0-rc.8](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.7...v1.0.0-rc.8) (2020-02-27)
+
+### Features
+
+* new template `<deckgo-slide-aspect-ratio/>`
+* new Web Component `<deckgo-drag-resize-rotate/>`
+* add social share to Hacker News
+
 <a name="1.0.0-rc.7"></a>
 # [1.0.0-rc.7](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.6-9...v1.0.0-rc.7) (2020-02-14)
 
