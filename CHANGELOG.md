@@ -1,3 +1,15 @@
+<a name="1.0.0-rc.8-1"></a>
+# [1.0.0-rc.8-1](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.8...v1.0.0-rc.8-1) (2020-03-09)
+
+### Features
+
+* service worker cache unsplash
+
+### Fix
+
+* template author social logo spacing
+* drag, resize and rotate improved (rotation reliability)
+
 <a name="1.0.0-rc.8"></a>
 # [1.0.0-rc.8](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.7...v1.0.0-rc.8) (2020-02-27)
 
