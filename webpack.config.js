@@ -61,7 +61,7 @@ module.exports = (env, argv) => {
             ignoreURLParametersMatching: [/./],
 
             runtimeCaching: [{
-                urlPattern: new RegExp(/^(?!.*giphy)(?=.*(?:png|jpg|jpeg|svg|webp|gif)).*/),
+                urlPattern: new RegExp(/^(?!.*(?:unsplash|giphy|firebasestorage))(?=.*(?:png|jpg|jpeg|svg|webp|gif)).*/),
                 handler: 'CacheFirst',
                 options: {
                     cacheName: 'images',
@@ -71,7 +71,7 @@ module.exports = (env, argv) => {
                     },
                 }
             },{
-                urlPattern: new RegExp(/^(?=.*giphy)(?=.*(?:png|jpg|jpeg|svg|webp|gif)).*/),
+                urlPattern: new RegExp(/^(?=.*(?:unsplash|giphy|firebasestorage))(?=.*(?:png|jpg|jpeg|svg|webp|gif)).*/),
                 handler: 'StaleWhileRevalidate',
                 options: {
                     cacheName: 'images',
