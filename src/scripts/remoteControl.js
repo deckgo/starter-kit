@@ -144,7 +144,7 @@ function initRemoteRoomServer($event) {
         }
 
         // SIGNALING_SERVER is declared by Webpack, see webpack.config.js
-        deckgoRemoteElement.server = process.env.SIGNALING_SERVER;
+        deckgoRemoteElement.socketUrl = process.env.SIGNALING_SERVER;
 
         resolve();
     });
