@@ -22,3 +22,23 @@ button.navigation ion-icon {
 button.navigation.hide-on-mobile {
     display: var(--deckgo-hide-on-mobile);
 }
+
+button.navigation.transparent, button.navigation.tertiary {
+    box-shadow: none;
+    width: 60px;
+    height: 60px;
+}
+
+button.navigation.transparent ion-icon, button.navigation.tertiary ion-icon {
+    font-size: 36px;
+}
+
+button.navigation.transparent {
+    border: 1px solid var(--ion-color-dark);
+}
+
+button.navigation.tertiary {
+    border: 1px solid var(--ion-color-tertiary);
+    background: var(--ion-color-tertiary);
+    color: var(--ion-color-tertiary-contrast);
+}

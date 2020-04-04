@@ -10,6 +10,7 @@ initButtons = () => {
         document.getElementById('next').addEventListener('click', nextSlide);
         document.getElementById('slidePicker').addEventListener('click', presentSlidePicker);
         document.getElementById('fullScreen').addEventListener('click', toggleFullScreen);
+        document.getElementById('remote').addEventListener('click', openRemote);
 
         const deck = document.getElementById('slider');
 
