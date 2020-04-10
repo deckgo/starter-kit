@@ -5,8 +5,12 @@ openRemote = async ($event) => {
     const connected = window.remoteState > 0 && window.remoteState < 4;
 
     if (connected && window.pendingRemoteRequests && window.pendingRemoteRequests.length > 0) {
-        await closeRemote();
-        await askAccess($event);
+        const popover = document.querySelector('ion-popover.access');
+
+        if  (!popover) {
+            await closeRemote();
+            await askAccess($event);
+        }
     } else {
         await displayRemote($event, connected);
     }
@@ -192,6 +196,11 @@ async function grantRemoteConnection() {
 
 async function nextPendingRequests($event) {
     if (!window.pendingRemoteRequests || window.pendingRemoteRequests.length <= 0) {
+        return;
+    }
+
+    // If we are connected no need to browse next pending requests
+    if (window.remoteState === 3) {
         return;
     }
 
