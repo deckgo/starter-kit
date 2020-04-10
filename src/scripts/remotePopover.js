@@ -154,7 +154,7 @@ function getRemoteControlRequest() {
 
     return `<p style="margin: 0; font-size: 16px;">Grant access to remote <strong>${request.message}</strong>?</p>
 
-    <div class="actions" style="display: flex; justify-content: center; align-content: center">
+    <div class="actions" style="display: flex; justify-content: center; align-content: center;">
         <button class="navigation ion-activatable transparent dismiss">
           <ion-ripple-effect></ion-ripple-effect>
           <ion-icon name="close"></ion-icon>
