@@ -45,7 +45,7 @@
     "@deckdeckgo/highlight-code": "^1.0.0-rc.3-2",
     "@deckdeckgo/lazy-img": "^1.0.0",
     "@deckdeckgo/qrcode": "^1.0.0",
-    "@deckdeckgo/remote": "^1.0.0",
+    "@deckdeckgo/remote": "^1.1.0",
     "@deckdeckgo/slide-aspect-ratio": "^1.0.0",
     "@deckdeckgo/slide-author": "^1.0.0",
     "@deckdeckgo/slide-big-img": "^1.0.0",

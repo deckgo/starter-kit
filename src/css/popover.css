@@ -3,6 +3,10 @@ ion-popover {
     --ion-item-text-color: var(--ion-color-dark);
 }
 
+ion-popover[class*="sc-ion-popover"] div.popover-content {
+    color: var(--ion-color-dark);
+}
+
 ion-popover ion-list-header {
     --color: var(--ion-color-dark);
 }
@@ -15,6 +19,19 @@ ion-popover ion-item {
 ion-popover[class*="sc-ion-popover"].menu {
     --min-width: 60vw;
     --height: 60vh;
+}
+
+ion-popover[class*="sc-ion-popover"].options {
+    --min-width: 300px;
+}
+
+ion-popover[class*="sc-ion-popover"].access {
+    --min-width: 260px;
+}
+
+ion-popover[class*="sc-ion-popover"].info {
+    --width: 300px;
+    --max-width: calc(100vw - 64px);
 }
 
 ion-popover.menu ion-list.list-ios {
