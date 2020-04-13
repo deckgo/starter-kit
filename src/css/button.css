@@ -9,6 +9,9 @@ button.navigation {
     height: 40px;
     contain: strict;
     outline:none;
+
+    position: relative;
+    overflow: hidden;
 }
 
 button.navigation.activated {
