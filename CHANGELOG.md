@@ -1,3 +1,45 @@
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0...v2.0.0) (2020-04-13)
+
+### Breaking Changes
+
+We have updated the [Remote Control](https://deckdeckgo.com) in order to make the presenter grant any remote connections.
+
+This has for goal, if you would have the remote option enabled, to make your content accessible only if you would accept it.
+
+This is a breaking changes and therefore your deck has to be updated, if you want to continue to use the remote.
+
+How to migrate:
+
+1. Update `package.json` to reflect the dependencies update of this repo
+
+2. Run `npm install`
+
+3. Overwrite the following files with these from this repo:
+
+- [button.css](src/css/button.css)
+- [popover.css](src/css/popover.css)
+
+- [buttons.js](src/scripts/buttons.js)
+- [menu.js](src/scripts/menu.js)
+- [remoteControl.js](src/scripts/remoteControl.js)
+- [remotePopover.js](src/scripts/remotePopover.js) (new script)
+
+- [index.js](src/buttons.js)
+
+4. Delete the following script:
+
+- [modalRemoteControl.js](src/scripts/modalRemoteControl.js)
+
+5. Add a new remote button as in [index.html](src/index.html)
+
+```
+<button id="remote" class="navigation ion-activatable">
+    <ion-ripple-effect></ion-ripple-effect>
+    <ion-icon name="phone-portrait-outline" aria-label="Open Remote" style="font-size: 1.4em;"></ion-icon>
+</button>
+```
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0-rc.8-1...v1.0.0) (2020-03-19)
 
