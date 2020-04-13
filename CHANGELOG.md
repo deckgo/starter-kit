@@ -1,3 +1,10 @@
+<a name="2.0.1"></a>
+# [2.0.1](https://github.com/deckgo/deckdeckgo-starter/compare/v2.0.0...v2.0.1) (2020-04-13)
+
+### Fix
+
+- service worker cache Tenor and other opaque assets
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/deckgo/deckdeckgo-starter/compare/v1.0.0...v2.0.0) (2020-04-13)
 
