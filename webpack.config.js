@@ -61,7 +61,7 @@ module.exports = (env, argv) => {
             ignoreURLParametersMatching: [/./],
 
             runtimeCaching: [{
-                urlPattern: new RegExp(/^(?!.*(?:unsplash|giphy|firebasestorage))(?=.*(?:png|jpg|jpeg|svg|webp|gif)).*/),
+                urlPattern: new RegExp(/^(?!.*(?:unsplash|giphy|tenor|firebasestorage))(?=.*(?:png|jpg|jpeg|svg|webp|gif)).*/),
                 handler: 'CacheFirst',
                 options: {
                     cacheName: 'images',
@@ -71,14 +71,17 @@ module.exports = (env, argv) => {
                     },
                 }
             },{
-                urlPattern: new RegExp(/^(?=.*(?:unsplash|giphy|firebasestorage))(?=.*(?:png|jpg|jpeg|svg|webp|gif)).*/),
+                urlPattern: new RegExp(/^(?=.*(?:unsplash|giphy|tenor|firebasestorage))(?=.*(?:png|jpg|jpeg|svg|webp|gif)).*/),
                 handler: 'StaleWhileRevalidate',
                 options: {
-                    cacheName: 'images',
+                    cacheName: 'cors-images',
                     expiration: {
                         maxEntries: 60,
                         maxAgeSeconds: 30 * 24 * 60 * 60 // 30 days
                     },
+                    cacheableResponse: {
+                        statuses: [0, 200]
+                    }
                 }
             }]
         }));
