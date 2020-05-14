@@ -45,6 +45,7 @@
     "@deckdeckgo/drag-resize-rotate": "^1.0.2",
     "@deckdeckgo/highlight-code": "^1.0.5",
     "@deckdeckgo/lazy-img": "^1.0.1",
+    "@deckdeckgo/math": "^1.0.1",
     "@deckdeckgo/qrcode": "^1.0.1",
     "@deckdeckgo/remote": "^1.1.1",
     "@deckdeckgo/slide-aspect-ratio": "^1.0.1",

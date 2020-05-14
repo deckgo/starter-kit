@@ -3,6 +3,7 @@
 
 ### Features
 
+- add new component `math`
 - update all DeckDeckGo libs
 
 <a name="2.2.0"></a>
