@@ -3,6 +3,7 @@
 
 ### Features
 
+- theming for the code highlighter (terminal carbon)
 - update `copy-webpack-plugin`
 
 <a name="2.3.0"></a>
