@@ -1,3 +1,10 @@
+<a name="2.4.0"></a>
+# [2.4.0](https://github.com/deckgo/deckdeckgo-starter/compare/v2.3.0...v2.4.0) (2020-05-21)
+
+### Features
+
+- update `copy-webpack-plugin`
+
 <a name="2.3.0"></a>
 # [2.3.0](https://github.com/deckgo/deckdeckgo-starter/compare/v2.2.0...v2.3.0) (2020-05-14)
 
