@@ -1,3 +1,10 @@
+<a name="2.4.1"></a>
+# [2.4.1](https://github.com/deckgo/deckdeckgo-starter/compare/v2.4.0...v2.4.1) (2020-05-29)
+
+### Fix
+
+- correct slide QR code size calculation 
+
 <a name="2.4.0"></a>
 # [2.4.0](https://github.com/deckgo/deckdeckgo-starter/compare/v2.3.0...v2.4.0) (2020-05-21)
 
