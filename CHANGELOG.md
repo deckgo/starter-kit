@@ -1,3 +1,10 @@
+<a name="2.5.0"></a>
+# [2.5.0](https://github.com/deckgo/deckdeckgo-starter/compare/v2.4.1...v2.5.0) (2020-06-05)
+
+### Features
+
+- template `playground`
+
 <a name="2.4.1"></a>
 # [2.4.1](https://github.com/deckgo/deckdeckgo-starter/compare/v2.4.0...v2.4.1) (2020-05-29)
 
