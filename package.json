@@ -24,7 +24,7 @@
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "concurrently": "^5.2.0",
-    "copy-webpack-plugin": "^6.0.1",
+    "copy-webpack-plugin": "^6.0.2",
     "css-loader": "^3.5.3",
     "deckdeckgo-webpack-plugins": "^1.0.0",
     "file-loader": "^6.0.0",
