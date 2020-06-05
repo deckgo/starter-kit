@@ -55,6 +55,7 @@ import {defineCustomElements as deckDeckGoSlideBigImgElements } from '@deckdeckg
 import {defineCustomElements as deckDeckGoSlideVideoElements } from '@deckdeckgo/slide-video/dist/loader';
 import {defineCustomElements as deckDeckGoSlidePollElements } from '@deckdeckgo/slide-poll/dist/loader';
 import {defineCustomElements as deckDeckGoSlideAspectRatioElements } from '@deckdeckgo/slide-aspect-ratio/dist/loader';
+import {defineCustomElements as deckDeckGoSlidePlaygroundElements } from '@deckdeckgo/slide-playground/dist/loader';
 
 import { defineCustomElements as deckDeckGoRemoteElements } from '@deckdeckgo/remote/dist/loader';
 import { defineCustomElements as deckDeckGoChartsElements } from '@deckdeckgo/charts/dist/loader';
@@ -97,6 +98,7 @@ deckDeckGoElements().then(async () => {
     promises.push(deckDeckGoSlideVideoElements());
     promises.push(deckDeckGoSlidePollElements());
     promises.push(deckDeckGoSlideAspectRatioElements());
+    promises.push(deckDeckGoSlidePlaygroundElements());
 
     await Promise.all(promises);
 
