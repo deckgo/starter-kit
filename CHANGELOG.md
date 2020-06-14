@@ -1,3 +1,10 @@
+<a name="2.5.2"></a>
+# [2.5.2](https://github.com/deckgo/deckdeckgo-starter/compare/v2.5.1...v2.5.2) (2020-06-14)
+
+### Style
+
+- improve `<deckgo-highlight-code/>` line numbers background and color
+
 <a name="2.5.1"></a>
 # [2.5.1](https://github.com/deckgo/deckdeckgo-starter/compare/v2.5.0...v2.5.1) (2020-06-13)
 
