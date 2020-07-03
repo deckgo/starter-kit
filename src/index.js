@@ -35,9 +35,6 @@ import './scripts/remotePopover.js';
 import { defineCustomElements as ionicElements } from '@ionic/core/loader';
 ionicElements();
 
-import { defineCustomElements as ioniconsElements } from 'ionicons/dist/loader';
-ioniconsElements();
-
 // Init DeckDeckGo elements
 import { defineCustomElements as deckDeckGoElements } from '@deckdeckgo/core/dist/loader';
 

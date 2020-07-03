@@ -1,3 +1,14 @@
+<a name="2.5.3"></a>
+# [2.5.3](https://github.com/deckgo/deckdeckgo-starter/compare/v2.5.2...v2.5.3) (2020-07-03)
+
+### Features
+
+- remove `ionicons` dependency as included in `@ionic/core`
+
+### Style
+
+- update `<deckgo-highlight-code/>` with default overflow y set to `auto`
+
 <a name="2.5.2"></a>
 # [2.5.2](https://github.com/deckgo/deckdeckgo-starter/compare/v2.5.1...v2.5.2) (2020-06-14)
 
