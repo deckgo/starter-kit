@@ -1,3 +1,18 @@
+<a name="2.6.0"></a>
+# [2.6.0](https://github.com/deckgo/deckdeckgo-starter/compare/v2.5.3...v2.6.0) (2020-07-12)
+
+### Features
+
+- introduces the support of `header` and `footer`
+
+### Style
+
+- navigation and action buttons align vertically on smaller devices
+
+### Fix
+
+- play and pause video binding
+
 <a name="2.5.3"></a>
 # [2.5.3](https://github.com/deckgo/deckdeckgo-starter/compare/v2.5.2...v2.5.3) (2020-07-03)
 

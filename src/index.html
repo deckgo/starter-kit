@@ -165,8 +165,8 @@
 
             <deckgo-slide-gif style="background: white;" src="https://media.giphy.com/media/xUA7baWfTjfHGLZc3e/giphy.gif" alt="Template for gif" fullscreen="true">
                 <h1 slot="title">Gif template</h1>
-                <h1 slot="header" style="font-weight: 300; --background: white; --color: var(--ion-color-dark);">Or this template...</h1>
-                <h2 slot="footer" style="font-weight: 300; --background: white; --color: var(--ion-color-dark);">...for GIFs</h2>
+                <h1 slot="top" style="font-weight: 300; --background: white; --color: var(--ion-color-dark);">Or this template...</h1>
+                <h2 slot="bottom" style="font-weight: 300; --background: white; --color: var(--ion-color-dark);">...for GIFs</h2>
             </deckgo-slide-gif>
 
             <deckgo-slide-poll>
@@ -231,6 +231,14 @@
             </deckgo-slide-title>
 
             <!-- END: Edit your slides -->
+
+            <!-- BEGIN: Edit header, footer or background cloned automatically to each slides at runtime -->
+
+            <div slot="footer">
+                <deckgo-social twitter="deckdeckgo"><ion-icon name="logo-twitter" aria-label="Twitter" style="color: #00aced; font-size: 1.4em;" slot="icon">@deckdeckgo</deckgo-social>
+            </div>
+
+            <!-- END: Edit header, footer or background -->
 
             <button slot="actions" style="color: inherit; outline: none; background: transparent; border-color: transparent; font-size: 1.6rem;"><ion-icon ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon></button>
 
