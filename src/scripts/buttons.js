@@ -4,8 +4,8 @@ initButtons = () => {
     }
 
     document.addEventListener('DOMContentLoaded', async () => {
-        document.getElementById('play').addEventListener('click', playPause('play', true));
-        document.getElementById('pause').addEventListener('click', playPause('pause', true));
+        document.getElementById('play').addEventListener('click', videoStart);
+        document.getElementById('pause').addEventListener('click', videoPause);
         document.getElementById('previous').addEventListener('click', previousSlide);
         document.getElementById('next').addEventListener('click', nextSlide);
         document.getElementById('slidePicker').addEventListener('click', presentSlidePicker);

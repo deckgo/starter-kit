@@ -1,3 +1,11 @@
+videoStart = async () => {
+    return playPause('play', true);
+}
+
+videoPause = async () => {
+    return playPause('pause', true);
+}
+
 playPause = (action, forwardToRemote) => {
     return new Promise(async (resolve) => {
         const deck = document.getElementById('slider');
