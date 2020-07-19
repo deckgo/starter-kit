@@ -1,3 +1,10 @@
+<a name="2.6.1"></a>
+# [2.6.1](https://github.com/deckgo/deckdeckgo-starter/compare/v2.6.0...v2.6.1) (2020-07-19)
+
+### Features
+
+- update component drag, drop and resize with text support
+
 <a name="2.6.0"></a>
 # [2.6.0](https://github.com/deckgo/deckdeckgo-starter/compare/v2.5.3...v2.6.0) (2020-07-12)
 
