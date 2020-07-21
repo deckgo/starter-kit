@@ -1,3 +1,11 @@
+<a name="2.6.2"></a>
+# [2.6.2](https://github.com/deckgo/deckdeckgo-starter/compare/v2.6.1...v2.6.2) (2020-07-21)
+
+### Features
+
+- update `deck-utils` to spread `font-weight` in titles children
+- drag and drop improvements
+
 <a name="2.6.1"></a>
 # [2.6.1](https://github.com/deckgo/deckdeckgo-starter/compare/v2.6.0...v2.6.1) (2020-07-19)
 
