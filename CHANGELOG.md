@@ -1,3 +1,11 @@
+<a name="2.6.3"></a>
+# [2.6.3](https://github.com/deckgo/deckdeckgo-starter/compare/v2.6.2...v2.6.3) (2020-08-06)
+
+### Features
+
+- remove resize hack for Chrome 77
+- update dependencies
+
 <a name="2.6.2"></a>
 # [2.6.2](https://github.com/deckgo/deckdeckgo-starter/compare/v2.6.1...v2.6.2) (2020-07-21)
 
