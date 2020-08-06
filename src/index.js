@@ -28,7 +28,6 @@ import './scripts/actions.js';
 import './scripts/menu.js';
 import './scripts/history.js';
 import './scripts/fullscreen.js';
-import './scripts/resize.js';
 import './scripts/actionPlayPause.js';
 import './scripts/remotePopover.js';
 
