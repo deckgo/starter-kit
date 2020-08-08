@@ -2,7 +2,6 @@ import '@ionic/core/css/ionic.bundle.css';
 
 import './css/variables.css';
 import './css/theme.css';
-import './css/pager.css';
 import './css/modal.css';
 import './css/popover.css';
 import './css/print.css';

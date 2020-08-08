@@ -1,3 +1,11 @@
+<a name="2.6.4"></a>
+# [2.6.4](https://github.com/deckgo/deckdeckgo-starter/compare/v2.6.3...v2.6.4) (2020-08-08)
+
+### Features
+
+- pager hidden per default
+- update highlight-code dependency
+
 <a name="2.6.3"></a>
 # [2.6.3](https://github.com/deckgo/deckdeckgo-starter/compare/v2.6.2...v2.6.3) (2020-08-06)
 
