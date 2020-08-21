@@ -1,3 +1,10 @@
+<a name="2.6.5"></a>
+# [2.6.5](https://github.com/deckgo/deckdeckgo-starter/compare/v2.6.4...v2.6.5) (2020-08-21)
+
+### Features
+
+- update `web-social-share` and `@deckdeckgo/highlight-code`
+
 <a name="2.6.4"></a>
 # [2.6.4](https://github.com/deckgo/deckdeckgo-starter/compare/v2.6.3...v2.6.4) (2020-08-08)
 
