@@ -31,6 +31,10 @@ const config = {
                 loader: 'url-loader?limit=100000'
             }
         ]
+    },
+    devServer: {
+        open: true,
+        port: 3000
     }
 };
 

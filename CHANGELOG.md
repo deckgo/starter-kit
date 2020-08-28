@@ -4,6 +4,7 @@
 ### Features
 
 - repo renamed from `deckdeckgo-starter` to `starter-kit`
+- use webpack-dev-server
 
 ### Fix
 
