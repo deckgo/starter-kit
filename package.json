@@ -1,5 +1,5 @@
 {
-  "name": "deckdeckgo-starter",
+  "name": "starter-kit",
   "version": "3.0.0",
   "description": "The Progressive Web App alternative for simple presentations",
   "homepage": "https://deckdeckgo.com",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/deckgo/deckdeckgo-starter.git"
+    "url": "git://github.com/deckgo/starter-kit.git"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",

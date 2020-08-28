@@ -1,8 +1,6 @@
 # DeckDeckGo - Starter Kit
 
-Create a PWA presentation using Web Components, [Ionic](http://ionicframework.com) components and HTML or Markdown 🚀
-
-Cherry on the cake 🍒🎂 [DeckDeckGo] comes with a [Progressive Web App](https://deckdeckgo.app) to remote control your slides 📱
+The Progressive Web App alternative for simple presentations.
 
 ## Table of contents
 
@@ -14,7 +12,7 @@ Cherry on the cake 🍒🎂 [DeckDeckGo] comes with a [Progressive Web App](http
 
 ## Starter Kit
 
-This project is the starter kit of [DeckDeckGo].
+This project is the developer kit of [DeckDeckGo].
 
 Its master branch contains the `HTML` starter kit. The markdown branch is the `Markdown` one.
 
@@ -24,7 +22,7 @@ Start you new presentation by following the quick  👉 [Getting Started guide](
 
 ## Example
    
-The [DeckDeckGo website](https://github.com/deckgo/deckdeckgo-website) is a full featured presentation developed with [DeckDeckGo].
+This [demo](https://github.com/deckgo/demo) is a full featured presentation developed with this kit.
 
 ## Develop
 
