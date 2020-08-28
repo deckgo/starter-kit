@@ -29,8 +29,8 @@ This [demo](https://github.com/deckgo/demo) is a full featured presentation deve
 To develop and run this starter kit locally, proceed as following:
 
 ```
-git clone https://github.com/deckgo/deckdeckgo-starter
-cd deckdeckgo-starter
+git clone https://github.com/deckgo/starter-kit
+cd starter-kit
 npm install
 npm run start
 ```
