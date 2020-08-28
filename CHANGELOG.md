@@ -1,3 +1,10 @@
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/deckgo/deckdeckgo-starter/compare/v2.6.5...v3.0.0) (2020-08-28)
+
+### Fix
+
+- local Google Fonts not loaded
+
 <a name="2.6.5"></a>
 # [2.6.5](https://github.com/deckgo/deckdeckgo-starter/compare/v2.6.4...v2.6.5) (2020-08-21)
 
