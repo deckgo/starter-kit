@@ -32,6 +32,7 @@
     "lite-server": "^2.5.4",
     "progress-bar-webpack-plugin": "^2.1.0",
     "style-loader": "^1.2.1",
+    "url-loader": "^4.1.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "workbox-webpack-plugin": "^5.1.3"
