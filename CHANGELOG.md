@@ -1,3 +1,10 @@
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/deckgo/starter-kit/compare/v3.0.0...v4.0.0) (2020-09-03)
+
+### Breaking Changes
+
+- E11, Edge 16-18 and Safari 10 not supported
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/deckgo/starter-kit/compare/v2.6.5...v3.0.0) (2020-08-28)
 
