@@ -5,6 +5,11 @@
 
 - E11, Edge 16-18 and Safari 10 not supported
 
+### Features
+
+- update all dependencies including all DeckDeckGo Web Components build with Stencil v2
+- remove Custom Elements (v1) Polyfill
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/deckgo/starter-kit/compare/v2.6.5...v3.0.0) (2020-08-28)
 

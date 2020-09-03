@@ -12,8 +12,6 @@ import './css/button.css';
 import '../node_modules/@deckdeckgo/deck-utils/css/deck.css';
 import '../node_modules/@deckdeckgo/deck-utils/css/fullscreen.css';
 
-import '@webcomponents/custom-elements';
-
 import * as manifestData from './manifest.json';
 window.ROOM_NAME = manifestData.name;
 

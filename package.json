@@ -63,7 +63,6 @@
     "@deckdeckgo/social": "^3.0.0",
     "@deckdeckgo/youtube": "^2.0.0",
     "@ionic/core": "^5.3.2",
-    "@webcomponents/custom-elements": "^1.4.2",
     "web-social-share": "^6.4.1"
   },
   "keywords": [
