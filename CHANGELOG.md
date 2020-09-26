@@ -3,7 +3,7 @@
 
 ### Features
 
-- introduce animation direction `vertical` and `papyrus
+- introduce animation direction `vertical` and `papyrus`
 - isMobile has been deprecated as a deck method
 
 <a name="4.0.0"></a>
