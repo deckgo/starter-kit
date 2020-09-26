@@ -6,7 +6,7 @@ export const initActions = () => {
 
         if (slider) {
             slider.addEventListener('slidesDidLoad', async (_slides) => {
-                await initActionButtons(slider)
+                await initActionButtons()
             });
 
             slider.addEventListener('slideNextDidChange', async () => {
@@ -30,7 +30,7 @@ export const initActions = () => {
     });
 };
 
-function initActionButtons(slider) {
+function initActionButtons() {
     return new Promise(async (resolve) => {
         const ionFab = document.querySelector('ion-fab');
 
