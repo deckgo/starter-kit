@@ -21,12 +21,13 @@ import './scripts/slider.js';
 import './scripts/sliderJumpTo.js';
 import './scripts/modalNotes.js';
 import './scripts/remoteControl.js';
-import './scripts/actions.js';
 import './scripts/menu.js';
 import './scripts/history.js';
 import './scripts/fullscreen.js';
 import './scripts/actionPlayPause.js';
 import './scripts/remotePopover.js';
+
+import {initActions} from './scripts/actions.js';
 
 import { defineCustomElements as ionicElements } from '@ionic/core/loader';
 ionicElements();

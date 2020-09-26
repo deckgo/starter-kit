@@ -1,10 +1,12 @@
-initActions = () => {
+import {isMobile} from '@deckdeckgo/utils';
+
+export const initActions = () => {
     return new Promise(async (resolve) => {
         const slider = document.getElementById('slider');
 
         if (slider) {
             slider.addEventListener('slidesDidLoad', async (_slides) => {
-                await initActionButtons(slider)
+                await initActionButtons()
             });
 
             slider.addEventListener('slideNextDidChange', async () => {
@@ -28,12 +30,12 @@ initActions = () => {
     });
 };
 
-function initActionButtons(slider) {
+function initActionButtons() {
     return new Promise(async (resolve) => {
         const ionFab = document.querySelector('ion-fab');
 
         if (ionFab) {
-            const mobile = await slider.isMobile();
+            const mobile = isMobile();
 
             if (mobile) {
                 ionFab.style.setProperty('--deckgo-hide-on-mobile', 'none');
@@ -54,7 +56,7 @@ function initActionButtons(slider) {
     });
 }
 
-initActionPlayPause = (deck) => {
+const initActionPlayPause = (deck) => {
     return new Promise(async (resolve) => {
         const playButton = document.getElementById('play');
         const pauseButton = document.getElementById('pause');

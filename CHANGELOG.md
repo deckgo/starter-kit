@@ -1,3 +1,11 @@
+<a name="5.0.0"></a>
+# [5.0.0](https://github.com/deckgo/starter-kit/compare/v4.0.0...v5.0.0) (2020-09-26)
+
+### Features
+
+- introduce animation direction `vertical` and `papyrus`
+- isMobile has been deprecated as a deck method
+
 <a name="4.0.0"></a>
 # [4.0.0](https://github.com/deckgo/starter-kit/compare/v3.0.0...v4.0.0) (2020-09-03)
 
