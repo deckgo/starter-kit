@@ -11,7 +11,6 @@ export const initReload = () => {
       toast.buttons = [
         {
           text: "Reload",
-          icon: "refresh-circle-outline",
           handler: () => {
             registration.waiting.postMessage("skipWaiting");
             window.location.reload();
