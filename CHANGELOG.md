@@ -1,3 +1,10 @@
+<a name="5.1.0"></a>
+# [5.1.0](https://github.com/deckgo/starter-kit/compare/v5.0.0...v5.1.0) (2020-10-06)
+
+### Features
+
+- prompt user to reload when a new version is available
+
 <a name="5.0.0"></a>
 # [5.0.0](https://github.com/deckgo/starter-kit/compare/v4.0.0...v5.0.0) (2020-09-26)
 
