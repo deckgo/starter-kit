@@ -29,6 +29,9 @@ import './scripts/remotePopover.js';
 
 import {initActions} from './scripts/actions.js';
 
+import {initReload} from "./scripts/reload";
+initReload();
+
 import { defineCustomElements as ionicElements } from '@ionic/core/loader';
 ionicElements();
 
