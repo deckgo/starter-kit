@@ -1,3 +1,10 @@
+<a name="5.2.0"></a>
+# [5.2.0](https://github.com/deckgo/starter-kit/compare/v5.1.0...v5.2.0) (2020-10-11)
+
+### Features
+
+- import `@deckdeckgo/word-cloud` component
+
 <a name="5.1.0"></a>
 # [5.1.0](https://github.com/deckgo/starter-kit/compare/v5.0.0...v5.1.0) (2020-10-06)
 
