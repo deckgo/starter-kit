@@ -28,7 +28,10 @@ const config = {
             },
             {
                 test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-                loader: 'url-loader?limit=100000'
+                loader: 'url-loader',
+                options: {
+                    limit: 100000
+                }
             }
         ]
     },
@@ -95,7 +98,7 @@ module.exports = (env, argv) => {
                 }
             }]
         }));
-        plugins.push(new DeckDeckGoInfoPlugin());
+                plugins.push(new DeckDeckGoInfoPlugin());
 
         if (!argv.notes) {
             plugins.push(new DeckDeckGoRemoveNotesPlugin());

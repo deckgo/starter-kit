@@ -10,10 +10,10 @@ import './css/img.css';
 import './css/button.css';
 
 import '../node_modules/@deckdeckgo/deck-utils/css/deck.css';
-import '../node_modules/@deckdeckgo/deck-utils/css/fullscreen.css';
 
-import * as manifestData from './manifest.json';
-window.ROOM_NAME = manifestData.name;
+import manifest from './manifest.json';
+const { name } = manifest;
+window.ROOM_NAME = name;
 
 import './scripts/buttons.js';
 import './scripts/loading.js';
