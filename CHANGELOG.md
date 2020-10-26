@@ -1,3 +1,11 @@
+<a name="6.0.0"></a>
+# [6.0.0](https://github.com/deckgo/starter-kit/compare/v5.2.0...v6.0.0) (2020-10-26)
+
+### Breaking Changes
+
+- the base font size is responsive and calculated according window height and applied automatically on the deck
+- Webpack v5
+
 <a name="5.2.0"></a>
 # [5.2.0](https://github.com/deckgo/starter-kit/compare/v5.1.0...v5.2.0) (2020-10-11)
 
