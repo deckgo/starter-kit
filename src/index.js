@@ -60,6 +60,7 @@ import { defineCustomElements as deckDeckGoQRCodeElements } from '@deckdeckgo/qr
 import { defineCustomElements as deckDeckGoHighlightCodeElements } from '@deckdeckgo/highlight-code/dist/loader';
 import { defineCustomElements as deckDeckGoLazyImgElements } from '@deckdeckgo/lazy-img/dist/loader';
 import { defineCustomElements as deckDeckGoSocialElements } from '@deckdeckgo/social/dist/loader';
+import { defineCustomElements as deckDeckGoRevealElements } from '@deckdeckgo/reveal/dist/loader';
 import { defineCustomElements as deckDeckGoYoutubeElements } from '@deckdeckgo/youtube/dist/loader';
 import { defineCustomElements as deckDeckGoDragResizeRotateElements } from '@deckdeckgo/drag-resize-rotate/dist/loader';
 import { defineCustomElements as deckDeckGoDemoElements } from '@deckdeckgo/demo/dist/loader';
@@ -75,6 +76,7 @@ deckDeckGoElements().then(async () => {
     await deckDeckGoHighlightCodeElements();
     await deckDeckGoLazyImgElements();
     await deckDeckGoSocialElements();
+    await deckDeckGoRevealElements();
     await deckDeckGoYoutubeElements();
     await deckDeckGoDragResizeRotateElements();
     await deckDeckGoDemoElements();
