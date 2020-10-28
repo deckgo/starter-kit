@@ -1,5 +1,10 @@
+<a name="6.1.0"></a>
+# [6.1.0](https://github.com/deckgo/starter-kit/compare/v6.0.0...v6.1.0) (2020-10-28)
+
+- build: reveal standalone component
+
 <a name="6.0.0"></a>
-# [6.0.0](https://github.com/deckgo/starter-kit/compare/v5.2.0...v6.0.0) (2020-10-26)
+# [6.0.0](https://github.com/deckgo/starter-kit/compare/v5.2.0...v6.0.0) (2020-10-28)
 
 ### Breaking Changes
 
