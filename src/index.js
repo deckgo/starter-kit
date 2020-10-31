@@ -1,15 +1,9 @@
 import '@ionic/core/css/ionic.bundle.css';
 
 import './css/variables.css';
-import './css/theme.css';
-import './css/modal.css';
-import './css/popover.css';
-import './css/print.css';
-import './css/alert.css';
-import './css/img.css';
-import './css/button.css';
 
 import '../node_modules/@deckdeckgo/deck-utils/css/deck.css';
+import '../node_modules/@deckdeckgo/kit/css/kit.css';
 
 import {initReload, initButtons, initFullscreen, initActions, postLoading, initRemote, postLoadingJumpTo, initDeckHistoryWatch} from "@deckdeckgo/kit";
 
