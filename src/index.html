@@ -99,15 +99,8 @@
 <ion-app class="loading">
 
     <ion-menu id="ion-menu" side="start" type="overlay" swipeGesture="false" content-id="main">
-
         <ion-content>
-            <ion-list>
-                <ion-item>Menu Item</ion-item>
-                <ion-item>Menu Item</ion-item>
-                <ion-item>Menu Item</ion-item>
-                <ion-item>Menu Item</ion-item>
-                <ion-item>Menu Item</ion-item>
-            </ion-list>
+            <deckgo-chapters></deckgo-chapters>
         </ion-content>
     </ion-menu>
 
@@ -276,40 +269,40 @@
 
         </ion-content>
 
-        <ion-fab vertical="bottom" horizontal="end" slot="fixed" id="navigation">
+        <button id="previous" class="navigation ion-activatable animate">
+            <ion-ripple-effect></ion-ripple-effect>
+            <ion-icon name="chevron-back-outline" aria-label="Previous slide"></ion-icon>
+        </button>
+
+        <button id="next" class="navigation ion-activatable animate">
+            <ion-ripple-effect></ion-ripple-effect>
+            <ion-icon name="chevron-forward-outline" aria-label="Next slide"></ion-icon>
+        </button>
+
+        <ion-fab vertical="top" horizontal="end" slot="fixed" id="navigation">
             <button id="play" class="navigation ion-activatable" style="display: none;">
                 <ion-ripple-effect></ion-ripple-effect>
-                <ion-icon name="play" aria-label="Play video" style="font-size: 1.4em;"></ion-icon>
+                <ion-icon name="play" aria-label="Play video"></ion-icon>
             </button>
 
             <button id="pause" class="navigation ion-activatable" style="display: none;">
                 <ion-ripple-effect></ion-ripple-effect>
-                <ion-icon name="pause" aria-label="Pause video" style="font-size: 1.4em;"></ion-icon>
-            </button>
-
-            <button id="previous" class="navigation ion-activatable">
-                <ion-ripple-effect></ion-ripple-effect>
-                <ion-icon name="arrow-back" aria-label="Previous slide" style="font-size: 1.4em;"></ion-icon>
-            </button>
-
-            <button id="next" class="navigation ion-activatable">
-                <ion-ripple-effect></ion-ripple-effect>
-                <ion-icon name="arrow-forward" aria-label="Next slide" style="font-size: 1.4em;"></ion-icon>
+                <ion-icon name="pause" aria-label="Pause video"></ion-icon>
             </button>
 
             <button id="slidePicker" class="navigation ion-activatable">
                 <ion-ripple-effect></ion-ripple-effect>
-                <ion-icon src="https://deckdeckgo.com/assets/icons/ionicons/md-list.svg" aria-label="Jump to a particular slide" style="font-size: 1.4em;"></ion-icon>
+                <ion-icon src="https://deckdeckgo.com/assets/icons/ionicons/md-list.svg" aria-label="Jump to a particular slide"></ion-icon>
             </button>
 
             <button id="fullScreen" class="navigation ion-activatable hide-on-mobile">
                 <ion-ripple-effect></ion-ripple-effect>
-                <ion-icon name="contract-outline" aria-label="Exit full screen" style="font-size: 1.4em;"></ion-icon>
+                <ion-icon name="contract-outline" aria-label="Exit full screen"></ion-icon>
             </button>
 
             <button id="remote" class="navigation ion-activatable">
                 <ion-ripple-effect></ion-ripple-effect>
-                <ion-icon name="phone-portrait-outline" aria-label="Open Remote" style="font-size: 1.4em;"></ion-icon>
+                <ion-icon name="phone-portrait-outline" aria-label="Open Remote"></ion-icon>
             </button>
         </ion-fab>
 
