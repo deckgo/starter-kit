@@ -119,10 +119,6 @@
                 </ion-buttons>
                 <ion-title>{{DECKDECKGO_TITLE}}</ion-title>
                 <ion-buttons slot="end">
-                    <ion-button id="remote">
-                        <ion-icon name="phone-portrait-outline" aria-label="Open Remote"></ion-icon>
-                    </ion-button>
-
                     <ion-button id="deckMenu"><ion-icon ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon></ion-button>
                 </ion-buttons>
             </ion-toolbar>
@@ -308,7 +304,12 @@
 
             <button id="fullScreen" class="navigation ion-activatable hide-on-mobile">
                 <ion-ripple-effect></ion-ripple-effect>
-                <ion-icon name="expand" aria-label="Full screen" style="font-size: 1.4em;"></ion-icon>
+                <ion-icon name="contract-outline" aria-label="Exit full screen" style="font-size: 1.4em;"></ion-icon>
+            </button>
+
+            <button id="remote" class="navigation ion-activatable">
+                <ion-ripple-effect></ion-ripple-effect>
+                <ion-icon name="phone-portrait-outline" aria-label="Open Remote" style="font-size: 1.4em;"></ion-icon>
             </button>
         </ion-fab>
 
