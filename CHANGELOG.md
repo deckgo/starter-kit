@@ -5,6 +5,10 @@
 
 - improve lazy loading
 
+### Fix
+
+- remote request popover position
+
 <a name="7.0.0"></a>
 # [7.0.0](https://github.com/deckgo/starter-kit/compare/v6.1.0...v7.0.0) (2020-11-03)
 
