@@ -48,6 +48,7 @@ import { defineCustomElements as deckDeckGoYoutubeElements } from '@deckdeckgo/y
 import { defineCustomElements as deckDeckGoDragResizeRotateElements } from '@deckdeckgo/drag-resize-rotate/dist/loader';
 import { defineCustomElements as deckDeckGoDemoElements } from '@deckdeckgo/demo/dist/loader';
 import { defineCustomElements as deckDeckGoMathElements } from '@deckdeckgo/math/dist/loader';
+import { defineCustomElements as deckDeckGoMarkdownElements } from '@deckdeckgo/markdown/dist/loader';
 import { defineCustomElements as deckDeckGoWordCloudElements } from '@deckdeckgo/word-cloud/dist/loader';
 
 // Init web-social-share
@@ -64,6 +65,7 @@ deckDeckGoElements().then(async () => {
     await deckDeckGoDragResizeRotateElements();
     await deckDeckGoDemoElements();
     await deckDeckGoMathElements();
+    await deckDeckGoMarkdownElements();
     await deckDeckGoWordCloudElements();
 
     const promises = [];
