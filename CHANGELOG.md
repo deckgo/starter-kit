@@ -1,3 +1,11 @@
+<a name="7.1.0"></a>
+# [7.1.0](https://github.com/deckgo/starter-kit/compare/v7.0.1...v7.1.0) (2020-11-14)
+
+### Features
+
+- selectable text and clickable links
+- add markdown component
+
 <a name="7.0.0"></a>
 # [7.0.0](https://github.com/deckgo/starter-kit/compare/v7.0.0...v7.0.1) (2020-11-08)
 
