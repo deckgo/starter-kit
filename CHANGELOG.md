@@ -1,3 +1,10 @@
+<a name="7.1.1"></a>
+# [7.1.1](https://github.com/deckgo/starter-kit/compare/v7.1.0...v7.1.1) (2020-11-16)
+
+### Style
+
+- improve markdown style inheritance
+
 <a name="7.1.0"></a>
 # [7.1.0](https://github.com/deckgo/starter-kit/compare/v7.0.1...v7.1.0) (2020-11-14)
 
