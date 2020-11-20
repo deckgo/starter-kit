@@ -1,3 +1,10 @@
+<a name="7.1.2"></a>
+# [7.1.2](https://github.com/deckgo/starter-kit/compare/v7.1.1...v7.1.2) (2020-11-20)
+
+### Features
+
+- update markdown and code to unleash these in our editor
+
 <a name="7.1.1"></a>
 # [7.1.1](https://github.com/deckgo/starter-kit/compare/v7.1.0...v7.1.1) (2020-11-16)
 
