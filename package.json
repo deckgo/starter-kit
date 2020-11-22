@@ -1,6 +1,6 @@
 {
   "name": "starter-kit",
-  "version": "7.1.2",
+  "version": "7.1.3",
   "description": "The Progressive Web App alternative for simple presentations",
   "homepage": "https://deckdeckgo.com",
   "scripts": {
@@ -43,7 +43,7 @@
     "@deckdeckgo/highlight-code": "^2.2.1",
     "@deckdeckgo/kit": "^2.0.2",
     "@deckdeckgo/lazy-img": "^3.0.0",
-    "@deckdeckgo/markdown": "^2.0.0",
+    "@deckdeckgo/markdown": "^2.0.1",
     "@deckdeckgo/math": "^2.0.3",
     "@deckdeckgo/qrcode": "^2.0.1",
     "@deckdeckgo/remote": "^2.0.1",
@@ -65,7 +65,7 @@
     "@deckdeckgo/slide-video": "^2.2.2",
     "@deckdeckgo/slide-youtube": "^2.2.2",
     "@deckdeckgo/social": "^4.0.0",
-    "@deckdeckgo/utils": "^1.3.0",
+    "@deckdeckgo/utils": "^1.7.0",
     "@deckdeckgo/word-cloud": "^1.0.5",
     "@deckdeckgo/youtube": "^2.0.1",
     "@ionic/core": "^5.5.0",

@@ -1,3 +1,10 @@
+<a name="7.1.3"></a>
+# [7.1.3](https://github.com/deckgo/starter-kit/compare/v7.1.2...v7.1.3) (2020-11-22)
+
+### Build
+
+- update utils
+
 <a name="7.1.2"></a>
 # [7.1.2](https://github.com/deckgo/starter-kit/compare/v7.1.1...v7.1.2) (2020-11-20)
 
