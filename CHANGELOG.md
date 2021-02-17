@@ -1,3 +1,10 @@
+<a name="7.1.5"></a>
+# [7.1.5](https://github.com/deckgo/starter-kit/compare/v7.1.4...v7.1.5) (2021-02-17)
+
+### Fix
+
+- support custom templates name
+
 <a name="7.1.4"></a>
 # [7.1.4](https://github.com/deckgo/starter-kit/compare/v7.1.3...v7.1.4) (2021-01-26)
 
