@@ -25,6 +25,7 @@
     "deckdeckgo-webpack-plugins": "^2.0.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",
+    "prettier": "^2.2.1",
     "progress-bar-webpack-plugin": "^2.1.0",
     "style-loader": "^2.0.0",
     "url-loader": "^4.1.1",
