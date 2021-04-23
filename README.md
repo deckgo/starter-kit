@@ -18,10 +18,10 @@ Its master branch contains the `HTML` starter kit. The markdown branch is the `M
 
 ## Getting Started
 
-Start you new presentation by following the quick  👉 [Getting Started guide](https://docs.deckdeckgo.com/docs) 👈
+Start you new presentation by following the quick 👉 [Getting Started guide](https://docs.deckdeckgo.com/docs) 👈
 
 ## Example
-   
+
 This [demo](https://github.com/deckgo/demo) is a full featured presentation developed with this kit.
 
 ## Develop
@@ -39,4 +39,4 @@ npm run start
 
 MIT © [David Dal Busco](mailto:david.dalbusco@outlook.com) and [Nicolas Mattia](nicolas@nmattia.com)
 
-[DeckDeckGo]: https://deckdeckgo.com
+[deckdeckgo]: https://deckdeckgo.com

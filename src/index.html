@@ -41,19 +41,19 @@
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', async () => {
           try {
-            const reg = await navigator.serviceWorker.register('service-worker.js')
+            const reg = await navigator.serviceWorker.register('service-worker.js');
             reg.onupdatefound = () => {
-              const installingWorker = reg.installing
+              const installingWorker = reg.installing;
               installingWorker.onstatechange = () => {
                 if (installingWorker.state === 'installed') {
-                  window.dispatchEvent(new Event('swUpdate'))
+                  window.dispatchEvent(new Event('swUpdate'));
                 }
-              }
-            }
+              };
+            };
           } catch (e) {
-            console.warn('No service worker registered')
+            console.warn('No service worker registered');
           }
-        })
+        });
       }
     </script>
 
@@ -115,7 +115,7 @@
           </ion-toolbar>
         </ion-header>
 
-        <ion-content force-overscroll="false" style="position: relative; --overflow: hidden;">
+        <ion-content force-overscroll="false" style="position: relative; --overflow: hidden">
           <main>
             <deckgo-deck id="slider" embedded="true">
               <!-- BEGIN: Edit your slides -->
@@ -133,42 +133,49 @@
                 <p slot="content">The Progressive Web App alternative for simple presentations 🚀</p>
               </deckgo-slide-title>
 
-              <deckgo-slide-content style="--background: white; --color: var(--ion-color-tertiary); --ion-item-background: white;">
+              <deckgo-slide-content style="--background: white; --color: var(--ion-color-tertiary); --ion-item-background: white">
                 <h2 slot="title">Features</h2>
                 <ion-list slot="content" lines="none" padding-top>
-                  <ion-item style="--color: var(--ion-color-dark);">
+                  <ion-item style="--color: var(--ion-color-dark)">
                     <ion-label text-wrap>✏️ Edit your presentation with <strong>HTML</strong> or <strong>Markdown</strong></ion-label>
                   </ion-item>
 
-                  <ion-item style="--color: var(--ion-color-dark);">
+                  <ion-item style="--color: var(--ion-color-dark)">
                     <ion-label text-wrap>📰️ Use predefined <strong>templates</strong></ion-label>
                   </ion-item>
 
-                  <ion-item style="--color: var(--ion-color-dark);">
+                  <ion-item style="--color: var(--ion-color-dark)">
                     <ion-label text-wrap>🌈 <strong>Style</strong> your presentation quickly</ion-label>
                   </ion-item>
 
-                  <ion-item style="--color: var(--ion-color-dark);">
+                  <ion-item style="--color: var(--ion-color-dark)">
                     <ion-label text-wrap>🌅 Build for performance with <strong>lazy</strong> loaded content</ion-label>
                   </ion-item>
 
-                  <ion-item style="--color: var(--ion-color-dark);">
+                  <ion-item style="--color: var(--ion-color-dark)">
                     <ion-label text-wrap>🎁 Free and <strong>open source</strong></ion-label>
                   </ion-item>
                 </ion-list>
               </deckgo-slide-content>
 
               <deckgo-slide-split
-                style="color: var(--ion-color-tertiary); --slide-split-color-start: white; --slide-split-align: center; --slide-split-text-align: center; --slide-split-background-end: white; --slide-split-color-end: var(--ion-color-tertiary);"
+                style="
+                  color: var(--ion-color-tertiary);
+                  --slide-split-color-start: white;
+                  --slide-split-align: center;
+                  --slide-split-text-align: center;
+                  --slide-split-background-end: white;
+                  --slide-split-color-end: var(--ion-color-tertiary);
+                "
               >
                 <h1 slot="title">Progressive Web App</h1>
-                <p slot="start" style="color: var(--ion-color-dark);">
+                <p slot="start" style="color: var(--ion-color-dark)">
                   Publish your presentation as a <strong>Progressive Web App</strong> with <strong>offline</strong> support
                 </p>
-                <div slot="end" style="text-align: center; width: 100%;">
+                <div slot="end" style="text-align: center; width: 100%">
                   <img
                     data-src="https://deckdeckgo.com/assets/img/deckdeckgo-logo.svg"
-                    style="width: 20vw;"
+                    style="width: 20vw"
                     alt="Publish your presentation as a Progressive Web App with offline support"
                   />
                 </div>
@@ -177,7 +184,7 @@
               <deckgo-slide-split type="demo">
                 <h1 slot="title">Demo</h1>
                 <h3 slot="start">Showcase Your Interactive Apps</h3>
-                <deckgo-demo style="display: block;" slot="end" src="https://tietracker.com"></deckgo-demo>
+                <deckgo-demo style="display: block" slot="end" src="https://tietracker.com"></deckgo-demo>
               </deckgo-slide-split>
 
               <deckgo-slide-author img-src="https://secure.meetupstatic.com/photos/member/9/c/4/2/member_272620002.jpeg">
@@ -193,7 +200,7 @@
                   ><ion-icon alt="David on Linkedin" slot="icon" name="logo-linkedin"></ion-icon
                 ></deckgo-social>
                 <deckgo-social slot="social-link" medium="david.dalbusco"
-                  ><img style="width: 1em;" alt="David on Medium" slot="icon" src="https://deckdeckgo.com/assets/icons/medium.svg"
+                  ><img style="width: 1em" alt="David on Medium" slot="icon" src="https://deckdeckgo.com/assets/icons/medium.svg"
                 /></deckgo-social>
               </deckgo-slide-author>
 
@@ -204,20 +211,20 @@
                 animation="true"
                 src="https://raw.githubusercontent.com/deckgo/deckdeckgo/master/webcomponents/charts/showcase/data-line-multiple.csv"
                 ticks="5"
-                style="--background: white;--color: black;"
+                style="--background: white; --color: black"
               >
                 <h3 slot="title">Or the template for charts</h3>
               </deckgo-slide-chart>
 
               <deckgo-slide-gif
-                style="background: white;"
+                style="background: white"
                 src="https://media.giphy.com/media/xUA7baWfTjfHGLZc3e/giphy.gif"
                 alt="Template for gif"
                 fullscreen="true"
               >
                 <h1 slot="title">Gif template</h1>
-                <h1 slot="top" style="font-weight: 300; --background: white; --color: var(--ion-color-dark);">Or this template...</h1>
-                <h2 slot="bottom" style="font-weight: 300; --background: white; --color: var(--ion-color-dark);">...for GIFs</h2>
+                <h1 slot="top" style="font-weight: 300; --background: white; --color: var(--ion-color-dark)">Or this template...</h1>
+                <h2 slot="bottom" style="font-weight: 300; --background: white; --color: var(--ion-color-dark)">...for GIFs</h2>
               </deckgo-slide-gif>
 
               <deckgo-slide-poll>
@@ -231,11 +238,11 @@
 
               <deckgo-slide-title>
                 <h2 slot="title">Reveal</h2>
-                <p no-shadow slot="content" style="display: flex;">
-                  <deckgo-reveal style="width: auto;"
-                    ><span>A</span><span style="margin-left: 8px; margin-right: 8px;">journey</span
-                    ><span style="margin-right: 8px;">miles thousand a of</span
-                    ><span style="color: var(--ion-color-warning);" style="margin-right: 8px;"
+                <p no-shadow slot="content" style="display: flex">
+                  <deckgo-reveal style="width: auto"
+                    ><span>A</span><span style="margin-left: 8px; margin-right: 8px">journey</span
+                    ><span style="margin-right: 8px">miles thousand a of</span
+                    ><span style="color: var(--ion-color-warning)" style="margin-right: 8px"
                       ><strong>step single a with begins</strong> - </span
                     ><span>Laozi</span></deckgo-reveal
                   >
@@ -244,7 +251,7 @@
 
               <deckgo-slide-youtube
                 src="https://www.youtube.com/watch?v=3o3oGBTTRSs"
-                style="--background: white; --color: var(--ion-color-tertiary);"
+                style="--background: white; --color: var(--ion-color-tertiary)"
               >
                 <h2 slot="title">Remote Control</h2>
               </deckgo-slide-youtube>
@@ -253,7 +260,12 @@
                 terminal="carbon"
                 theme="one-light"
                 src="https://demo.deckdeckgo.com/assets/code/deckdeckgo-slide-code-example.txt"
-                style="--code-margin-bottom: 6rem; --background: var(--ion-color-dark); --color: var(--ion-color-light); --code-color: var(--ion-color-light);"
+                style="
+                  --code-margin-bottom: 6rem;
+                  --background: var(--ion-color-dark);
+                  --color: var(--ion-color-light);
+                  --code-color: var(--ion-color-light);
+                "
               >
                 <h2 slot="title">Showcase your code</h2>
               </deckgo-slide-code>
@@ -262,28 +274,24 @@
                 <h2 slot="title">Or your best playgrounds</h2>
               </deckgo-slide-playground>
 
-              <deckgo-slide-qrcode content="https://deckdeckgo.com" style="--deckgo-qrcode-color-fill: black;">
+              <deckgo-slide-qrcode content="https://deckdeckgo.com" style="--deckgo-qrcode-color-fill: black">
                 <h1 slot="title">QR Code</h1>
                 <p slot="content">Display a QR code to let your audience get your slides as a PWA without any delay</p>
               </deckgo-slide-qrcode>
 
-              <deckgo-slide-title style="--background: var(--ion-color-dark); --color: var(--ion-color-light);">
+              <deckgo-slide-title style="--background: var(--ion-color-dark); --color: var(--ion-color-light)">
                 <h2 slot="title">Get started now 🔥</h2>
                 <div slot="content">
-                  <div style="padding: 32px;">
-                    <code style="background-image: var(--ion-color-dark);" padding>
-                      $ npm init deckdeckgo
-                    </code>
+                  <div style="padding: 32px">
+                    <code style="background-image: var(--ion-color-dark)" padding> $ npm init deckdeckgo </code>
                   </div>
 
-                  <p style="margin-bottom: 0; margin-top: 16px; font-size: 0.5em;">
+                  <p style="margin-bottom: 0; margin-top: 16px; font-size: 0.5em">
                     Dive deeper with the <a href="https://docs.deckdeckgo.com">Getting Started guide</a>
                   </p>
 
-                  <p style="margin-bottom: 0; margin-top: 48px; font-size: 0.5em;">
-                    Created by David Dal Busco
-                  </p>
-                  <p no-margin no-padding style="font-size: 0.8em; margin-top: 8px;">
+                  <p style="margin-bottom: 0; margin-top: 48px; font-size: 0.5em">Created by David Dal Busco</p>
+                  <p no-margin no-padding style="font-size: 0.8em; margin-top: 8px">
                     <a href="https://twitter.com/daviddalbusco"><ion-icon name="logo-twitter"></ion-icon></a>
                     <a href="https://www.linkedin.com/in/david-dal-busco/"><ion-icon name="logo-linkedin"></ion-icon></a>
                   </p>
@@ -299,7 +307,7 @@
                   ><ion-icon
                     name="logo-twitter"
                     aria-label="Twitter"
-                    style="color: #00aced; font-size: 1.4em;"
+                    style="color: #00aced; font-size: 1.4em"
                     slot="icon"
                   />@deckdeckgo</deckgo-social
                 >
@@ -339,39 +347,37 @@
           </button>
         </ion-fab>
 
-        <web-social-share show="false" style="--web-social-share-backdrop-opacity: 0.5;">
+        <web-social-share show="false" style="--web-social-share-backdrop-opacity: 0.5">
           <ion-icon
             name="logo-twitter"
             aria-label="Twitter"
             slot="twitter"
-            style="color: #00aced; font-size: 1.6rem; display: block;"
+            style="color: #00aced; font-size: 1.6rem; display: block"
           ></ion-icon>
-          <ion-icon name="logo-reddit" aria-label="Reddit" slot="reddit" style="font-size: 1.6rem; display: block;"></ion-icon>
+          <ion-icon name="logo-reddit" aria-label="Reddit" slot="reddit" style="font-size: 1.6rem; display: block"></ion-icon>
           <ion-icon
             name="logo-linkedin"
             aria-label="Linkedin"
             slot="linkedin"
-            style="color: #0077b5; font-size: 1.6rem; display: block;"
+            style="color: #0077b5; font-size: 1.6rem; display: block"
           ></ion-icon>
-          <ion-icon name="mail" slot="email" aria-label="Email" style="color: #ff8ea3; font-size: 1.6rem; display: block;"></ion-icon>
+          <ion-icon name="mail" slot="email" aria-label="Email" style="color: #ff8ea3; font-size: 1.6rem; display: block"></ion-icon>
           <ion-icon
             name="logo-whatsapp"
             aria-label="WhatsApp"
             slot="whatsapp"
-            style="color: #25D366; font-size: 1.6rem; display: block;"
+            style="color: #25d366; font-size: 1.6rem; display: block"
           ></ion-icon>
           <ion-icon
             name="logo-hackernews"
             aria-label="Hacker News"
             slot="hackernews"
-            style="color: #ff6000; font-size: 1.6rem; display: block;"
+            style="color: #ff6000; font-size: 1.6rem; display: block"
           ></ion-icon>
         </web-social-share>
       </div>
     </ion-app>
 
-    <noscript>
-      Please enable Javascript to access this presentation.
-    </noscript>
+    <noscript> Please enable Javascript to access this presentation. </noscript>
   </body>
 </html>
