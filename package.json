@@ -1,6 +1,6 @@
 {
   "name": "starter-kit",
-  "version": "8.0.0",
+  "version": "8.1.0",
   "description": "The Progressive Web App alternative for simple presentations",
   "homepage": "https://deckdeckgo.com",
   "scripts": {
@@ -42,7 +42,8 @@
     "@deckdeckgo/demo": "^2.0.1",
     "@deckdeckgo/drag-resize-rotate": "^2.0.1",
     "@deckdeckgo/highlight-code": "^2.5.2",
-    "@deckdeckgo/kit": "^3.0.1",
+    "@deckdeckgo/kit": "^3.1.0",
+    "@deckdeckgo/laser-pointer": "^1.0.1",
     "@deckdeckgo/lazy-img": "^3.0.0",
     "@deckdeckgo/markdown": "^2.0.2",
     "@deckdeckgo/math": "^2.0.3",

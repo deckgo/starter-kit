@@ -59,6 +59,7 @@ import {defineCustomElements as deckDeckGoDemoElements} from '@deckdeckgo/demo/d
 import {defineCustomElements as deckDeckGoMathElements} from '@deckdeckgo/math/dist/loader';
 import {defineCustomElements as deckDeckGoMarkdownElements} from '@deckdeckgo/markdown/dist/loader';
 import {defineCustomElements as deckDeckGoWordCloudElements} from '@deckdeckgo/word-cloud/dist/loader';
+import {defineCustomElements as deckDeckGoLaserPointerElements} from '@deckdeckgo/laser-pointer/dist/loader';
 
 // Init web-social-share
 import {defineCustomElements as webSocialShareElements} from 'web-social-share/dist/loader';
@@ -76,6 +77,7 @@ deckDeckGoElements().then(async () => {
   await deckDeckGoMathElements();
   await deckDeckGoMarkdownElements();
   await deckDeckGoWordCloudElements();
+  await deckDeckGoLaserPointerElements();
 
   const promises = [];
 
