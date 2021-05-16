@@ -1,3 +1,11 @@
+<a name="8.2.0"></a>
+
+# [8.2.0](https://github.com/deckgo/starter-kit/compare/v8.1.0...v8.2.0) (2021-05-16)
+
+### Build
+
+- bump dependencies including DeckDeckGo "`esm` libraries"
+
 <a name="8.1.0"></a>
 
 # [8.1.0](https://github.com/deckgo/starter-kit/compare/v8.0.0...v8.1.0) (2021-04-23)
