@@ -36,7 +36,6 @@ import {defineCustomElements as deckDeckGoSlideAuthorElements} from '@deckdeckgo
 import {defineCustomElements as deckDeckGoSlideChartElements} from '@deckdeckgo/slide-chart/dist/loader';
 import {defineCustomElements as deckDeckGoSlideYoutubeElements} from '@deckdeckgo/slide-youtube/dist/loader';
 import {defineCustomElements as deckDeckGoSlideSplitElements} from '@deckdeckgo/slide-split/dist/loader';
-import {defineCustomElements as deckDeckGoSlideCodeElements} from '@deckdeckgo/slide-code/dist/loader';
 import {defineCustomElements as deckDeckGoSlideCountdownElements} from '@deckdeckgo/slide-countdown/dist/loader';
 import {defineCustomElements as deckDeckGoSlideGifElements} from '@deckdeckgo/slide-gif/dist/loader';
 import {defineCustomElements as deckDeckGoSlideQRCodeElements} from '@deckdeckgo/slide-qrcode/dist/loader';
@@ -87,7 +86,6 @@ deckDeckGoElements().then(async () => {
   promises.push(deckDeckGoSlideChartElements());
   promises.push(deckDeckGoSlideYoutubeElements());
   promises.push(deckDeckGoSlideSplitElements());
-  promises.push(deckDeckGoSlideCodeElements());
   promises.push(deckDeckGoSlideCountdownElements());
   promises.push(deckDeckGoSlideGifElements());
   promises.push(deckDeckGoSlideQRCodeElements());

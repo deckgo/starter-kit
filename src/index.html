@@ -204,17 +204,30 @@
                 /></deckgo-social>
               </deckgo-slide-author>
 
-              <deckgo-slide-chart
-                type="line"
-                grid="true"
-                date-pattern="dd.MM.yyyy"
-                animation="true"
-                src="https://raw.githubusercontent.com/deckgo/deckdeckgo/master/webcomponents/charts/showcase/data-line-multiple.csv"
-                ticks="5"
-                style="--background: white; --color: black"
+              <deckgo-slide-title
+                      style="
+                  --code-margin-bottom: 6rem;
+                  --background: var(--ion-color-dark);
+                  --color: var(--ion-color-light);
+                  --code-color: var(--ion-color-light);
+                "
               >
-                <h3 slot="title">Or the template for charts</h3>
-              </deckgo-slide-chart>
+                <h2 slot="title" style="margin-top: 0">Showcase your code</h2>
+                <deckgo-highlight-code highlight-lines="2-5 9" line-numbers="true" slot="content">
+                  <code slot="code">export class MyComponent {
+
+  private handleClick = () => {
+    alert('Received the button click!');
+  }
+
+  render() {
+    return (
+      <button onclick="{this.handleClick}">Click Me!</button>
+    );
+  }
+}</code>
+                </deckgo-highlight-code>
+              </deckgo-slide-title>
 
               <deckgo-slide-gif
                 style="background: white"
@@ -255,20 +268,6 @@
               >
                 <h2 slot="title">Remote Control</h2>
               </deckgo-slide-youtube>
-
-              <deckgo-slide-code
-                terminal="carbon"
-                theme="one-light"
-                src="https://demo.deckdeckgo.com/assets/code/deckdeckgo-slide-code-example.txt"
-                style="
-                  --code-margin-bottom: 6rem;
-                  --background: var(--ion-color-dark);
-                  --color: var(--ion-color-light);
-                  --code-color: var(--ion-color-light);
-                "
-              >
-                <h2 slot="title">Showcase your code</h2>
-              </deckgo-slide-code>
 
               <deckgo-slide-playground src="https://codepen.io/peterpeterparker/pen/dyGbOZm">
                 <h2 slot="title">Or your best playgrounds</h2>

@@ -45,6 +45,7 @@ const plugins = [
   new HtmlWebpackPlugin({
     hash: true,
     inject: true,
+    minify: false,
     template: path.resolve(__dirname, 'src', 'index.html'),
     path: path.join(__dirname, '../dist/'),
     filename: 'index.html'

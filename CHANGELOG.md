@@ -1,3 +1,19 @@
+<a name="8.3.0"></a>
+
+# [8.3.0](https://github.com/deckgo/starter-kit/compare/v8.2.0...v8.3.0) (2021-05-21)
+
+### Features
+
+- replace deprecated template code with code highlight
+
+### Fix
+
+- no minification to support code blocks
+
+### Build
+
+- update dependencies
+
 <a name="8.2.0"></a>
 
 # [8.2.0](https://github.com/deckgo/starter-kit/compare/v8.1.0...v8.2.0) (2021-05-16)
