@@ -1,3 +1,11 @@
+<a name="8.3.1"></a>
+
+# [8.3.1](https://github.com/deckgo/starter-kit/compare/v8.3.0...v8.3.1) (2021-05-27)
+
+### Fix
+
+- no reveal / animation of `@deckgo/highlight-code` if no lines to highlight
+
 <a name="8.3.0"></a>
 
 # [8.3.0](https://github.com/deckgo/starter-kit/compare/v8.2.0...v8.3.0) (2021-05-21)
