@@ -1,3 +1,11 @@
+<a name="8.3.2"></a>
+
+# [8.3.2](https://github.com/deckgo/starter-kit/compare/v8.3.1...v8.3.2) (2021-05-29)
+
+### Build
+
+- bump dependencies
+
 <a name="8.3.1"></a>
 
 # [8.3.1](https://github.com/deckgo/starter-kit/compare/v8.3.0...v8.3.1) (2021-05-27)
