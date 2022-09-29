@@ -36,7 +36,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@deckdeckgo/charts": "^2.1.0",
+    "@deckdeckgo/charts": "^2.3.0",
     "@deckdeckgo/core": "^8.2.1",
     "@deckdeckgo/deck-utils": "^4.0.2",
     "@deckdeckgo/demo": "^2.1.0",
